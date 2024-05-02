@@ -34,10 +34,20 @@ int main(int argc, char * argv[])
   double offset_z = 0.6;  // 0 mm
 
   // Set a target Pose
-  auto target_pose = current_pose.pose;
-  target_pose.position.x += offset_x;
-  target_pose.position.y += offset_y;
-  target_pose.position.z = offset_z;
+  //auto target_pose = current_pose.pose;
+  //target_pose.position.x += offset_x;
+  //target_pose.position.y += offset_y;
+  //target_pose.position.z = offset_z;
+
+  // Set a target Pose
+  auto const target_pose = []{
+    geometry_msgs::msg::Pose msg;
+    //msg.orientation.w = 1.0;
+    msg.position.x = current_pose.position.x;
+    msg.position.y = current_pose.position.y;
+    msg.position.z = 0.5;
+    return msg;
+  }();
 
   // Keep the current orientation
   target_pose.orientation = current_pose.pose.orientation;
