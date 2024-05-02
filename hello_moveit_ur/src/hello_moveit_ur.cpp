@@ -21,7 +21,7 @@ int main(int argc, char * argv[])
   auto move_group_interface = MoveGroupInterface(node, "ur_manipulator");  //CHANGE
 
   // Create MoveItVisualTools
-  auto visual_tools = std::make_shared<moveit_visual_tools::MoveItVisualTools>(node, "base_link", "/visualization_marker_array");
+  auto visual_tools = std::make_shared<moveit_visual_tools::MoveItVisualTools>(node, "base", "/visualization_marker_array");
   visual_tools->deleteAllMarkers();
   visual_tools->loadRemoteControl();
 
