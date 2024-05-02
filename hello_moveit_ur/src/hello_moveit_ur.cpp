@@ -25,15 +25,19 @@ int main(int argc, char * argv[])
   visual_tools->deleteAllMarkers();
   visual_tools->loadRemoteControl();
 
+  // Query the current position of the robot
+  auto current_pose = move_group_interface.getCurrentPose();
+
+  // Define the offsets in mm
+  double offset_x = 0.01;  // 10 mm
+  double offset_y = 0.02;  // 20 mm
+  double offset_z = 0.03;  // 30 mm
+
   // Set a target Pose
-  auto const target_pose = []{
-    geometry_msgs::msg::Pose msg;
-    //msg.orientation.w = -0.5;
-    msg.position.x = -0.25;
-    msg.position.y = 0.17;
-    msg.position.z = 0.7;
-    return msg;
-  }();
+  auto target_pose = current_pose.pose;
+  target_pose.position.x += offset_x;
+  target_pose.position.y += offset_y;
+  target_pose.position.z += offset_z;
   move_group_interface.setPoseTarget(target_pose);
 
   // Create a plan to that target pose
