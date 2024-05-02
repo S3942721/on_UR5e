@@ -20,9 +20,7 @@ using moveit::planning_interface::MoveGroupInterface;
 auto move_group_interface = MoveGroupInterface(node, "ur_manipulator");  //CHANGE
 
   // Create trajectory publisher to visualise tragectory in rviz
-  ros::Publisher display_publisher = node_handle.advertise<moveit_msgs::DisplayTrajectory>("/move_group/display_planned_path", 1, true);
-  moveit_msgs::DisplayTrajectory display_trajectory;
-  
+
 // Set a target Pose
 auto const target_pose = []{
   geometry_msgs::msg::Pose msg;
@@ -44,13 +42,17 @@ auto const [success, plan] = [&move_group_interface]{
 // Execute the plan
 if(success) {
   // Display tragectory in rviz
-  ROS_INFO("Visualizing plan 1 (again)");
-  display_trajectory.trajectory_start = my_plan.start_state_;
-  display_trajectory.trajectory.push_back(my_plan.trajectory_);
-  display_publisher.publish(display_trajectory);
-  /* Sleep to give Rviz time to visualize the plan. */
-  sleep(5.0);
+  namespace rvt = rviz_visual_tools;
+  moveit_visual_tools::MoveItVisualTools visual_tools(move_group_node, "base_link", "move_group_tutorial",
+                                                      move_group.getRobotModel());
   
+  RCLCPP_INFO(LOGGER, "Visualizing plan 1 as trajectory line");
+  visual_tools.publishAxisLabeled(target_pose1, "pose1");
+  visual_tools.publishText(text_pose, "Pose_Goal", rvt::WHITE, rvt::XLARGE);
+  visual_tools.publishTrajectoryLine(my_plan.trajectory_, joint_model_group);
+  visual_tools.trigger();
+  visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to continue the demo");
+    
   if (move_group_interface.execute(plan))
   {
     RCLCPP_ERROR(logger, "Execution Succeeded!!!");
