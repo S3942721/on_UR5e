@@ -28,7 +28,7 @@ int main(int argc, char * argv[])
   // Set a target Pose
   auto const target_pose = []{
     geometry_msgs::msg::Pose msg;
-    msg.orientation.w = 0.5;
+    msg.orientation.w = -0.5;
     msg.position.x = -0.25;
     msg.position.y = 0.17;
     msg.position.z = 0.7;
