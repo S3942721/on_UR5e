@@ -53,6 +53,7 @@ int main(int argc, char * argv[])
 
   std::string planning_frame = move_group_interface.getPlanningFrame();
   RCLCPP_INFO(logger, "Planning frame: %s", planning_frame.c_str());
+  std::cout << "Planning frame: " << planning_frame.c_str() << std:endl;
   
   // Visualize the plan in Rviz
   visual_tools->publishTrajectoryLine(plan.trajectory_, move_group_interface.getRobotModel()->getJointModelGroup(move_group_interface.getName()));
