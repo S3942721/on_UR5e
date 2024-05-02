@@ -43,9 +43,9 @@ int main(int argc, char * argv[])
   auto const target_pose = []{
     geometry_msgs::msg::Pose msg;
     //msg.orientation.w = 1.0;
-    msg.position.x = 0.28;
-    msg.position.y = 0.2;
-    msg.position.z = 0.5;
+    msg.position.x = 0.33;
+    msg.position.y = -0.065;
+    msg.position.z = 0.68;
     return msg;
   }();
 
@@ -70,12 +70,12 @@ int main(int argc, char * argv[])
 
   // Execute the plan
   if(success) {
-  //  if (move_group_interface.execute(plan))
-  //  {
+    if (move_group_interface.execute(plan))
+    {
       RCLCPP_INFO(logger, "Execution Succeeded!!!");
-  //  } else {
-  //    RCLCPP_ERROR(logger, "Execution Failed!!!");
-  //  }
+    } else {
+      RCLCPP_ERROR(logger, "Execution Failed!!!");
+    }
   } else {
     RCLCPP_ERROR(logger, "Planing failed!");
   }
