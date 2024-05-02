@@ -36,8 +36,8 @@ int main(int argc, char * argv[])
   // Set a target Pose
   auto target_pose = current_pose.pose;
   target_pose.position.x += offset_x;
-  target_pose.position.y += offset_y;
-  target_pose.position.z += offset_z;
+  //target_pose.position.y += offset_y;
+  //target_pose.position.z += offset_z;
 
   // Keep the current orientation
   target_pose.orientation = current_pose.pose.orientation;
