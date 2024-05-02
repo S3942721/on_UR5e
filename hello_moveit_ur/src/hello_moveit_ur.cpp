@@ -51,6 +51,9 @@ int main(int argc, char * argv[])
     return std::make_pair(ok, msg);
   }();
 
+  std::string planning_frame = move_group_interface.getPlanningFrame();
+  RCLCPP_INFO(logger, "Planning frame: %s", planning_frame.c_str());
+  
   // Visualize the plan in Rviz
   visual_tools->publishTrajectoryLine(plan.trajectory_, move_group_interface.getRobotModel()->getJointModelGroup(move_group_interface.getName()));
   visual_tools->trigger();
@@ -59,7 +62,7 @@ int main(int argc, char * argv[])
   if(success) {
     //if (move_group_interface.execute(plan))
     //{
-      RCLCPP_ERROR(logger, "Execution Succeeded!!!");
+      RCLCPP_INFO(logger, "Execution Succeeded!!!");
     //} else {
     //  RCLCPP_ERROR(logger, "Execution Failed!!!");
     //}
