@@ -57,8 +57,8 @@ int main(int argc, char * argv[])
   std::cout << "Planning frame: " << planning_frame.c_str() << std::endl;
   
   // Visualize the plan in Rviz
-  visual_tools->publishTrajectoryLine(plan.trajectory_, move_group_interface.getRobotModel()->getJointModelGroup(move_group_interface.getName()));
-  visual_tools->trigger();
+  //visual_tools->publishTrajectoryLine(plan.trajectory_, move_group_interface.getRobotModel()->getJointModelGroup(move_group_interface.getName()));
+  //visual_tools->trigger();
 
   // Execute the plan
   if(success) {
