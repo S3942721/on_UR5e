@@ -29,9 +29,9 @@ int main(int argc, char * argv[])
   auto current_pose = move_group_interface.getCurrentPose();
 
   // Define the offsets in mm
-  double offset_x = 0.01;  // 10 mm
-  double offset_y = 0.02;  // 20 mm
-  double offset_z = 0.03;  // 30 mm
+  double offset_x = 0.0;  // 10 mm
+  double offset_y = 0.0;  // 20 mm
+  double offset_z = 0.0;  // 30 mm
 
   // Set a target Pose
   auto target_pose = current_pose.pose;
