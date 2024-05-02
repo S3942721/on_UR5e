@@ -44,7 +44,7 @@ int main(int argc, char * argv[])
     geometry_msgs::msg::Pose msg;
     //msg.orientation.w = 1.0;
     msg.position.x = 0.28;
-    msg.position.y = -0.2;
+    msg.position.y = 0.2;
     msg.position.z = 0.5;
     return msg;
   }();
