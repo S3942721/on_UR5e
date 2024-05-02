@@ -50,7 +50,7 @@ int main(int argc, char * argv[])
   }();
 
   // Keep the current orientation
-  target_pose.orientation = current_pose.pose.orientation;
+  //target_pose.orientation = current_pose.pose.orientation;
 
   move_group_interface.setPoseTarget(target_pose);
 
