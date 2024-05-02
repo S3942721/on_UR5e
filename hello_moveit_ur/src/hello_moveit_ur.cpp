@@ -54,7 +54,7 @@ int main(int argc, char * argv[])
       RCLCPP_ERROR(logger, "Execution Succeeded!!!");
     //} else {
     //  RCLCPP_ERROR(logger, "Execution Failed!!!");
-    }
+    //}
   } else {
     RCLCPP_ERROR(logger, "Planing failed!");
   }
