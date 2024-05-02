@@ -31,13 +31,13 @@ int main(int argc, char * argv[])
   // Define the offsets in mm
   double offset_x = 0.0;  // 100 mm
   double offset_y = 0.0;  // 0 mm
-  double offset_z = 0.4;  // 0 mm
+  double offset_z = 0.6;  // 0 mm
 
   // Set a target Pose
   auto target_pose = current_pose.pose;
   target_pose.position.x += offset_x;
   target_pose.position.y += offset_y;
-  target_pose.position.z += offset_z;
+  target_pose.position.z = offset_z;
 
   // Keep the current orientation
   target_pose.orientation = current_pose.pose.orientation;
