@@ -39,7 +39,7 @@ auto const [success, plan] = [&move_group_interface]{
 
 // Execute the plan
 if(success) {
-  move_group_interface.execute(plan);
+  move_group_interface.execute(plan, wait=true);
 } else {
   RCLCPP_ERROR(logger, "Planing failed!");
 }
