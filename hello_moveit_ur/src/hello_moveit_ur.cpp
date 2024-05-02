@@ -62,12 +62,12 @@ int main(int argc, char * argv[])
 
   // Execute the plan
   if(success) {
-    //if (move_group_interface.execute(plan))
-    //{
+    if (move_group_interface.execute(plan))
+    {
       RCLCPP_INFO(logger, "Execution Succeeded!!!");
-    //} else {
-    //  RCLCPP_ERROR(logger, "Execution Failed!!!");
-    //}
+    } else {
+      RCLCPP_ERROR(logger, "Execution Failed!!!");
+    }
   } else {
     RCLCPP_ERROR(logger, "Planing failed!");
   }
