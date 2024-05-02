@@ -25,7 +25,7 @@ int main(int argc, char * argv[])
   visual_tools->deleteAllMarkers();
   visual_tools->loadRemoteControl();
 
-  // Query the current position of the robot
+  // Query the current position and orientation of the robot
   auto current_pose = move_group_interface.getCurrentPose();
 
   // Define the offsets in mm
@@ -38,6 +38,10 @@ int main(int argc, char * argv[])
   target_pose.position.x += offset_x;
   target_pose.position.y += offset_y;
   target_pose.position.z += offset_z;
+
+  // Keep the current orientation
+  target_pose.orientation = current_pose.pose.orientation;
+
   move_group_interface.setPoseTarget(target_pose);
 
   // Create a plan to that target pose
