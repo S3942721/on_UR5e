@@ -26,12 +26,12 @@ int main(int argc, char * argv[])
   visual_tools->loadRemoteControl();
 
   // Query the current position and orientation of the robot
-  auto current_pose = move_group_interface.getCurrentPose();
+  //auto current_pose = move_group_interface.getCurrentPose();
 
   // Define the offsets in mm
-  double offset_x = 0.0;  // 100 mm
-  double offset_y = 0.0;  // 0 mm
-  double offset_z = 0.6;  // 0 mm
+  //double offset_x = 0.0;  // 100 mm
+  //double offset_y = 0.0;  // 0 mm
+  //double offset_z = 0.6;  // 0 mm
 
   // Set a target Pose
   //auto target_pose = current_pose.pose;
@@ -43,8 +43,8 @@ int main(int argc, char * argv[])
   auto const target_pose = []{
     geometry_msgs::msg::Pose msg;
     //msg.orientation.w = 1.0;
-    msg.position.x = current_pose.position.x;
-    msg.position.y = current_pose.position.y;
+    msg.position.x = 0.28;
+    msg.position.y = -0.2;
     msg.position.z = 0.5;
     return msg;
   }();
