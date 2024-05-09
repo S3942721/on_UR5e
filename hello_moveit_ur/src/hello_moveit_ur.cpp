@@ -64,6 +64,12 @@ int main(int argc, char * argv[])
     return std::make_pair(ok, msg);
   }();
 
+  std::string endEffectorLink = move_group_interface.getEndEffectorLink();
+  RCLCPP_INFO(logger, "End Effector Link: %s", endEffectorLink.c_str());
+  
+  std::string endEffector = move_group_interface.getEndEffector();
+  RCLCPP_INFO(logger, "End Effector: %s", endEffector.c_str());
+
   std::string planning_frame = move_group_interface.getPlanningFrame();
   RCLCPP_INFO(logger, "Planning frame: %s", planning_frame.c_str());
   
