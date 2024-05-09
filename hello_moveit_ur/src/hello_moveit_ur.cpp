@@ -26,7 +26,7 @@ int main(int argc, char * argv[])
   visual_tools->loadRemoteControl();
 
   // Query the current position and orientation of the robot
-  //auto current_pose = move_group_interface.getCurrentPose();
+  auto current_pose = move_group_interface.getCurrentPose();
 
   // Define the offsets in mm
   //double offset_x = 0.0;  // 100 mm
@@ -54,7 +54,33 @@ int main(int argc, char * argv[])
 
   // Keep the current orientation
   //target_pose.orientation = current_pose.pose.orientation;
+  
+  // Print current pose:
+  RCLCPP_INFO(logger, "Current Pose:");
+  RCLCPP_INFO(logger, "X: %s", current_pose.position.x.c_str());
+  RCLCPP_INFO(logger, "Y: %s", current_pose.position.y.c_str());
+  RCLCPP_INFO(logger, "Z: %s", current_pose.position.z.c_str());
+  
+  // Assuming current_pose.orientation is a quaternion
+  RCLCPP_INFO(logger, "Orientation (Quaternion):");
+  RCLCPP_INFO(logger, "X: %s", current_pose.orientation.x.c_str());
+  RCLCPP_INFO(logger, "Y: %s", current_pose.orientation.y.c_str());
+  RCLCPP_INFO(logger, "Z: %s", current_pose.orientation.z.c_str());
+  RCLCPP_INFO(logger, "W: %s", current_pose.orientation.w.c_str());
 
+  // Print target pose:
+  RCLCPP_INFO(logger, "Target Pose:");
+  RCLCPP_INFO(logger, "X: %s", target_pose.position.x.c_str());
+  RCLCPP_INFO(logger, "Y: %s", target_pose.position.y.c_str());
+  RCLCPP_INFO(logger, "Z: %s", target_pose.position.z.c_str());
+  
+  // Assuming target_pose.orientation is a quaternion
+  RCLCPP_INFO(logger, "Orientation (Quaternion):");
+  RCLCPP_INFO(logger, "X: %s", target_pose.orientation.x.c_str());
+  RCLCPP_INFO(logger, "Y: %s", target_pose.orientation.y.c_str());
+  RCLCPP_INFO(logger, "Z: %s", target_pose.orientation.z.c_str());
+  RCLCPP_INFO(logger, "W: %s", target_pose.orientation.w.c_str());
+  
   move_group_interface.setPoseTarget(target_pose);
 
   // Create a plan to that target pose
