@@ -57,16 +57,16 @@ int main(int argc, char * argv[])
   
   // Print current pose:
   RCLCPP_INFO(logger, "Current Pose:");
-  RCLCPP_INFO(logger, "X: %s", current_pose.position.x.c_str());
-  RCLCPP_INFO(logger, "Y: %s", current_pose.position.y.c_str());
-  RCLCPP_INFO(logger, "Z: %s", current_pose.position.z.c_str());
+  RCLCPP_INFO(logger, "X: %s", current_pose.pose.position.x.c_str());
+  RCLCPP_INFO(logger, "Y: %s", current_pose.pose.position.y.c_str());
+  RCLCPP_INFO(logger, "Z: %s", current_pose.pose.position.z.c_str());
   
-  // Assuming current_pose.orientation is a quaternion
+  // Assuming current_pose.pose.orientation is a quaternion
   RCLCPP_INFO(logger, "Orientation (Quaternion):");
-  RCLCPP_INFO(logger, "X: %s", current_pose.orientation.x.c_str());
-  RCLCPP_INFO(logger, "Y: %s", current_pose.orientation.y.c_str());
-  RCLCPP_INFO(logger, "Z: %s", current_pose.orientation.z.c_str());
-  RCLCPP_INFO(logger, "W: %s", current_pose.orientation.w.c_str());
+  RCLCPP_INFO(logger, "X: %s", current_pose.pose.orientation.x.c_str());
+  RCLCPP_INFO(logger, "Y: %s", current_pose.pose.orientation.y.c_str());
+  RCLCPP_INFO(logger, "Z: %s", current_pose.pose.orientation.z.c_str());
+  RCLCPP_INFO(logger, "W: %s", current_pose.pose.orientation.w.c_str());
 
   // Print target pose:
   RCLCPP_INFO(logger, "Target Pose:");
