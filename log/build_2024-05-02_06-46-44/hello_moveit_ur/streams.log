@@ -1,0 +1,28 @@
+[0.043s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[0.214s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit_ur[0m
+[0.365s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[21.918s] [100%] [32m[1mLinking CXX executable hello_moveit_ur[0m
+[22.582s] [100%] Built target hello_moveit_ur
+[22.604s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[22.694s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/hello_moveit_ur
+[22.712s] -- Install configuration: "Release"
+[22.713s] -- Installing: /root/overlay_ws/src/install/hello_moveit_ur/lib/hello_moveit_ur/hello_moveit_ur
+[22.714s] -- Set runtime path of "/root/overlay_ws/src/install/hello_moveit_ur/lib/hello_moveit_ur/hello_moveit_ur" to ""
+[22.714s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur//launch
+[22.714s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur//launch/hello_moveit_ur_launch.py
+[22.714s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/package_run_dependencies/hello_moveit_ur
+[22.715s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/parent_prefix_path/hello_moveit_ur
+[22.715s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/ament_prefix_path.sh
+[22.715s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/ament_prefix_path.dsv
+[22.715s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/path.sh
+[22.716s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/path.dsv
+[22.716s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.bash
+[22.716s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.sh
+[22.716s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.zsh
+[22.716s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.dsv
+[22.717s] -- Installing: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.dsv
+[22.717s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/packages/hello_moveit_ur
+[22.717s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/cmake/hello_moveit_urConfig.cmake
+[22.717s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/cmake/hello_moveit_urConfig-version.cmake
+[22.717s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.xml
+[22.720s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/hello_moveit_ur

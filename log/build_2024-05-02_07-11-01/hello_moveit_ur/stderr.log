@@ -1,0 +1,17 @@
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:56:67:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   56 |   std::cout << "Planning frame: " << planning_frame.c_str() << std[01;31m[K:[m[Kendl;
+      |                                                                   [01;31m[K^[m[K
+      |                                                                   [32m[K::[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:32:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   32 |   double [01;35m[Koffset_x[m[K = 0.0;  // 10 mm
+      |          [01;35m[K^~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:33:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   33 |   double [01;35m[Koffset_y[m[K = 0.0;  // 20 mm
+      |          [01;35m[K^~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:34:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_z[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   34 |   double [01;35m[Koffset_z[m[K = 0.0;  // 30 mm
+      |          [01;35m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,58 @@
+[0.048s] Invoking command in '/root/overlay_ws/src/build/rviz_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/rviz_visual_tools -- -j8 -l8
+[0.209s] [  2%] [34m[1mAutomatic MOC for target gtest[0m
+[0.225s] [  5%] [34m[1mAutomatic MOC for target rviz_visual_tools_gui[0m
+[0.232s] [  7%] [34m[1mAutomatic MOC for target rviz_visual_tools_remote_control[0m
+[0.234s] [ 10%] [34m[1mAutomatic MOC for target gtest_main[0m
+[0.305s] [ 10%] Built target gtest_autogen
+[0.370s] [ 10%] Built target rviz_visual_tools_remote_control_autogen
+[0.371s] [ 10%] Built target gtest_main_autogen
+[0.486s] [ 12%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.508s] [ 15%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o[0m
+[0.510s] [ 17%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_remote_control.dir/src/remote_control.cpp.o[0m
+[0.532s] [ 20%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_remote_control.dir/rviz_visual_tools_remote_control_autogen/mocs_compilation.cpp.o[0m
+[0.580s] [ 23%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.o[0m
+[0.595s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.270s] [ 25%] Built target rviz_visual_tools_gui_autogen
+[1.433s] [ 28%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/src/rviz_visual_tools_gui.cpp.o[0m
+[1.454s] [ 30%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/rviz_visual_tools_gui_autogen/mocs_compilation.cpp.o[0m
+[1.470s] [ 33%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/src/remote_control.cpp.o[0m
+[1.488s] [ 35%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/src/key_tool.cpp.o[0m
+[3.520s] [ 38%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.759s] [ 38%] Built target gtest_main
+[12.068s] [ 41%] [32m[1mLinking CXX static library libgtest.a[0m
+[12.486s] [ 41%] Built target gtest
+[24.424s] [ 43%] [32m[1mLinking CXX shared library librviz_visual_tools_remote_control.so[0m
+[25.464s] [ 43%] Built target rviz_visual_tools_remote_control
+[25.542s] [ 46%] [34m[1mAutomatic MOC for target rviz_visual_tools[0m
+[25.606s] [ 46%] Built target rviz_visual_tools_autogen
+[25.668s] [ 48%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools.dir/src/tf_visual_tools.cpp.o[0m
+[25.672s] [ 51%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools.dir/src/rviz_visual_tools.cpp.o[0m
+[25.677s] [ 53%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools.dir/rviz_visual_tools_autogen/mocs_compilation.cpp.o[0m
+[26.529s] [ 56%] [32m[1mLinking CXX shared library librviz_visual_tools_gui.so[0m
+[30.870s] [ 56%] Built target rviz_visual_tools_gui
+[55.973s] [ 58%] [32m[1mLinking CXX shared library librviz_visual_tools.so[0m
+[57.573s] [ 58%] Built target rviz_visual_tools
+[57.620s] [ 61%] [34m[1mAutomatic MOC for target rviz_visual_tools_imarker_simple[0m
+[57.670s] [ 61%] Built target rviz_visual_tools_imarker_simple_autogen
+[57.720s] [ 64%] [34m[1mAutomatic MOC for target rviz_visual_tools_rvt_test[0m
+[57.767s] [ 64%] Built target rviz_visual_tools_rvt_test_autogen
+[57.821s] [ 66%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple.dir/rviz_visual_tools_imarker_simple_autogen/mocs_compilation.cpp.o[0m
+[57.865s] [ 69%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple.dir/src/imarker_simple.cpp.o[0m
+[65.606s] [ 71%] [32m[1mLinking CXX shared library librviz_visual_tools_imarker_simple.so[0m
+[66.216s] [ 71%] Built target rviz_visual_tools_imarker_simple
+[66.272s] [ 79%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_rvt_test.dir/tests/rvt_test.cpp.o[0m
+[66.272s] [ 79%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_rvt_test.dir/rviz_visual_tools_rvt_test_autogen/mocs_compilation.cpp.o[0m
+[66.272s] [ 79%] [34m[1mAutomatic MOC for target rviz_visual_tools_demo[0m
+[66.329s] [ 79%] Built target rviz_visual_tools_demo_autogen
+[66.381s] [ 82%] [34m[1mAutomatic MOC for target rviz_visual_tools_imarker_simple_demo[0m
+[66.436s] [ 82%] Built target rviz_visual_tools_imarker_simple_demo_autogen
+[66.487s] [ 84%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_demo.dir/rviz_visual_tools_demo_autogen/mocs_compilation.cpp.o[0m
+[66.488s] [ 87%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_demo.dir/src/rviz_visual_tools_demo.cpp.o[0m
+[75.670s] [ 89%] [32m[1mLinking CXX executable rviz_visual_tools_demo[0m
+[76.503s] [ 89%] Built target rviz_visual_tools_demo
+[76.566s] [ 92%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple_demo.dir/rviz_visual_tools_imarker_simple_demo_autogen/mocs_compilation.cpp.o[0m
+[76.569s] [ 94%] [32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple_demo.dir/src/imarker_simple_demo.cpp.o[0m
+[77.702s] [ 97%] [32m[1mLinking CXX executable rviz_visual_tools_rvt_test[0m
+[78.722s] [ 97%] Built target rviz_visual_tools_rvt_test
+[84.722s] [100%] [32m[1mLinking CXX executable rviz_visual_tools_imarker_simple_demo[0m
+[85.511s] [100%] Built target rviz_visual_tools_imarker_simple_demo

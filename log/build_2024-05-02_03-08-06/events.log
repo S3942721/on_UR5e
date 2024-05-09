@@ -1,0 +1,132 @@
+[0.000000] (-) TimerEvent: {}
+[0.000308] (hello_moveit_ur) JobQueued: {'identifier': 'hello_moveit_ur', 'dependencies': OrderedDict()}
+[0.000378] (hello_moveit_ur) JobStarted: {'identifier': 'hello_moveit_ur'}
+[0.023874] (hello_moveit_ur) JobProgress: {'identifier': 'hello_moveit_ur', 'progress': 'cmake'}
+[0.025023] (hello_moveit_ur) JobProgress: {'identifier': 'hello_moveit_ur', 'progress': 'build'}
+[0.026049] (hello_moveit_ur) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/overlay_ws/src/build/hello_moveit_ur', '--', '-j8', '-l8'], 'cwd': '/root/overlay_ws/src/build/hello_moveit_ur', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('HOSTNAME', 'urbrain'), ('WORKING_BRANCH', 'main'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/underlay_ws/install/pilz_industrial_motion_planner_testutils/lib:/root/underlay_ws/install/pilz_industrial_motion_planner/lib:/root/underlay_ws/install/moveit_visual_tools/lib:/root/underlay_ws/install/moveit_task_constructor_visualization/lib:/root/underlay_ws/install/moveit_task_constructor_demo/lib:/root/underlay_ws/install/moveit_task_constructor_capabilities/lib:/root/underlay_ws/install/moveit_task_constructor_core/lib:/root/underlay_ws/install/moveit_ros_control_interface/lib:/root/underlay_ws/install/moveit_simple_controller_manager/lib:/root/underlay_ws/install/moveit_setup_assistant/lib:/root/underlay_ws/install/moveit_setup_srdf_plugins/lib:/root/underlay_ws/install/moveit_setup_core_plugins/lib:/root/underlay_ws/install/moveit_setup_controllers/lib:/root/underlay_ws/install/moveit_setup_app_plugins/lib:/root/underlay_ws/install/moveit_setup_framework/lib:/root/underlay_ws/install/moveit_servo/lib:/root/underlay_ws/install/moveit_ros_visualization/lib:/root/underlay_ws/install/moveit_hybrid_planning/lib:/root/underlay_ws/install/moveit_ros_planning_interface/lib:/root/underlay_ws/install/moveit_ros_benchmarks/lib:/root/underlay_ws/install/moveit_ros_warehouse/lib:/root/underlay_ws/install/moveit_ros_robot_interaction/lib:/root/underlay_ws/install/moveit_ros_perception/lib:/root/underlay_ws/install/moveit_ros_move_group/lib:/root/underlay_ws/install/moveit_planners_ompl/lib:/root/underlay_ws/install/moveit_ros_planning/lib:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor/lib:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/root/underlay_ws/install/moveit_planners_chomp/lib:/root/underlay_ws/install/moveit_kinematics/lib:/root/underlay_ws/install/moveit_chomp_optimizer_adapter/lib:/root/underlay_ws/install/chomp_motion_planner/lib:/root/underlay_ws/install/moveit_core/lib:/root/underlay_ws/install/srdfdom/lib:/root/underlay_ws/install/rviz_marker_tools/lib:/root/underlay_ws/install/rosparam_shortcuts/lib:/root/underlay_ws/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/overlay_ws'), ('OVERLAY_WS', '/root/overlay_ws'), ('ROS_PYTHON_VERSION', '3'), ('REPO_URL', 'git@github.com:S3942721/on_UR5e.git'), ('UNDERLAY_WS', '/root/underlay_ws'), ('COLCON_PREFIX_PATH', '/root/overlay_ws/install:/root/underlay_ws/install'), ('ROS_DISTRO', 'humble'), ('SSH_KEY_LOCATION', 'deploy_key'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/underlay_ws/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/overlay_ws/src/build/hello_moveit_ur'), ('LC_ALL', 'en_AU.UTF-8'), ('PYTHONPATH', '/root/underlay_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/root/underlay_ws/install/srdfdom/local/lib/python3.10/dist-packages:/root/underlay_ws/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/root/underlay_ws/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble')]), 'shell': False}
+[0.098966] (-) TimerEvent: {}
+[0.128859] (hello_moveit_ur) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hello_moveit_ur\x1b[0m\n'}
+[0.171296] (hello_moveit_ur) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o\x1b[0m\n'}
+[0.199071] (-) TimerEvent: {}
+[0.299415] (-) TimerEvent: {}
+[0.399774] (-) TimerEvent: {}
+[0.500129] (-) TimerEvent: {}
+[0.600487] (-) TimerEvent: {}
+[0.700844] (-) TimerEvent: {}
+[0.801200] (-) TimerEvent: {}
+[0.901559] (-) TimerEvent: {}
+[1.001916] (-) TimerEvent: {}
+[1.102288] (-) TimerEvent: {}
+[1.202652] (-) TimerEvent: {}
+[1.303020] (-) TimerEvent: {}
+[1.403433] (-) TimerEvent: {}
+[1.503793] (-) TimerEvent: {}
+[1.604151] (-) TimerEvent: {}
+[1.704522] (-) TimerEvent: {}
+[1.804910] (-) TimerEvent: {}
+[1.905266] (-) TimerEvent: {}
+[2.005632] (-) TimerEvent: {}
+[2.105988] (-) TimerEvent: {}
+[2.206351] (-) TimerEvent: {}
+[2.306713] (-) TimerEvent: {}
+[2.407070] (-) TimerEvent: {}
+[2.507426] (-) TimerEvent: {}
+[2.607795] (-) TimerEvent: {}
+[2.708152] (-) TimerEvent: {}
+[2.808522] (-) TimerEvent: {}
+[2.908885] (-) TimerEvent: {}
+[3.009247] (-) TimerEvent: {}
+[3.109610] (-) TimerEvent: {}
+[3.209977] (-) TimerEvent: {}
+[3.310348] (-) TimerEvent: {}
+[3.410709] (-) TimerEvent: {}
+[3.511070] (-) TimerEvent: {}
+[3.611433] (-) TimerEvent: {}
+[3.711797] (-) TimerEvent: {}
+[3.812160] (-) TimerEvent: {}
+[3.912523] (-) TimerEvent: {}
+[4.012888] (-) TimerEvent: {}
+[4.113245] (-) TimerEvent: {}
+[4.213604] (-) TimerEvent: {}
+[4.313964] (-) TimerEvent: {}
+[4.414336] (-) TimerEvent: {}
+[4.514691] (-) TimerEvent: {}
+[4.615052] (-) TimerEvent: {}
+[4.715414] (-) TimerEvent: {}
+[4.815772] (-) TimerEvent: {}
+[4.916129] (-) TimerEvent: {}
+[5.016494] (-) TimerEvent: {}
+[5.116859] (-) TimerEvent: {}
+[5.217236] (-) TimerEvent: {}
+[5.317601] (-) TimerEvent: {}
+[5.418007] (-) TimerEvent: {}
+[5.518353] (-) TimerEvent: {}
+[5.618712] (-) TimerEvent: {}
+[5.719122] (-) TimerEvent: {}
+[5.819489] (-) TimerEvent: {}
+[5.919851] (-) TimerEvent: {}
+[6.020216] (-) TimerEvent: {}
+[6.120578] (-) TimerEvent: {}
+[6.220949] (-) TimerEvent: {}
+[6.321308] (-) TimerEvent: {}
+[6.421673] (-) TimerEvent: {}
+[6.522052] (-) TimerEvent: {}
+[6.622435] (-) TimerEvent: {}
+[6.722795] (-) TimerEvent: {}
+[6.823159] (-) TimerEvent: {}
+[6.923519] (-) TimerEvent: {}
+[7.008241] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.008521] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:42:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmoveit::planning_interface::MoveGroupInterface::execute(std::tuple_element<1, const std::pair<bool, moveit::planning_interface::MoveGroupInterface::Plan> >::type&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.008646] (hello_moveit_ur) StderrLine: {'line': b'   42 |   \x1b[01;31m\x1b[Kmove_group_interface.execute(plan, true)\x1b[m\x1b[K;\n'}
+[7.008762] (hello_moveit_ur) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.008875] (hello_moveit_ur) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:4\x1b[m\x1b[K:\n'}
+[7.008987] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:729:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::execute(const moveit::planning_interface::MoveGroupInterface::Plan&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.009103] (hello_moveit_ur) StderrLine: {'line': b'  729 |   moveit::core::MoveItErrorCode \x1b[01;36m\x1b[Kexecute\x1b[m\x1b[K(const Plan& plan);\n'}
+[7.009214] (hello_moveit_ur) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.009324] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:729:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[7.009435] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:732:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::execute(const RobotTrajectory&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.009557] (hello_moveit_ur) StderrLine: {'line': b'  732 |   moveit::core::MoveItErrorCode \x1b[01;36m\x1b[Kexecute\x1b[m\x1b[K(const moveit_msgs::msg::RobotTrajectory& trajectory);\n'}
+[7.009667] (hello_moveit_ur) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.009776] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:732:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[7.023606] (-) TimerEvent: {}
+[7.123949] (-) TimerEvent: {}
+[7.224337] (-) TimerEvent: {}
+[7.324708] (-) TimerEvent: {}
+[7.425080] (-) TimerEvent: {}
+[7.525458] (-) TimerEvent: {}
+[7.625831] (-) TimerEvent: {}
+[7.726193] (-) TimerEvent: {}
+[7.826579] (-) TimerEvent: {}
+[7.926941] (-) TimerEvent: {}
+[8.027301] (-) TimerEvent: {}
+[8.127663] (-) TimerEvent: {}
+[8.228026] (-) TimerEvent: {}
+[8.328379] (-) TimerEvent: {}
+[8.428735] (-) TimerEvent: {}
+[8.529093] (-) TimerEvent: {}
+[8.629481] (-) TimerEvent: {}
+[8.729841] (-) TimerEvent: {}
+[8.830204] (-) TimerEvent: {}
+[8.930576] (-) TimerEvent: {}
+[9.030934] (-) TimerEvent: {}
+[9.131294] (-) TimerEvent: {}
+[9.231657] (-) TimerEvent: {}
+[9.332031] (-) TimerEvent: {}
+[9.432456] (-) TimerEvent: {}
+[9.532823] (-) TimerEvent: {}
+[9.633196] (-) TimerEvent: {}
+[9.733563] (-) TimerEvent: {}
+[9.833938] (-) TimerEvent: {}
+[9.934323] (-) TimerEvent: {}
+[10.034704] (-) TimerEvent: {}
+[10.135082] (-) TimerEvent: {}
+[10.235461] (-) TimerEvent: {}
+[10.335828] (-) TimerEvent: {}
+[10.436203] (-) TimerEvent: {}
+[10.533432] (hello_moveit_ur) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1\n'}
+[10.533827] (hello_moveit_ur) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2\n'}
+[10.534031] (hello_moveit_ur) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.536428] (-) TimerEvent: {}
+[10.537298] (hello_moveit_ur) CommandEnded: {'returncode': 2}
+[10.625890] (hello_moveit_ur) JobEnded: {'identifier': 'hello_moveit_ur', 'rc': 2}
+[10.636508] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+Invoking command in '/root/overlay_ws/src/build/rviz_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/overlay_ws/src/rviz_visual_tools -DCMAKE_INSTALL_PREFIX=/root/overlay_ws/src/install/rviz_visual_tools

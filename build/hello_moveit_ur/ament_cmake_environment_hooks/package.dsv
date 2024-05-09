@@ -1,0 +1,4 @@
+source;share/hello_moveit_ur/local_setup.bash
+source;share/hello_moveit_ur/local_setup.dsv
+source;share/hello_moveit_ur/local_setup.sh
+source;share/hello_moveit_ur/local_setup.zsh

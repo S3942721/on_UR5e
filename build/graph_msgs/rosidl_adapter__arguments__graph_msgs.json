@@ -1,0 +1,7 @@
+{
+  "package_name": "graph_msgs",
+  "non_idl_tuples": [
+    "/root/overlay_ws/src/graph_msgs:msg/Edges.msg",
+    "/root/overlay_ws/src/graph_msgs:msg/GeometryGraph.msg"
+  ]
+}

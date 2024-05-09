@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit_ur[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:45:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   45 |   [01;31m[K}[m[K else {
+      |   [01;31m[K^[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:47:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   47 |   [01;31m[K}[m[K
+      |   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

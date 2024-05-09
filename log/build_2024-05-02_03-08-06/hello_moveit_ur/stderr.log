@@ -1,0 +1,16 @@
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:42:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::execute(std::tuple_element<1, const std::pair<bool, moveit::planning_interface::MoveGroupInterface::Plan> >::type&, bool)[m[K’
+   42 |   [01;31m[Kmove_group_interface.execute(plan, true)[m[K;
+      |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:4[m[K:
+[01m[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:729:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::execute(const moveit::planning_interface::MoveGroupInterface::Plan&)[m[K’
+  729 |   moveit::core::MoveItErrorCode [01;36m[Kexecute[m[K(const Plan& plan);
+      |                                 [01;36m[K^~~~~~~[m[K
+[01m[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:729:33:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:732:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::execute(const RobotTrajectory&)[m[K’
+  732 |   moveit::core::MoveItErrorCode [01;36m[Kexecute[m[K(const moveit_msgs::msg::RobotTrajectory& trajectory);
+      |                                 [01;36m[K^~~~~~~[m[K
+[01m[K/root/underlay_ws/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:732:33:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

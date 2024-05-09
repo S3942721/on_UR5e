@@ -1,0 +1,16 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:58:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+   58 |   } [01;31m[Kelse[m[K {
+      |     [01;31m[K^~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:63:21:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+   63 |   rclcpp::shutdown()[01;31m[K;[m[K
+      |                     [01;31m[K^[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:64:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+   64 |   [01;31m[Kreturn[m[K 0;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:65:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   65 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

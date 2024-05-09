@@ -1,0 +1,11 @@
+[0.045s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[0.167s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit_ur[0m
+[0.228s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[1.817s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kmoveit_visual_tools/moveit_visual_tools.h: No such file or directory
+[1.817s]     5 | #include [01;31m[K<moveit_visual_tools/moveit_visual_tools.h>[m[K
+[1.818s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.818s] compilation terminated.
+[1.828s] gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+[1.828s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+[1.828s] gmake: *** [Makefile:146: all] Error 2
+[1.832s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8

@@ -1,0 +1,356 @@
+[0.179s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--mixin', 'release']
+[0.179s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=['release'], verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fbd27991330>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbd27acda80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbd27acda80>>, mixin_verb=('build',))
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.428s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/overlay_ws/src'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['colcon_pkg']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'colcon_pkg'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['colcon_meta']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'colcon_meta'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['ros']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ros'
+[0.449s] DEBUG:colcon.colcon_core.package_identification:Package 'graph_msgs' with type 'ros.ament_cmake' and name 'graph_msgs'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ignore_ament_install'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['colcon_pkg']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'colcon_pkg'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['colcon_meta']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'colcon_meta'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ros'
+[0.451s] DEBUG:colcon.colcon_core.package_identification:Package 'hello_moveit_ur' with type 'ros.ament_cmake' and name 'hello_moveit_ur'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ignore_ament_install'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['colcon_pkg']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'colcon_pkg'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['colcon_meta']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'colcon_meta'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['ros']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ros'
+[0.454s] DEBUG:colcon.colcon_core.package_identification:Package 'moveit_visual_tools' with type 'ros.ament_cmake' and name 'moveit_visual_tools'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['colcon_pkg']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'colcon_pkg'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['colcon_meta']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'colcon_meta'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['ros']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ros'
+[0.458s] DEBUG:colcon.colcon_core.package_identification:Package 'rviz_visual_tools' with type 'ros.ament_cmake' and name 'rviz_visual_tools'
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.495s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /root/overlay_ws/install
+[0.498s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 55 installed packages in /root/underlay_ws/install
+[0.501s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 342 installed packages in /opt/ros/humble
+[0.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.604s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'moveit_visual_tools' is in: /root/underlay_ws/install/moveit_visual_tools, /opt/ros/humble
+	'rviz_visual_tools' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding moveit_visual_tools rviz_visual_tools
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'cmake_target' from command line to 'None'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'graph_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.606s] DEBUG:colcon.colcon_core.verb:Building package 'graph_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/overlay_ws/src/build/graph_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/overlay_ws/src/install/graph_msgs', 'merge_install': False, 'path': '/root/overlay_ws/src/graph_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_target' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_clean_cache' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_clean_first' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_force_configure' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'ament_cmake_args' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'catkin_cmake_args' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.607s] DEBUG:colcon.colcon_core.verb:Building package 'hello_moveit_ur' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/overlay_ws/src/build/hello_moveit_ur', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/overlay_ws/src/install/hello_moveit_ur', 'merge_install': False, 'path': '/root/overlay_ws/src/hello_moveit_ur', 'symlink_install': False, 'test_result_base': None}
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'cmake_target' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'rviz_visual_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.608s] DEBUG:colcon.colcon_core.verb:Building package 'rviz_visual_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/overlay_ws/src/build/rviz_visual_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/overlay_ws/src/install/rviz_visual_tools', 'merge_install': False, 'path': '/root/overlay_ws/src/rviz_visual_tools', 'symlink_install': False, 'test_result_base': None}
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_target' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.609s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_visual_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/overlay_ws/src/build/moveit_visual_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/overlay_ws/src/install/moveit_visual_tools', 'merge_install': False, 'path': '/root/overlay_ws/src/moveit_visual_tools', 'symlink_install': False, 'test_result_base': None}
+[0.609s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.610s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.611s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/overlay_ws/src/graph_msgs' with build type 'ament_cmake'
+[0.611s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/overlay_ws/src/graph_msgs'
+[0.614s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.628s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/overlay_ws/src/rviz_visual_tools' with build type 'ament_cmake'
+[0.628s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/overlay_ws/src/rviz_visual_tools'
+[0.629s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.641s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/overlay_ws/src/hello_moveit_ur' with build type 'ament_cmake'
+[0.642s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/overlay_ws/src/hello_moveit_ur'
+[0.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/graph_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/graph_msgs -- -j8 -l8
+[0.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/rviz_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/rviz_visual_tools -- -j8 -l8
+[0.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[1.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/graph_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/graph_msgs -- -j8 -l8
+[1.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/rviz_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/rviz_visual_tools -- -j8 -l8
+[1.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/graph_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/graph_msgs
+[1.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/rviz_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/rviz_visual_tools
+[1.639s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rviz_visual_tools)
+[1.641s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/rviz_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/rviz_visual_tools
+[1.643s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools' for CMake module files
+[1.645s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools' for CMake config files
+[1.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_visual_tools', 'cmake_prefix_path')
+[1.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/cmake_prefix_path.ps1'
+[1.646s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/cmake_prefix_path.dsv'
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/cmake_prefix_path.sh'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/lib'
+[1.648s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_visual_tools', 'ld_library_path_lib')
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/ld_library_path_lib.ps1'
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/ld_library_path_lib.dsv'
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/ld_library_path_lib.sh'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/bin'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/lib/pkgconfig/rviz_visual_tools.pc'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/lib/python3.10/site-packages'
+[1.651s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/bin'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.ps1'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.dsv'
+[1.653s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.sh'
+[1.655s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.bash'
+[1.656s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.zsh'
+[1.657s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/rviz_visual_tools/share/colcon-core/packages/rviz_visual_tools)
+[1.678s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(graph_msgs)
+[1.678s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs' for CMake module files
+[1.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/graph_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/graph_msgs
+[1.681s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs' for CMake config files
+[1.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('graph_msgs', 'cmake_prefix_path')
+[1.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/cmake_prefix_path.ps1'
+[1.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/cmake_prefix_path.dsv'
+[1.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/cmake_prefix_path.sh'
+[1.684s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/lib'
+[1.684s] Level 1:colcon.colcon_core.shell:create_environment_hook('graph_msgs', 'ld_library_path_lib')
+[1.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/ld_library_path_lib.ps1'
+[1.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/ld_library_path_lib.dsv'
+[1.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/ld_library_path_lib.sh'
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/bin'
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/lib/pkgconfig/graph_msgs.pc'
+[1.687s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/lib/python3.10/site-packages'
+[1.687s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/bin'
+[1.687s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.ps1'
+[1.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.dsv'
+[1.689s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.sh'
+[1.689s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.bash'
+[1.690s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.zsh'
+[1.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/graph_msgs/share/colcon-core/packages/graph_msgs)
+[1.850s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rviz_visual_tools)
+[1.851s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools' for CMake module files
+[1.851s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools' for CMake config files
+[1.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_visual_tools', 'cmake_prefix_path')
+[1.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/cmake_prefix_path.ps1'
+[1.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/cmake_prefix_path.dsv'
+[1.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/cmake_prefix_path.sh'
+[1.854s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/lib'
+[1.854s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_visual_tools', 'ld_library_path_lib')
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/ld_library_path_lib.ps1'
+[1.855s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/ld_library_path_lib.dsv'
+[1.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/hook/ld_library_path_lib.sh'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/bin'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/lib/pkgconfig/rviz_visual_tools.pc'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/lib/python3.10/site-packages'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/rviz_visual_tools/bin'
+[1.857s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.ps1'
+[1.858s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.dsv'
+[1.859s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.sh'
+[1.859s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.bash'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.zsh'
+[1.861s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/rviz_visual_tools/share/colcon-core/packages/rviz_visual_tools)
+[1.898s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(graph_msgs)
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs' for CMake module files
+[1.900s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs' for CMake config files
+[1.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('graph_msgs', 'cmake_prefix_path')
+[1.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/cmake_prefix_path.ps1'
+[1.901s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/cmake_prefix_path.dsv'
+[1.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/cmake_prefix_path.sh'
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/lib'
+[1.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('graph_msgs', 'ld_library_path_lib')
+[1.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/ld_library_path_lib.ps1'
+[1.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/ld_library_path_lib.dsv'
+[1.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/hook/ld_library_path_lib.sh'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/bin'
+[1.905s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/lib/pkgconfig/graph_msgs.pc'
+[1.905s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/lib/python3.10/site-packages'
+[1.905s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/graph_msgs/bin'
+[1.906s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.ps1'
+[1.906s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.dsv'
+[1.907s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.sh'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.bash'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.zsh'
+[1.909s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/graph_msgs/share/colcon-core/packages/graph_msgs)
+[1.909s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/overlay_ws/src/moveit_visual_tools' with build type 'ament_cmake'
+[1.909s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/overlay_ws/src/moveit_visual_tools'
+[1.910s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.910s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/moveit_visual_tools': AMENT_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/root/overlay_ws/src/install/rviz_visual_tools/lib:/root/overlay_ws/src/install/graph_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/overlay_ws/src/build/moveit_visual_tools -- -j8 -l8
+[2.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/moveit_visual_tools' returned '0': AMENT_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/root/overlay_ws/src/install/rviz_visual_tools/lib:/root/overlay_ws/src/install/graph_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/overlay_ws/src/build/moveit_visual_tools -- -j8 -l8
+[2.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/moveit_visual_tools': AMENT_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/root/overlay_ws/src/install/rviz_visual_tools/lib:/root/overlay_ws/src/install/graph_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/overlay_ws/src/build/moveit_visual_tools
+[2.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_visual_tools)
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools' for CMake module files
+[2.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/moveit_visual_tools' returned '0': AMENT_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/overlay_ws/src/install/rviz_visual_tools:/root/overlay_ws/src/install/graph_msgs:/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/root/overlay_ws/src/install/rviz_visual_tools/lib:/root/overlay_ws/src/install/graph_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/overlay_ws/src/build/moveit_visual_tools
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools' for CMake config files
+[2.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'cmake_prefix_path')
+[2.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.ps1'
+[2.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.dsv'
+[2.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.sh'
+[2.261s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/lib'
+[2.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'ld_library_path_lib')
+[2.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.ps1'
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.dsv'
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.sh'
+[2.263s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/bin'
+[2.263s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/lib/pkgconfig/moveit_visual_tools.pc'
+[2.263s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/lib/python3.10/site-packages'
+[2.263s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/bin'
+[2.264s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.ps1'
+[2.264s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.dsv'
+[2.265s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.sh'
+[2.266s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.bash'
+[2.266s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.zsh'
+[2.267s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/moveit_visual_tools/share/colcon-core/packages/moveit_visual_tools)
+[2.345s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_visual_tools)
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools' for CMake module files
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools' for CMake config files
+[2.347s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'cmake_prefix_path')
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.ps1'
+[2.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.dsv'
+[2.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.sh'
+[2.349s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/lib'
+[2.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'ld_library_path_lib')
+[2.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.ps1'
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.dsv'
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.sh'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/bin'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/lib/pkgconfig/moveit_visual_tools.pc'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/lib/python3.10/site-packages'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/moveit_visual_tools/bin'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.ps1'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.dsv'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.sh'
+[2.354s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.bash'
+[2.355s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/moveit_visual_tools/share/moveit_visual_tools/package.zsh'
+[2.355s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/moveit_visual_tools/share/colcon-core/packages/moveit_visual_tools)
+[16.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[16.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/hello_moveit_ur
+[16.526s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_moveit_ur)
+[16.527s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur' for CMake module files
+[16.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/hello_moveit_ur
+[16.529s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur' for CMake config files
+[16.530s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_moveit_ur', 'cmake_prefix_path')
+[16.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.ps1'
+[16.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.dsv'
+[16.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.sh'
+[16.532s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/lib'
+[16.532s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/bin'
+[16.532s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/lib/pkgconfig/hello_moveit_ur.pc'
+[16.533s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/lib/python3.10/site-packages'
+[16.533s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/bin'
+[16.534s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.ps1'
+[16.535s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.dsv'
+[16.535s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.sh'
+[16.536s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.bash'
+[16.536s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.zsh'
+[16.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/hello_moveit_ur/share/colcon-core/packages/hello_moveit_ur)
+[16.608s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_moveit_ur)
+[16.609s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur' for CMake module files
+[16.610s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur' for CMake config files
+[16.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_moveit_ur', 'cmake_prefix_path')
+[16.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.ps1'
+[16.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.dsv'
+[16.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.sh'
+[16.612s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/lib'
+[16.613s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/bin'
+[16.613s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/lib/pkgconfig/hello_moveit_ur.pc'
+[16.613s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/lib/python3.10/site-packages'
+[16.614s] Level 1:colcon.colcon_core.environment:checking '/root/overlay_ws/src/install/hello_moveit_ur/bin'
+[16.614s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.ps1'
+[16.615s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.dsv'
+[16.616s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.sh'
+[16.616s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.bash'
+[16.617s] INFO:colcon.colcon_core.shell:Creating package script '/root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.zsh'
+[16.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/overlay_ws/src/install/hello_moveit_ur/share/colcon-core/packages/hello_moveit_ur)
+[16.618s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.619s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.619s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.619s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.631s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[16.631s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.631s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.631s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.635s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[16.636s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.636s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/overlay_ws/src/install/local_setup.ps1'
+[16.638s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/overlay_ws/src/install/_local_setup_util_ps1.py'
+[16.640s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/overlay_ws/src/install/setup.ps1'
+[16.647s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/overlay_ws/src/install/local_setup.sh'
+[16.648s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/overlay_ws/src/install/_local_setup_util_sh.py'
+[16.649s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/overlay_ws/src/install/setup.sh'
+[16.656s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/overlay_ws/src/install/local_setup.bash'
+[16.656s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/overlay_ws/src/install/setup.bash'
+[16.663s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/overlay_ws/src/install/local_setup.zsh'
+[16.664s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/overlay_ws/src/install/setup.zsh'

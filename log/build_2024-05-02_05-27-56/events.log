@@ -1,0 +1,1255 @@
+[0.000000] (-) TimerEvent: {}
+[0.000195] (graph_msgs) JobQueued: {'identifier': 'graph_msgs', 'dependencies': OrderedDict()}
+[0.000313] (hello_moveit_ur) JobQueued: {'identifier': 'hello_moveit_ur', 'dependencies': OrderedDict()}
+[0.000539] (rviz_visual_tools) JobQueued: {'identifier': 'rviz_visual_tools', 'dependencies': OrderedDict()}
+[0.000901] (moveit_visual_tools) JobQueued: {'identifier': 'moveit_visual_tools', 'dependencies': OrderedDict([('graph_msgs', '/root/overlay_ws/src/install/graph_msgs'), ('rviz_visual_tools', '/root/overlay_ws/src/install/rviz_visual_tools')])}
+[0.001096] (graph_msgs) JobStarted: {'identifier': 'graph_msgs'}
+[0.026928] (rviz_visual_tools) JobStarted: {'identifier': 'rviz_visual_tools'}
+[0.041501] (hello_moveit_ur) JobStarted: {'identifier': 'hello_moveit_ur'}
+[0.061665] (graph_msgs) JobProgress: {'identifier': 'graph_msgs', 'progress': 'cmake'}
+[0.062682] (graph_msgs) JobProgress: {'identifier': 'graph_msgs', 'progress': 'build'}
+[0.063954] (graph_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/overlay_ws/src/build/graph_msgs', '--', '-j8', '-l8'], 'cwd': '/root/overlay_ws/src/build/graph_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('HOSTNAME', 'urbrain'), ('WORKING_BRANCH', 'main'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/underlay_ws/install/pilz_industrial_motion_planner_testutils/lib:/root/underlay_ws/install/pilz_industrial_motion_planner/lib:/root/underlay_ws/install/moveit_visual_tools/lib:/root/underlay_ws/install/moveit_task_constructor_visualization/lib:/root/underlay_ws/install/moveit_task_constructor_demo/lib:/root/underlay_ws/install/moveit_task_constructor_capabilities/lib:/root/underlay_ws/install/moveit_task_constructor_core/lib:/root/underlay_ws/install/moveit_ros_control_interface/lib:/root/underlay_ws/install/moveit_simple_controller_manager/lib:/root/underlay_ws/install/moveit_setup_assistant/lib:/root/underlay_ws/install/moveit_setup_srdf_plugins/lib:/root/underlay_ws/install/moveit_setup_core_plugins/lib:/root/underlay_ws/install/moveit_setup_controllers/lib:/root/underlay_ws/install/moveit_setup_app_plugins/lib:/root/underlay_ws/install/moveit_setup_framework/lib:/root/underlay_ws/install/moveit_servo/lib:/root/underlay_ws/install/moveit_ros_visualization/lib:/root/underlay_ws/install/moveit_hybrid_planning/lib:/root/underlay_ws/install/moveit_ros_planning_interface/lib:/root/underlay_ws/install/moveit_ros_benchmarks/lib:/root/underlay_ws/install/moveit_ros_warehouse/lib:/root/underlay_ws/install/moveit_ros_robot_interaction/lib:/root/underlay_ws/install/moveit_ros_perception/lib:/root/underlay_ws/install/moveit_ros_move_group/lib:/root/underlay_ws/install/moveit_planners_ompl/lib:/root/underlay_ws/install/moveit_ros_planning/lib:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor/lib:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/root/underlay_ws/install/moveit_planners_chomp/lib:/root/underlay_ws/install/moveit_kinematics/lib:/root/underlay_ws/install/moveit_chomp_optimizer_adapter/lib:/root/underlay_ws/install/chomp_motion_planner/lib:/root/underlay_ws/install/moveit_core/lib:/root/underlay_ws/install/srdfdom/lib:/root/underlay_ws/install/rviz_marker_tools/lib:/root/underlay_ws/install/rosparam_shortcuts/lib:/root/underlay_ws/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/overlay_ws'), ('OVERLAY_WS', '/root/overlay_ws'), ('ROS_PYTHON_VERSION', '3'), ('REPO_URL', 'git@github.com:S3942721/on_UR5e.git'), ('UNDERLAY_WS', '/root/underlay_ws'), ('COLCON_PREFIX_PATH', '/root/overlay_ws/install:/root/underlay_ws/install'), ('ROS_DISTRO', 'humble'), ('SSH_KEY_LOCATION', 'deploy_key'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/underlay_ws/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/overlay_ws/src/build/graph_msgs'), ('LC_ALL', 'en_AU.UTF-8'), ('PYTHONPATH', '/root/underlay_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/root/underlay_ws/install/srdfdom/local/lib/python3.10/dist-packages:/root/underlay_ws/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/root/underlay_ws/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble')]), 'shell': False}
+[0.068389] (rviz_visual_tools) JobProgress: {'identifier': 'rviz_visual_tools', 'progress': 'cmake'}
+[0.069570] (rviz_visual_tools) JobProgress: {'identifier': 'rviz_visual_tools', 'progress': 'build'}
+[0.070256] (rviz_visual_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/overlay_ws/src/build/rviz_visual_tools', '--', '-j8', '-l8'], 'cwd': '/root/overlay_ws/src/build/rviz_visual_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('HOSTNAME', 'urbrain'), ('WORKING_BRANCH', 'main'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/underlay_ws/install/pilz_industrial_motion_planner_testutils/lib:/root/underlay_ws/install/pilz_industrial_motion_planner/lib:/root/underlay_ws/install/moveit_visual_tools/lib:/root/underlay_ws/install/moveit_task_constructor_visualization/lib:/root/underlay_ws/install/moveit_task_constructor_demo/lib:/root/underlay_ws/install/moveit_task_constructor_capabilities/lib:/root/underlay_ws/install/moveit_task_constructor_core/lib:/root/underlay_ws/install/moveit_ros_control_interface/lib:/root/underlay_ws/install/moveit_simple_controller_manager/lib:/root/underlay_ws/install/moveit_setup_assistant/lib:/root/underlay_ws/install/moveit_setup_srdf_plugins/lib:/root/underlay_ws/install/moveit_setup_core_plugins/lib:/root/underlay_ws/install/moveit_setup_controllers/lib:/root/underlay_ws/install/moveit_setup_app_plugins/lib:/root/underlay_ws/install/moveit_setup_framework/lib:/root/underlay_ws/install/moveit_servo/lib:/root/underlay_ws/install/moveit_ros_visualization/lib:/root/underlay_ws/install/moveit_hybrid_planning/lib:/root/underlay_ws/install/moveit_ros_planning_interface/lib:/root/underlay_ws/install/moveit_ros_benchmarks/lib:/root/underlay_ws/install/moveit_ros_warehouse/lib:/root/underlay_ws/install/moveit_ros_robot_interaction/lib:/root/underlay_ws/install/moveit_ros_perception/lib:/root/underlay_ws/install/moveit_ros_move_group/lib:/root/underlay_ws/install/moveit_planners_ompl/lib:/root/underlay_ws/install/moveit_ros_planning/lib:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor/lib:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/root/underlay_ws/install/moveit_planners_chomp/lib:/root/underlay_ws/install/moveit_kinematics/lib:/root/underlay_ws/install/moveit_chomp_optimizer_adapter/lib:/root/underlay_ws/install/chomp_motion_planner/lib:/root/underlay_ws/install/moveit_core/lib:/root/underlay_ws/install/srdfdom/lib:/root/underlay_ws/install/rviz_marker_tools/lib:/root/underlay_ws/install/rosparam_shortcuts/lib:/root/underlay_ws/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/overlay_ws'), ('OVERLAY_WS', '/root/overlay_ws'), ('ROS_PYTHON_VERSION', '3'), ('REPO_URL', 'git@github.com:S3942721/on_UR5e.git'), ('UNDERLAY_WS', '/root/underlay_ws'), ('COLCON_PREFIX_PATH', '/root/overlay_ws/install:/root/underlay_ws/install'), ('ROS_DISTRO', 'humble'), ('SSH_KEY_LOCATION', 'deploy_key'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/underlay_ws/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/overlay_ws/src/build/rviz_visual_tools'), ('LC_ALL', 'en_AU.UTF-8'), ('PYTHONPATH', '/root/underlay_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/root/underlay_ws/install/srdfdom/local/lib/python3.10/dist-packages:/root/underlay_ws/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/root/underlay_ws/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble')]), 'shell': False}
+[0.077128] (hello_moveit_ur) JobProgress: {'identifier': 'hello_moveit_ur', 'progress': 'cmake'}
+[0.079009] (hello_moveit_ur) JobProgress: {'identifier': 'hello_moveit_ur', 'progress': 'build'}
+[0.079655] (hello_moveit_ur) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/overlay_ws/src/build/hello_moveit_ur', '--', '-j8', '-l8'], 'cwd': '/root/overlay_ws/src/build/hello_moveit_ur', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('HOSTNAME', 'urbrain'), ('WORKING_BRANCH', 'main'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/underlay_ws/install/pilz_industrial_motion_planner_testutils/lib:/root/underlay_ws/install/pilz_industrial_motion_planner/lib:/root/underlay_ws/install/moveit_visual_tools/lib:/root/underlay_ws/install/moveit_task_constructor_visualization/lib:/root/underlay_ws/install/moveit_task_constructor_demo/lib:/root/underlay_ws/install/moveit_task_constructor_capabilities/lib:/root/underlay_ws/install/moveit_task_constructor_core/lib:/root/underlay_ws/install/moveit_ros_control_interface/lib:/root/underlay_ws/install/moveit_simple_controller_manager/lib:/root/underlay_ws/install/moveit_setup_assistant/lib:/root/underlay_ws/install/moveit_setup_srdf_plugins/lib:/root/underlay_ws/install/moveit_setup_core_plugins/lib:/root/underlay_ws/install/moveit_setup_controllers/lib:/root/underlay_ws/install/moveit_setup_app_plugins/lib:/root/underlay_ws/install/moveit_setup_framework/lib:/root/underlay_ws/install/moveit_servo/lib:/root/underlay_ws/install/moveit_ros_visualization/lib:/root/underlay_ws/install/moveit_hybrid_planning/lib:/root/underlay_ws/install/moveit_ros_planning_interface/lib:/root/underlay_ws/install/moveit_ros_benchmarks/lib:/root/underlay_ws/install/moveit_ros_warehouse/lib:/root/underlay_ws/install/moveit_ros_robot_interaction/lib:/root/underlay_ws/install/moveit_ros_perception/lib:/root/underlay_ws/install/moveit_ros_move_group/lib:/root/underlay_ws/install/moveit_planners_ompl/lib:/root/underlay_ws/install/moveit_ros_planning/lib:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor/lib:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/root/underlay_ws/install/moveit_planners_chomp/lib:/root/underlay_ws/install/moveit_kinematics/lib:/root/underlay_ws/install/moveit_chomp_optimizer_adapter/lib:/root/underlay_ws/install/chomp_motion_planner/lib:/root/underlay_ws/install/moveit_core/lib:/root/underlay_ws/install/srdfdom/lib:/root/underlay_ws/install/rviz_marker_tools/lib:/root/underlay_ws/install/rosparam_shortcuts/lib:/root/underlay_ws/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/overlay_ws'), ('OVERLAY_WS', '/root/overlay_ws'), ('ROS_PYTHON_VERSION', '3'), ('REPO_URL', 'git@github.com:S3942721/on_UR5e.git'), ('UNDERLAY_WS', '/root/underlay_ws'), ('COLCON_PREFIX_PATH', '/root/overlay_ws/install:/root/underlay_ws/install'), ('ROS_DISTRO', 'humble'), ('SSH_KEY_LOCATION', 'deploy_key'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/underlay_ws/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/overlay_ws/src/build/hello_moveit_ur'), ('LC_ALL', 'en_AU.UTF-8'), ('PYTHONPATH', '/root/underlay_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/root/underlay_ws/install/srdfdom/local/lib/python3.10/dist-packages:/root/underlay_ws/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/root/underlay_ws/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble')]), 'shell': False}
+[0.099655] (-) TimerEvent: {}
+[0.162528] (hello_moveit_ur) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.189253] (graph_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.199757] (-) TimerEvent: {}
+[0.222697] (graph_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.236281] (rviz_visual_tools) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mAutomatic MOC for target gtest\x1b[0m\n'}
+[0.252705] (rviz_visual_tools) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_visual_tools_gui\x1b[0m\n'}
+[0.259255] (rviz_visual_tools) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_visual_tools_remote_control\x1b[0m\n'}
+[0.261644] (rviz_visual_tools) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target gtest_main\x1b[0m\n'}
+[0.291235] (graph_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_graph_msgs\n'}
+[0.299859] (-) TimerEvent: {}
+[0.332090] (rviz_visual_tools) StdoutLine: {'line': b'[ 10%] Built target gtest_autogen\n'}
+[0.397670] (rviz_visual_tools) StdoutLine: {'line': b'[ 10%] Built target rviz_visual_tools_remote_control_autogen\n'}
+[0.397982] (rviz_visual_tools) StdoutLine: {'line': b'[ 10%] Built target gtest_main_autogen\n'}
+[0.399964] (-) TimerEvent: {}
+[0.500930] (-) TimerEvent: {}
+[0.513429] (rviz_visual_tools) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[0.526615] (hello_moveit_ur) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.5 (/root/underlay_ws/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)\n'}
+[0.535550] (rviz_visual_tools) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[0.537813] (rviz_visual_tools) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_remote_control.dir/src/remote_control.cpp.o\x1b[0m\n'}
+[0.557276] (hello_moveit_ur) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[0.559173] (rviz_visual_tools) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_remote_control.dir/rviz_visual_tools_remote_control_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[0.601033] (-) TimerEvent: {}
+[0.606784] (rviz_visual_tools) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[0.622880] (rviz_visual_tools) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[0.634283] (hello_moveit_ur) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.641360] (hello_moveit_ur) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.657724] (hello_moveit_ur) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.701270] (-) TimerEvent: {}
+[0.711411] (hello_moveit_ur) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.767714] (hello_moveit_ur) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801378] (-) TimerEvent: {}
+[0.902386] (-) TimerEvent: {}
+[1.003387] (-) TimerEvent: {}
+[1.104033] (-) TimerEvent: {}
+[1.108593] (graph_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.110517] (graph_msgs) StdoutLine: {'line': b'creating graph_msgs.egg-info\n'}
+[1.111371] (graph_msgs) StdoutLine: {'line': b'writing graph_msgs.egg-info/PKG-INFO\n'}
+[1.112059] (graph_msgs) StdoutLine: {'line': b'writing dependency_links to graph_msgs.egg-info/dependency_links.txt\n'}
+[1.112817] (graph_msgs) StdoutLine: {'line': b'writing top-level names to graph_msgs.egg-info/top_level.txt\n'}
+[1.113564] (graph_msgs) StdoutLine: {'line': b"writing manifest file 'graph_msgs.egg-info/SOURCES.txt'\n"}
+[1.129707] (graph_msgs) StdoutLine: {'line': b"reading manifest file 'graph_msgs.egg-info/SOURCES.txt'\n"}
+[1.131294] (graph_msgs) StdoutLine: {'line': b"writing manifest file 'graph_msgs.egg-info/SOURCES.txt'\n"}
+[1.196788] (graph_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_graph_msgs_egg\n'}
+[1.204141] (-) TimerEvent: {}
+[1.297733] (rviz_visual_tools) StdoutLine: {'line': b'[ 25%] Built target rviz_visual_tools_gui_autogen\n'}
+[1.304256] (-) TimerEvent: {}
+[1.404779] (-) TimerEvent: {}
+[1.460166] (rviz_visual_tools) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/src/rviz_visual_tools_gui.cpp.o\x1b[0m\n'}
+[1.481554] (rviz_visual_tools) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/rviz_visual_tools_gui_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[1.497501] (rviz_visual_tools) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/src/remote_control.cpp.o\x1b[0m\n'}
+[1.504900] (-) TimerEvent: {}
+[1.515270] (rviz_visual_tools) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_gui.dir/src/key_tool.cpp.o\x1b[0m\n'}
+[1.589788] (graph_msgs) StdoutLine: {'line': b'[  5%] Built target graph_msgs__cpp\n'}
+[1.605020] (-) TimerEvent: {}
+[1.655005] (graph_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_generator_c.dir/rosidl_generator_c/graph_msgs/msg/detail/edges__functions.c.o\x1b[0m\n'}
+[1.667154] (graph_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_generator_c.dir/rosidl_generator_c/graph_msgs/msg/detail/geometry_graph__functions.c.o\x1b[0m\n'}
+[1.687224] (graph_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.702355] (graph_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.705141] (-) TimerEvent: {}
+[1.714735] (graph_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.805235] (-) TimerEvent: {}
+[1.905648] (-) TimerEvent: {}
+[2.006045] (-) TimerEvent: {}
+[2.028968] (graph_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libgraph_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.106161] (-) TimerEvent: {}
+[2.206621] (-) TimerEvent: {}
+[2.307097] (-) TimerEvent: {}
+[2.335683] (graph_msgs) StdoutLine: {'line': b'[ 20%] Built target graph_msgs__rosidl_generator_c\n'}
+[2.407243] (-) TimerEvent: {}
+[2.478131] (graph_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.480050] (graph_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.501374] (graph_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.507277] (-) TimerEvent: {}
+[2.607718] (-) TimerEvent: {}
+[2.708137] (-) TimerEvent: {}
+[2.808559] (-) TimerEvent: {}
+[2.908987] (-) TimerEvent: {}
+[3.009411] (-) TimerEvent: {}
+[3.109838] (-) TimerEvent: {}
+[3.210260] (-) TimerEvent: {}
+[3.313163] (-) TimerEvent: {}
+[3.387332] (graph_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/graph_msgs/msg/edges__type_support.cpp.o\x1b[0m\n'}
+[3.390841] (graph_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/graph_msgs/msg/geometry_graph__type_support.cpp.o\x1b[0m\n'}
+[3.413274] (-) TimerEvent: {}
+[3.513870] (-) TimerEvent: {}
+[3.547582] (rviz_visual_tools) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[3.613988] (-) TimerEvent: {}
+[3.714840] (-) TimerEvent: {}
+[3.786485] (rviz_visual_tools) StdoutLine: {'line': b'[ 38%] Built target gtest_main\n'}
+[3.814953] (-) TimerEvent: {}
+[3.915500] (-) TimerEvent: {}
+[3.924950] (graph_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/graph_msgs/msg/detail/edges__type_support.cpp.o\x1b[0m\n'}
+[3.992945] (graph_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/graph_msgs/msg/detail/geometry_graph__type_support.cpp.o\x1b[0m\n'}
+[4.015870] (-) TimerEvent: {}
+[4.116538] (-) TimerEvent: {}
+[4.175321] (graph_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/graph_msgs/msg/detail/dds_fastrtps/edges__type_support.cpp.o\x1b[0m\n'}
+[4.216652] (-) TimerEvent: {}
+[4.317086] (-) TimerEvent: {}
+[4.348925] (graph_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/graph_msgs/msg/edges__type_support.cpp.o\x1b[0m\n'}
+[4.417210] (-) TimerEvent: {}
+[4.517734] (-) TimerEvent: {}
+[4.618465] (-) TimerEvent: {}
+[4.661343] (graph_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/graph_msgs/msg/geometry_graph__type_support.cpp.o\x1b[0m\n'}
+[4.718596] (-) TimerEvent: {}
+[4.819774] (-) TimerEvent: {}
+[4.921031] (-) TimerEvent: {}
+[4.970033] (graph_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libgraph_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.021150] (-) TimerEvent: {}
+[5.122159] (-) TimerEvent: {}
+[5.154330] (graph_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/graph_msgs/msg/detail/edges__type_support.c.o\x1b[0m\n'}
+[5.176247] (graph_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/graph_msgs/msg/detail/edges__type_support_c.cpp.o\x1b[0m\n'}
+[5.222286] (-) TimerEvent: {}
+[5.322951] (-) TimerEvent: {}
+[5.327220] (graph_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/graph_msgs/msg/detail/geometry_graph__type_support.c.o\x1b[0m\n'}
+[5.396881] (graph_msgs) StdoutLine: {'line': b'[ 56%] Built target graph_msgs__rosidl_typesupport_c\n'}
+[5.423136] (-) TimerEvent: {}
+[5.431779] (graph_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libgraph_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.512008] (graph_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/graph_msgs/msg/detail/geometry_graph__type_support_c.cpp.o\x1b[0m\n'}
+[5.518335] (graph_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/graph_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/graph_msgs/msg/detail/dds_fastrtps/geometry_graph__type_support.cpp.o\x1b[0m\n'}
+[5.523281] (-) TimerEvent: {}
+[5.623871] (-) TimerEvent: {}
+[5.655690] (graph_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libgraph_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.684711] (hello_moveit_ur) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[5.723995] (-) TimerEvent: {}
+[5.824474] (-) TimerEvent: {}
+[5.851907] (graph_msgs) StdoutLine: {'line': b'[ 66%] Built target graph_msgs__rosidl_typesupport_cpp\n'}
+[5.917840] (hello_moveit_ur) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[5.924594] (-) TimerEvent: {}
+[5.972696] (graph_msgs) StdoutLine: {'line': b'[ 66%] Built target graph_msgs__rosidl_typesupport_introspection_c\n'}
+[6.024718] (-) TimerEvent: {}
+[6.125347] (-) TimerEvent: {}
+[6.228079] (-) TimerEvent: {}
+[6.332576] (-) TimerEvent: {}
+[6.343751] (hello_moveit_ur) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.381340] (hello_moveit_ur) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.436672] (-) TimerEvent: {}
+[6.537790] (-) TimerEvent: {}
+[6.638279] (-) TimerEvent: {}
+[6.713494] (graph_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libgraph_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.738397] (-) TimerEvent: {}
+[6.839020] (-) TimerEvent: {}
+[6.939699] (-) TimerEvent: {}
+[7.040981] (-) TimerEvent: {}
+[7.103084] (graph_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libgraph_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.138959] (graph_msgs) StdoutLine: {'line': b'[ 71%] Built target graph_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.141090] (-) TimerEvent: {}
+[7.241639] (-) TimerEvent: {}
+[7.342207] (-) TimerEvent: {}
+[7.348081] (hello_moveit_ur) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.442443] (-) TimerEvent: {}
+[7.520450] (graph_msgs) StdoutLine: {'line': b'[ 71%] Built target graph_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.542785] (-) TimerEvent: {}
+[7.643296] (-) TimerEvent: {}
+[7.744014] (-) TimerEvent: {}
+[7.845268] (-) TimerEvent: {}
+[7.945869] (-) TimerEvent: {}
+[7.974109] (hello_moveit_ur) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[8.045994] (-) TimerEvent: {}
+[8.133023] (hello_moveit_ur) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[8.146120] (-) TimerEvent: {}
+[8.247028] (-) TimerEvent: {}
+[8.316562] (hello_moveit_ur) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[8.328496] (graph_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libgraph_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.347153] (-) TimerEvent: {}
+[8.447767] (-) TimerEvent: {}
+[8.548321] (-) TimerEvent: {}
+[8.648860] (-) TimerEvent: {}
+[8.712493] (graph_msgs) StdoutLine: {'line': b'[ 74%] Built target graph_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.748987] (-) TimerEvent: {}
+[8.753162] (hello_moveit_ur) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[8.849107] (-) TimerEvent: {}
+[8.928933] (graph_msgs) StdoutLine: {'line': b'[ 74%] Built target graph_msgs\n'}
+[8.949234] (-) TimerEvent: {}
+[9.050020] (-) TimerEvent: {}
+[9.134654] (graph_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.150145] (-) TimerEvent: {}
+[9.250672] (-) TimerEvent: {}
+[9.351552] (-) TimerEvent: {}
+[9.451959] (-) TimerEvent: {}
+[9.554294] (-) TimerEvent: {}
+[9.654716] (-) TimerEvent: {}
+[9.755304] (-) TimerEvent: {}
+[9.855820] (-) TimerEvent: {}
+[9.956318] (-) TimerEvent: {}
+[10.056827] (-) TimerEvent: {}
+[10.157339] (-) TimerEvent: {}
+[10.260378] (-) TimerEvent: {}
+[10.361184] (-) TimerEvent: {}
+[10.461931] (-) TimerEvent: {}
+[10.562666] (-) TimerEvent: {}
+[10.619642] (hello_moveit_ur) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[10.662779] (-) TimerEvent: {}
+[10.763377] (-) TimerEvent: {}
+[10.864079] (-) TimerEvent: {}
+[10.964544] (-) TimerEvent: {}
+[11.065865] (-) TimerEvent: {}
+[11.167004] (-) TimerEvent: {}
+[11.171410] (graph_msgs) StdoutLine: {'line': b'[ 76%] Built target graph_msgs__py\n'}
+[11.267124] (-) TimerEvent: {}
+[11.289100] (graph_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_generator_py.dir/rosidl_generator_py/graph_msgs/msg/_edges_s.c.o\x1b[0m\n'}
+[11.351420] (graph_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_generator_py.dir/rosidl_generator_py/graph_msgs/msg/_geometry_graph_s.c.o\x1b[0m\n'}
+[11.367267] (-) TimerEvent: {}
+[11.467721] (-) TimerEvent: {}
+[11.568148] (-) TimerEvent: {}
+[11.668581] (-) TimerEvent: {}
+[11.769047] (-) TimerEvent: {}
+[11.869566] (-) TimerEvent: {}
+[11.960427] (graph_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/graph_msgs/libgraph_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[11.969687] (-) TimerEvent: {}
+[12.070248] (-) TimerEvent: {}
+[12.095110] (rviz_visual_tools) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[12.170366] (-) TimerEvent: {}
+[12.238159] (hello_moveit_ur) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[12.240786] (graph_msgs) StdoutLine: {'line': b'[ 84%] Built target graph_msgs__rosidl_generator_py\n'}
+[12.270483] (-) TimerEvent: {}
+[12.371207] (-) TimerEvent: {}
+[12.371854] (graph_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/graph_msgs/_graph_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.406134] (graph_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/graph_msgs/_graph_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.442368] (graph_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/graph_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/graph_msgs/_graph_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.471309] (-) TimerEvent: {}
+[12.513066] (rviz_visual_tools) StdoutLine: {'line': b'[ 41%] Built target gtest\n'}
+[12.571432] (-) TimerEvent: {}
+[12.672043] (-) TimerEvent: {}
+[12.718586] (graph_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/graph_msgs/graph_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.772163] (-) TimerEvent: {}
+[12.872675] (-) TimerEvent: {}
+[12.973241] (-) TimerEvent: {}
+[12.979245] (graph_msgs) StdoutLine: {'line': b'[ 94%] Built target graph_msgs__rosidl_typesupport_c__pyext\n'}
+[13.026398] (graph_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/graph_msgs/graph_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.069093] (graph_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/graph_msgs/graph_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.073361] (-) TimerEvent: {}
+[13.127657] (hello_moveit_ur) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[13.173484] (-) TimerEvent: {}
+[13.232935] (graph_msgs) StdoutLine: {'line': b'[100%] Built target graph_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.273606] (-) TimerEvent: {}
+[13.368781] (graph_msgs) StdoutLine: {'line': b'[100%] Built target graph_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[13.373724] (-) TimerEvent: {}
+[13.408843] (graph_msgs) CommandEnded: {'returncode': 0}
+[13.473846] (-) TimerEvent: {}
+[13.574610] (-) TimerEvent: {}
+[13.675057] (-) TimerEvent: {}
+[13.775590] (-) TimerEvent: {}
+[13.876131] (-) TimerEvent: {}
+[13.977166] (-) TimerEvent: {}
+[14.079296] (-) TimerEvent: {}
+[14.180883] (-) TimerEvent: {}
+[14.281641] (-) TimerEvent: {}
+[14.340685] (hello_moveit_ur) StdoutLine: {'line': b'-- Found moveit_visual_tools: 4.1.0 (/root/underlay_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake)\n'}
+[14.381763] (-) TimerEvent: {}
+[14.396982] (graph_msgs) JobProgress: {'identifier': 'graph_msgs', 'progress': 'install'}
+[14.421107] (graph_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/overlay_ws/src/build/graph_msgs'], 'cwd': '/root/overlay_ws/src/build/graph_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('HOSTNAME', 'urbrain'), ('WORKING_BRANCH', 'main'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/underlay_ws/install/pilz_industrial_motion_planner_testutils/lib:/root/underlay_ws/install/pilz_industrial_motion_planner/lib:/root/underlay_ws/install/moveit_visual_tools/lib:/root/underlay_ws/install/moveit_task_constructor_visualization/lib:/root/underlay_ws/install/moveit_task_constructor_demo/lib:/root/underlay_ws/install/moveit_task_constructor_capabilities/lib:/root/underlay_ws/install/moveit_task_constructor_core/lib:/root/underlay_ws/install/moveit_ros_control_interface/lib:/root/underlay_ws/install/moveit_simple_controller_manager/lib:/root/underlay_ws/install/moveit_setup_assistant/lib:/root/underlay_ws/install/moveit_setup_srdf_plugins/lib:/root/underlay_ws/install/moveit_setup_core_plugins/lib:/root/underlay_ws/install/moveit_setup_controllers/lib:/root/underlay_ws/install/moveit_setup_app_plugins/lib:/root/underlay_ws/install/moveit_setup_framework/lib:/root/underlay_ws/install/moveit_servo/lib:/root/underlay_ws/install/moveit_ros_visualization/lib:/root/underlay_ws/install/moveit_hybrid_planning/lib:/root/underlay_ws/install/moveit_ros_planning_interface/lib:/root/underlay_ws/install/moveit_ros_benchmarks/lib:/root/underlay_ws/install/moveit_ros_warehouse/lib:/root/underlay_ws/install/moveit_ros_robot_interaction/lib:/root/underlay_ws/install/moveit_ros_perception/lib:/root/underlay_ws/install/moveit_ros_move_group/lib:/root/underlay_ws/install/moveit_planners_ompl/lib:/root/underlay_ws/install/moveit_ros_planning/lib:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor/lib:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/root/underlay_ws/install/moveit_planners_chomp/lib:/root/underlay_ws/install/moveit_kinematics/lib:/root/underlay_ws/install/moveit_chomp_optimizer_adapter/lib:/root/underlay_ws/install/chomp_motion_planner/lib:/root/underlay_ws/install/moveit_core/lib:/root/underlay_ws/install/srdfdom/lib:/root/underlay_ws/install/rviz_marker_tools/lib:/root/underlay_ws/install/rosparam_shortcuts/lib:/root/underlay_ws/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/overlay_ws'), ('OVERLAY_WS', '/root/overlay_ws'), ('ROS_PYTHON_VERSION', '3'), ('REPO_URL', 'git@github.com:S3942721/on_UR5e.git'), ('UNDERLAY_WS', '/root/underlay_ws'), ('COLCON_PREFIX_PATH', '/root/overlay_ws/install:/root/underlay_ws/install'), ('ROS_DISTRO', 'humble'), ('SSH_KEY_LOCATION', 'deploy_key'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/underlay_ws/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/overlay_ws/src/build/graph_msgs'), ('LC_ALL', 'en_AU.UTF-8'), ('PYTHONPATH', '/root/underlay_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/root/underlay_ws/install/srdfdom/local/lib/python3.10/dist-packages:/root/underlay_ws/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/root/underlay_ws/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/overlay_ws/install/hello_moveit_ur:/root/underlay_ws/install/pilz_industrial_motion_planner_testutils:/root/underlay_ws/install/moveit_runtime:/root/underlay_ws/install/moveit2_tutorials:/root/underlay_ws/install/moveit:/root/underlay_ws/install/moveit_planners:/root/underlay_ws/install/pilz_industrial_motion_planner:/root/underlay_ws/install/moveit_visual_tools:/root/underlay_ws/install/moveit_task_constructor_visualization:/root/underlay_ws/install/moveit_task_constructor_demo:/root/underlay_ws/install/moveit_task_constructor_capabilities:/root/underlay_ws/install/moveit_task_constructor_core:/root/underlay_ws/install/moveit_ros_control_interface:/root/underlay_ws/install/moveit_plugins:/root/underlay_ws/install/moveit_simple_controller_manager:/root/underlay_ws/install/moveit_setup_assistant:/root/underlay_ws/install/moveit_setup_srdf_plugins:/root/underlay_ws/install/moveit_setup_core_plugins:/root/underlay_ws/install/moveit_setup_controllers:/root/underlay_ws/install/moveit_setup_app_plugins:/root/underlay_ws/install/moveit_setup_framework:/root/underlay_ws/install/moveit_servo:/root/underlay_ws/install/moveit_ros:/root/underlay_ws/install/moveit_ros_visualization:/root/underlay_ws/install/moveit_hybrid_planning:/root/underlay_ws/install/moveit_ros_planning_interface:/root/underlay_ws/install/moveit_ros_benchmarks:/root/underlay_ws/install/moveit_ros_warehouse:/root/underlay_ws/install/moveit_ros_robot_interaction:/root/underlay_ws/install/moveit_ros_perception:/root/underlay_ws/install/moveit_resources_prbt_pg70_support:/root/underlay_ws/install/moveit_resources_prbt_moveit_config:/root/underlay_ws/install/moveit_ros_move_group:/root/underlay_ws/install/moveit_planners_ompl:/root/underlay_ws/install/moveit_ros_planning:/root/underlay_ws/install/moveit_ros_occupancy_map_monitor:/root/underlay_ws/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/underlay_ws/install/moveit_planners_chomp:/root/underlay_ws/install/moveit_kinematics:/root/underlay_ws/install/moveit_chomp_optimizer_adapter:/root/underlay_ws/install/chomp_motion_planner:/root/underlay_ws/install/moveit_core:/root/underlay_ws/install/srdfdom:/root/underlay_ws/install/rviz_marker_tools:/root/underlay_ws/install/rosparam_shortcuts:/root/underlay_ws/install/moveit_task_constructor_msgs:/root/underlay_ws/install/moveit_resources_prbt_support:/root/underlay_ws/install/moveit_resources:/root/underlay_ws/install/moveit_resources_pr2_description:/root/underlay_ws/install/moveit_resources_panda_moveit_config:/root/underlay_ws/install/moveit_resources_panda_description:/root/underlay_ws/install/moveit_resources_fanuc_moveit_config:/root/underlay_ws/install/moveit_resources_fanuc_description:/root/underlay_ws/install/moveit_common:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble')]), 'shell': False}
+[14.445983] (graph_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.446427] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/ament_index/resource_index/rosidl_interfaces/graph_msgs\n'}
+[14.446819] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs\n'}
+[14.447105] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg\n'}
+[14.447406] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/geometry_graph.h\n'}
+[14.447715] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail\n'}
+[14.447917] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__struct.h\n'}
+[14.448175] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__type_support.h\n'}
+[14.448434] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__functions.c\n'}
+[14.448687] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__functions.h\n'}
+[14.448929] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__type_support.h\n'}
+[14.449183] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__struct.h\n'}
+[14.449438] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__functions.c\n'}
+[14.449695] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__functions.h\n'}
+[14.449949] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/edges.h\n'}
+[14.450232] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.450774] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/library_path.sh\n'}
+[14.451122] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/library_path.dsv\n'}
+[14.451560] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_generator_c.so\n'}
+[14.452400] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_generator_c.so" to ""\n'}
+[14.452714] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs\n'}
+[14.452908] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg\n'}
+[14.453093] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.453390] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail\n'}
+[14.453595] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__rosidl_typesupport_fastrtps_c.h\n'}
+[14.453854] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__rosidl_typesupport_fastrtps_c.h\n'}
+[14.454049] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[14.454776] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.455135] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs\n'}
+[14.455364] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg\n'}
+[14.455685] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.455950] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail\n'}
+[14.456164] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__rosidl_typesupport_introspection_c.h\n'}
+[14.456433] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__type_support.c\n'}
+[14.456686] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__rosidl_typesupport_introspection_c.h\n'}
+[14.456943] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__type_support.c\n'}
+[14.457130] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_introspection_c.so\n'}
+[14.457671] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.457927] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_c.so\n'}
+[14.458514] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_c.so" to ""\n'}
+[14.458893] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs\n'}
+[14.459148] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg\n'}
+[14.459428] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail\n'}
+[14.459689] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__builder.hpp\n'}
+[14.459961] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__traits.hpp\n'}
+[14.460239] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__builder.hpp\n'}
+[14.460501] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__traits.hpp\n'}
+[14.460768] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__struct.hpp\n'}
+[14.461029] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__struct.hpp\n'}
+[14.461286] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/geometry_graph.hpp\n'}
+[14.461610] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/edges.hpp\n'}
+[14.461917] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs\n'}
+[14.462186] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg\n'}
+[14.462459] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.462670] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail\n'}
+[14.462933] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/dds_fastrtps\n'}
+[14.463132] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.463344] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.463545] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.463834] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.464236] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs\n'}
+[14.464441] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg\n'}
+[14.464678] (graph_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail\n'}
+[14.464929] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__type_support.cpp\n'}
+[14.465195] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__type_support.cpp\n'}
+[14.465389] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.466872] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/include/graph_msgs/graph_msgs/msg/detail/edges__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.467075] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[14.467290] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.467561] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_cpp.so\n'}
+[14.467832] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[14.473433] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/pythonpath.sh\n'}
+[14.473676] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/pythonpath.dsv\n'}
+[14.473881] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs-0.2.0-py3.10.egg-info\n'}
+[14.474085] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs-0.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.474292] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs-0.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.474494] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs-0.2.0-py3.10.egg-info/top_level.txt\n'}
+[14.474695] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs-0.2.0-py3.10.egg-info/PKG-INFO\n'}
+[14.474895] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs\n'}
+[14.475176] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/_graph_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[14.475460] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg\n'}
+[14.475678] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/_geometry_graph_s.c\n'}
+[14.476006] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/_geometry_graph.py\n'}
+[14.476263] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/_edges_s.c\n'}
+[14.476517] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/__init__.py\n'}
+[14.476707] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/_edges.py\n'}
+[14.476968] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/_graph_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.477166] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.477417] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.477665] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/_graph_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.477901] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/__init__.py\n'}
+[14.478075] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/libgraph_msgs__rosidl_generator_py.so\n'}
+[14.478258] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.483711] (-) TimerEvent: {}
+[14.584641] (-) TimerEvent: {}
+[14.587040] (graph_msgs) StdoutLine: {'line': b"Listing '/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs'...\n"}
+[14.587406] (graph_msgs) StdoutLine: {'line': b"Compiling '/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/__init__.py'...\n"}
+[14.587601] (graph_msgs) StdoutLine: {'line': b"Listing '/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg'...\n"}
+[14.587793] (graph_msgs) StdoutLine: {'line': b"Compiling '/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/__init__.py'...\n"}
+[14.587980] (graph_msgs) StdoutLine: {'line': b"Compiling '/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/_edges.py'...\n"}
+[14.588164] (graph_msgs) StdoutLine: {'line': b"Compiling '/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/msg/_geometry_graph.py'...\n"}
+[14.596735] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.597999] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.598817] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.599986] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.600769] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.601855] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/local/lib/python3.10/dist-packages/graph_msgs/graph_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.602315] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_generator_py.so\n'}
+[14.603444] (graph_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/overlay_ws/src/install/graph_msgs/lib/libgraph_msgs__rosidl_generator_py.so" to ""\n'}
+[14.603996] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/msg/Edges.idl\n'}
+[14.604604] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/msg/GeometryGraph.idl\n'}
+[14.605222] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/msg/Edges.msg\n'}
+[14.605810] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/msg/GeometryGraph.msg\n'}
+[14.606521] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/ament_index/resource_index/package_run_dependencies/graph_msgs\n'}
+[14.607262] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/ament_index/resource_index/parent_prefix_path/graph_msgs\n'}
+[14.607913] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/ament_prefix_path.sh\n'}
+[14.608550] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/ament_prefix_path.dsv\n'}
+[14.609160] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/path.sh\n'}
+[14.609774] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/environment/path.dsv\n'}
+[14.610392] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/local_setup.bash\n'}
+[14.611000] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/local_setup.sh\n'}
+[14.611608] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/local_setup.zsh\n'}
+[14.612187] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/local_setup.dsv\n'}
+[14.612774] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.dsv\n'}
+[14.613505] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/ament_index/resource_index/packages/graph_msgs\n'}
+[14.614223] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_generator_cExport.cmake\n'}
+[14.614886] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.615627] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.616265] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.616931] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.617557] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.618184] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_cExport.cmake\n'}
+[14.618811] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.619460] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_generator_cppExport.cmake\n'}
+[14.620100] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.620718] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.621339] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.621963] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.622602] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[14.623249] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.623894] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_generator_pyExport.cmake\n'}
+[14.624511] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/export_graph_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.625113] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[14.625700] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.626321] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.626936] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.627571] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.628166] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.628773] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.629363] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgsConfig.cmake\n'}
+[14.629909] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/cmake/graph_msgsConfig-version.cmake\n'}
+[14.630498] (graph_msgs) StdoutLine: {'line': b'-- Installing: /root/overlay_ws/src/install/graph_msgs/share/graph_msgs/package.xml\n'}
+[14.647482] (graph_msgs) CommandEnded: {'returncode': 0}
+[14.684745] (-) TimerEvent: {}
+[14.785190] (-) TimerEvent: {}
+[14.885712] (-) TimerEvent: {}
+[14.986183] (-) TimerEvent: {}
+[15.087282] (-) TimerEvent: {}
+[15.188025] (-) TimerEvent: {}
+[15.288779] (-) TimerEvent: {}
+[15.293958] (graph_msgs) JobEnded: {'identifier': 'graph_msgs', 'rc': 0}
+[15.388904] (-) TimerEvent: {}
+[15.489540] (-) TimerEvent: {}
+[15.590263] (-) TimerEvent: {}
+[15.701265] (-) TimerEvent: {}
+[15.801971] (-) TimerEvent: {}
+[15.837384] (hello_moveit_ur) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[15.840051] (hello_moveit_ur) StdoutLine: {'line': b'-- Found OGRE\n'}
+[15.840376] (hello_moveit_ur) StdoutLine: {'line': b'--   static     : OFF\n'}
+[15.840676] (hello_moveit_ur) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[15.840898] (hello_moveit_ur) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[15.841106] (hello_moveit_ur) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[15.841314] (hello_moveit_ur) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[15.841518] (hello_moveit_ur) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[15.841719] (hello_moveit_ur) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[15.841925] (hello_moveit_ur) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[15.842128] (hello_moveit_ur) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[15.842348] (hello_moveit_ur) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[15.842692] (hello_moveit_ur) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[15.843255] (hello_moveit_ur) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[15.844666] (hello_moveit_ur) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[15.902085] (-) TimerEvent: {}
+[15.922127] (hello_moveit_ur) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[15.948283] (hello_moveit_ur) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[16.002208] (-) TimerEvent: {}
+[16.103006] (-) TimerEvent: {}
+[16.203463] (-) TimerEvent: {}
+[16.304023] (-) TimerEvent: {}
+[16.386084] (hello_moveit_ur) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[16.386961] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[16.404144] (-) TimerEvent: {}
+[16.504856] (-) TimerEvent: {}
+[16.605399] (-) TimerEvent: {}
+[16.670841] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[16.671340] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[16.705529] (-) TimerEvent: {}
+[16.806067] (-) TimerEvent: {}
+[16.906730] (-) TimerEvent: {}
+[16.916747] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[16.917146] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for connect\n'}
+[17.006856] (-) TimerEvent: {}
+[17.107418] (-) TimerEvent: {}
+[17.161753] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[17.162090] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for remove\n'}
+[17.207535] (-) TimerEvent: {}
+[17.307951] (-) TimerEvent: {}
+[17.408382] (-) TimerEvent: {}
+[17.415775] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[17.416135] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[17.508507] (-) TimerEvent: {}
+[17.608934] (-) TimerEvent: {}
+[17.674829] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[17.675248] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[17.709060] (-) TimerEvent: {}
+[17.809676] (-) TimerEvent: {}
+[17.910162] (-) TimerEvent: {}
+[17.966740] (hello_moveit_ur) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[17.971770] (hello_moveit_ur) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[17.972124] (hello_moveit_ur) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[18.010275] (-) TimerEvent: {}
+[18.110704] (-) TimerEvent: {}
+[18.211281] (-) TimerEvent: {}
+[18.311749] (-) TimerEvent: {}
+[18.412251] (-) TimerEvent: {}
+[18.513121] (-) TimerEvent: {}
+[18.613574] (-) TimerEvent: {}
+[18.713994] (-) TimerEvent: {}
+[18.814865] (-) TimerEvent: {}
+[18.915951] (-) TimerEvent: {}
+[19.018358] (-) TimerEvent: {}
+[19.119179] (-) TimerEvent: {}
+[19.219626] (-) TimerEvent: {}
+[19.320041] (-) TimerEvent: {}
+[19.420570] (-) TimerEvent: {}
+[19.521091] (-) TimerEvent: {}
+[19.622433] (-) TimerEvent: {}
+[19.722831] (-) TimerEvent: {}
+[19.823307] (-) TimerEvent: {}
+[19.924271] (-) TimerEvent: {}
+[20.025036] (-) TimerEvent: {}
+[20.128045] (-) TimerEvent: {}
+[20.224239] (hello_moveit_ur) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[20.228162] (-) TimerEvent: {}
+[20.331299] (-) TimerEvent: {}
+[20.414133] (hello_moveit_ur) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[20.414541] (hello_moveit_ur) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/overlay_ws/src/hello_moveit_ur/include>\n'}
+[20.414782] (hello_moveit_ur) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[20.418822] (hello_moveit_ur) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[20.425790] (hello_moveit_ur) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[20.429666] (hello_moveit_ur) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[20.431414] (-) TimerEvent: {}
+[20.465305] (hello_moveit_ur) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[20.465633] (hello_moveit_ur) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[20.465834] (hello_moveit_ur) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[20.466025] (hello_moveit_ur) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.531540] (-) TimerEvent: {}
+[20.566627] (hello_moveit_ur) StdoutLine: {'line': b'-- Generating done\n'}
+[20.573517] (hello_moveit_ur) StdoutLine: {'line': b'-- Build files have been written to: /root/overlay_ws/src/build/hello_moveit_ur\n'}
+[20.632005] (-) TimerEvent: {}
+[20.672550] (hello_moveit_ur) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hello_moveit_ur\x1b[0m\n'}
+[20.732128] (-) TimerEvent: {}
+[20.768557] (hello_moveit_ur) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o\x1b[0m\n'}
+[20.832251] (-) TimerEvent: {}
+[20.932686] (-) TimerEvent: {}
+[21.033102] (-) TimerEvent: {}
+[21.133546] (-) TimerEvent: {}
+[21.233982] (-) TimerEvent: {}
+[21.334857] (-) TimerEvent: {}
+[21.435577] (-) TimerEvent: {}
+[21.536878] (-) TimerEvent: {}
+[21.637572] (-) TimerEvent: {}
+[21.738130] (-) TimerEvent: {}
+[21.838557] (-) TimerEvent: {}
+[21.938969] (-) TimerEvent: {}
+[22.039422] (-) TimerEvent: {}
+[22.139835] (-) TimerEvent: {}
+[22.240265] (-) TimerEvent: {}
+[22.340690] (-) TimerEvent: {}
+[22.441232] (-) TimerEvent: {}
+[22.542160] (-) TimerEvent: {}
+[22.645714] (-) TimerEvent: {}
+[22.746232] (-) TimerEvent: {}
+[22.846781] (-) TimerEvent: {}
+[22.947538] (-) TimerEvent: {}
+[23.048023] (-) TimerEvent: {}
+[23.148442] (-) TimerEvent: {}
+[23.249458] (-) TimerEvent: {}
+[23.350011] (-) TimerEvent: {}
+[23.450500] (-) TimerEvent: {}
+[23.551289] (-) TimerEvent: {}
+[23.655929] (-) TimerEvent: {}
+[23.759343] (-) TimerEvent: {}
+[23.861662] (-) TimerEvent: {}
+[23.962691] (-) TimerEvent: {}
+[24.063390] (-) TimerEvent: {}
+[24.164301] (-) TimerEvent: {}
+[24.265191] (-) TimerEvent: {}
+[24.369735] (-) TimerEvent: {}
+[24.451259] (rviz_visual_tools) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library librviz_visual_tools_remote_control.so\x1b[0m\n'}
+[24.469854] (-) TimerEvent: {}
+[24.570449] (-) TimerEvent: {}
+[24.671137] (-) TimerEvent: {}
+[24.771783] (-) TimerEvent: {}
+[24.872237] (-) TimerEvent: {}
+[24.972672] (-) TimerEvent: {}
+[25.074343] (-) TimerEvent: {}
+[25.175304] (-) TimerEvent: {}
+[25.276995] (-) TimerEvent: {}
+[25.378280] (-) TimerEvent: {}
+[25.479113] (-) TimerEvent: {}
+[25.491610] (rviz_visual_tools) StdoutLine: {'line': b'[ 43%] Built target rviz_visual_tools_remote_control\n'}
+[25.569410] (rviz_visual_tools) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_visual_tools\x1b[0m\n'}
+[25.579249] (-) TimerEvent: {}
+[25.633555] (rviz_visual_tools) StdoutLine: {'line': b'[ 46%] Built target rviz_visual_tools_autogen\n'}
+[25.679350] (-) TimerEvent: {}
+[25.695783] (rviz_visual_tools) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools.dir/src/tf_visual_tools.cpp.o\x1b[0m\n'}
+[25.699695] (rviz_visual_tools) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools.dir/src/rviz_visual_tools.cpp.o\x1b[0m\n'}
+[25.704505] (rviz_visual_tools) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools.dir/rviz_visual_tools_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[25.779468] (-) TimerEvent: {}
+[25.879922] (-) TimerEvent: {}
+[25.980449] (-) TimerEvent: {}
+[26.080943] (-) TimerEvent: {}
+[26.181367] (-) TimerEvent: {}
+[26.281813] (-) TimerEvent: {}
+[26.382697] (-) TimerEvent: {}
+[26.483535] (-) TimerEvent: {}
+[26.555902] (rviz_visual_tools) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library librviz_visual_tools_gui.so\x1b[0m\n'}
+[26.583656] (-) TimerEvent: {}
+[26.684053] (-) TimerEvent: {}
+[26.785232] (-) TimerEvent: {}
+[26.886172] (-) TimerEvent: {}
+[26.986801] (-) TimerEvent: {}
+[27.087264] (-) TimerEvent: {}
+[27.187736] (-) TimerEvent: {}
+[27.288205] (-) TimerEvent: {}
+[27.388725] (-) TimerEvent: {}
+[27.489633] (-) TimerEvent: {}
+[27.590149] (-) TimerEvent: {}
+[27.693492] (-) TimerEvent: {}
+[27.796696] (-) TimerEvent: {}
+[27.897248] (-) TimerEvent: {}
+[27.998203] (-) TimerEvent: {}
+[28.098805] (-) TimerEvent: {}
+[28.199676] (-) TimerEvent: {}
+[28.300123] (-) TimerEvent: {}
+[28.401201] (-) TimerEvent: {}
+[28.502300] (-) TimerEvent: {}
+[28.603743] (-) TimerEvent: {}
+[28.705084] (-) TimerEvent: {}
+[28.805572] (-) TimerEvent: {}
+[28.908267] (-) TimerEvent: {}
+[29.009316] (-) TimerEvent: {}
+[29.109923] (-) TimerEvent: {}
+[29.211042] (-) TimerEvent: {}
+[29.311620] (-) TimerEvent: {}
+[29.412905] (-) TimerEvent: {}
+[29.513323] (-) TimerEvent: {}
+[29.618473] (-) TimerEvent: {}
+[29.719540] (-) TimerEvent: {}
+[29.820004] (-) TimerEvent: {}
+[29.920829] (-) TimerEvent: {}
+[30.021716] (-) TimerEvent: {}
+[30.122685] (-) TimerEvent: {}
+[30.227576] (-) TimerEvent: {}
+[30.327993] (-) TimerEvent: {}
+[30.428397] (-) TimerEvent: {}
+[30.531298] (-) TimerEvent: {}
+[30.631872] (-) TimerEvent: {}
+[30.732499] (-) TimerEvent: {}
+[30.836580] (-) TimerEvent: {}
+[30.897677] (rviz_visual_tools) StdoutLine: {'line': b'[ 56%] Built target rviz_visual_tools_gui\n'}
+[30.936800] (-) TimerEvent: {}
+[31.039894] (-) TimerEvent: {}
+[31.140540] (-) TimerEvent: {}
+[31.241294] (-) TimerEvent: {}
+[31.341733] (-) TimerEvent: {}
+[31.442155] (-) TimerEvent: {}
+[31.542631] (-) TimerEvent: {}
+[31.643016] (-) TimerEvent: {}
+[31.743477] (-) TimerEvent: {}
+[31.844534] (-) TimerEvent: {}
+[31.945350] (-) TimerEvent: {}
+[32.045902] (-) TimerEvent: {}
+[32.146628] (-) TimerEvent: {}
+[32.247460] (-) TimerEvent: {}
+[32.347891] (-) TimerEvent: {}
+[32.448708] (-) TimerEvent: {}
+[32.549543] (-) TimerEvent: {}
+[32.650269] (-) TimerEvent: {}
+[32.750728] (-) TimerEvent: {}
+[32.853139] (-) TimerEvent: {}
+[32.953545] (-) TimerEvent: {}
+[33.054059] (-) TimerEvent: {}
+[33.154567] (-) TimerEvent: {}
+[33.256201] (-) TimerEvent: {}
+[33.362504] (-) TimerEvent: {}
+[33.463529] (-) TimerEvent: {}
+[33.564163] (-) TimerEvent: {}
+[33.665324] (-) TimerEvent: {}
+[33.765975] (-) TimerEvent: {}
+[33.866399] (-) TimerEvent: {}
+[33.966885] (-) TimerEvent: {}
+[34.067298] (-) TimerEvent: {}
+[34.167674] (-) TimerEvent: {}
+[34.268089] (-) TimerEvent: {}
+[34.368568] (-) TimerEvent: {}
+[34.468975] (-) TimerEvent: {}
+[34.570028] (-) TimerEvent: {}
+[34.670664] (-) TimerEvent: {}
+[34.771018] (-) TimerEvent: {}
+[34.871478] (-) TimerEvent: {}
+[34.972045] (-) TimerEvent: {}
+[35.072917] (-) TimerEvent: {}
+[35.174820] (-) TimerEvent: {}
+[35.275706] (-) TimerEvent: {}
+[35.376051] (-) TimerEvent: {}
+[35.476449] (-) TimerEvent: {}
+[35.577083] (-) TimerEvent: {}
+[35.677931] (-) TimerEvent: {}
+[35.779512] (-) TimerEvent: {}
+[35.880474] (-) TimerEvent: {}
+[35.981622] (-) TimerEvent: {}
+[36.082341] (-) TimerEvent: {}
+[36.182782] (-) TimerEvent: {}
+[36.283324] (-) TimerEvent: {}
+[36.383755] (-) TimerEvent: {}
+[36.484678] (-) TimerEvent: {}
+[36.585200] (-) TimerEvent: {}
+[36.685612] (-) TimerEvent: {}
+[36.785997] (-) TimerEvent: {}
+[36.891453] (-) TimerEvent: {}
+[36.991956] (-) TimerEvent: {}
+[37.092378] (-) TimerEvent: {}
+[37.192813] (-) TimerEvent: {}
+[37.293186] (-) TimerEvent: {}
+[37.393759] (-) TimerEvent: {}
+[37.494417] (-) TimerEvent: {}
+[37.594968] (-) TimerEvent: {}
+[37.695948] (-) TimerEvent: {}
+[37.797605] (-) TimerEvent: {}
+[37.899185] (-) TimerEvent: {}
+[37.999613] (-) TimerEvent: {}
+[38.100096] (-) TimerEvent: {}
+[38.200561] (-) TimerEvent: {}
+[38.300983] (-) TimerEvent: {}
+[38.401407] (-) TimerEvent: {}
+[38.501784] (-) TimerEvent: {}
+[38.602127] (-) TimerEvent: {}
+[38.702528] (-) TimerEvent: {}
+[38.806861] (-) TimerEvent: {}
+[38.907822] (-) TimerEvent: {}
+[39.009013] (-) TimerEvent: {}
+[39.109499] (-) TimerEvent: {}
+[39.209972] (-) TimerEvent: {}
+[39.310696] (-) TimerEvent: {}
+[39.411401] (-) TimerEvent: {}
+[39.511788] (-) TimerEvent: {}
+[39.612179] (-) TimerEvent: {}
+[39.712713] (-) TimerEvent: {}
+[39.813078] (-) TimerEvent: {}
+[39.913481] (-) TimerEvent: {}
+[40.013864] (-) TimerEvent: {}
+[40.114373] (-) TimerEvent: {}
+[40.214741] (-) TimerEvent: {}
+[40.315176] (-) TimerEvent: {}
+[40.415625] (-) TimerEvent: {}
+[40.516060] (-) TimerEvent: {}
+[40.616999] (-) TimerEvent: {}
+[40.717412] (-) TimerEvent: {}
+[40.817763] (-) TimerEvent: {}
+[40.918252] (-) TimerEvent: {}
+[41.018706] (-) TimerEvent: {}
+[41.119141] (-) TimerEvent: {}
+[41.219537] (-) TimerEvent: {}
+[41.319998] (-) TimerEvent: {}
+[41.420793] (-) TimerEvent: {}
+[41.521411] (-) TimerEvent: {}
+[41.621924] (-) TimerEvent: {}
+[41.722411] (-) TimerEvent: {}
+[41.822845] (-) TimerEvent: {}
+[41.923293] (-) TimerEvent: {}
+[42.023646] (-) TimerEvent: {}
+[42.058140] (hello_moveit_ur) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[42.058738] (hello_moveit_ur) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[42.058930] (hello_moveit_ur) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[42.059120] (hello_moveit_ur) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:1\x1b[m\x1b[K:\n'}
+[42.059329] (hello_moveit_ur) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit_visual_tools::MoveItVisualTools; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[42.059517] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit_visual_tools::MoveItVisualTools; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit_visual_tools::MoveItVisualTools>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.059707] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools; _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.059908] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit_visual_tools::MoveItVisualTools; _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.060106] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.060291] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.060489] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit_visual_tools::MoveItVisualTools; _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.060671] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit_visual_tools::MoveItVisualTools; _Args = {const char (&)[10]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.060851] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:24:79:\x1b[m\x1b[K   required from here\n'}
+[42.061027] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const char [10])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.061203] (hello_moveit_ur) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[42.061382] (hello_moveit_ur) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[42.061625] (hello_moveit_ur) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:5\x1b[m\x1b[K:\n'}
+[42.061810] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:97:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const SharedPtr&, const string&, const string&, moveit::core::RobotModelConstPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.061992] (hello_moveit_ur) StderrLine: {'line': b'   97 |   \x1b[01;36m\x1b[KMoveItVisualTools\x1b[m\x1b[K(const rclcpp::Node::SharedPtr& node, const std::string& base_frame,\n'}
+[42.062189] (hello_moveit_ur) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[42.062362] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:97:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[42.062537] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:88:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const SharedPtr&, const string&, const string&, planning_scene_monitor::PlanningSceneMonitorPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.062715] (hello_moveit_ur) StderrLine: {'line': b'   88 |   \x1b[01;36m\x1b[KMoveItVisualTools\x1b[m\x1b[K(const rclcpp::Node::SharedPtr& node, const std::string& base_frame, const std::string& marker_topic,\n'}
+[42.062901] (hello_moveit_ur) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[42.063073] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:88:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[42.063262] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:79:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.063445] (hello_moveit_ur) StderrLine: {'line': b'   79 |   \x1b[01;36m\x1b[KMoveItVisualTools\x1b[m\x1b[K(const rclcpp::Node::SharedPtr& node);\n'}
+[42.063632] (hello_moveit_ur) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[42.063812] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:79:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [10]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp::Node>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[42.063994] (hello_moveit_ur) StderrLine: {'line': b'   79 |   MoveItVisualTools(\x1b[01;36m\x1b[Kconst rclcpp::Node::SharedPtr& node\x1b[m\x1b[K);\n'}
+[42.064169] (hello_moveit_ur) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[42.064345] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const moveit_visual_tools::MoveItVisualTools&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.064522] (hello_moveit_ur) StderrLine: {'line': b'   70 | class \x1b[01;36m\x1b[KMoveItVisualTools\x1b[m\x1b[K : public rviz_visual_tools::RvizVisualTools\n'}
+[42.064698] (hello_moveit_ur) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[42.064870] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [10]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst moveit_visual_tools::MoveItVisualTools&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.065063] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(moveit_visual_tools::MoveItVisualTools&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.065242] (hello_moveit_ur) StderrLine: {'line': b'\x1b[01m\x1b[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [10]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kmoveit_visual_tools::MoveItVisualTools&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[42.123766] (-) TimerEvent: {}
+[42.224197] (-) TimerEvent: {}
+[42.326557] (-) TimerEvent: {}
+[42.427264] (-) TimerEvent: {}
+[42.527603] (-) TimerEvent: {}
+[42.627991] (-) TimerEvent: {}
+[42.728411] (-) TimerEvent: {}
+[42.831303] (-) TimerEvent: {}
+[42.932305] (-) TimerEvent: {}
+[43.032704] (-) TimerEvent: {}
+[43.133071] (-) TimerEvent: {}
+[43.233930] (-) TimerEvent: {}
+[43.335379] (-) TimerEvent: {}
+[43.436048] (-) TimerEvent: {}
+[43.536385] (-) TimerEvent: {}
+[43.567042] (hello_moveit_ur) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1\n'}
+[43.567477] (hello_moveit_ur) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2\n'}
+[43.567672] (hello_moveit_ur) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[43.570233] (hello_moveit_ur) CommandEnded: {'returncode': 2}
+[43.636488] (-) TimerEvent: {}
+[43.664891] (hello_moveit_ur) JobEnded: {'identifier': 'hello_moveit_ur', 'rc': 2}
+[43.736844] (-) TimerEvent: {}
+[43.837472] (-) TimerEvent: {}
+[43.937823] (-) TimerEvent: {}
+[44.038182] (-) TimerEvent: {}
+[44.138582] (-) TimerEvent: {}
+[44.238976] (-) TimerEvent: {}
+[44.339377] (-) TimerEvent: {}
+[44.439725] (-) TimerEvent: {}
+[44.540137] (-) TimerEvent: {}
+[44.640654] (-) TimerEvent: {}
+[44.741099] (-) TimerEvent: {}
+[44.841454] (-) TimerEvent: {}
+[44.941803] (-) TimerEvent: {}
+[45.042158] (-) TimerEvent: {}
+[45.142545] (-) TimerEvent: {}
+[45.242976] (-) TimerEvent: {}
+[45.343907] (-) TimerEvent: {}
+[45.444873] (-) TimerEvent: {}
+[45.545242] (-) TimerEvent: {}
+[45.645604] (-) TimerEvent: {}
+[45.746017] (-) TimerEvent: {}
+[45.846462] (-) TimerEvent: {}
+[45.946986] (-) TimerEvent: {}
+[46.048165] (-) TimerEvent: {}
+[46.148554] (-) TimerEvent: {}
+[46.248982] (-) TimerEvent: {}
+[46.349358] (-) TimerEvent: {}
+[46.449786] (-) TimerEvent: {}
+[46.550268] (-) TimerEvent: {}
+[46.650687] (-) TimerEvent: {}
+[46.751260] (-) TimerEvent: {}
+[46.851973] (-) TimerEvent: {}
+[46.952308] (-) TimerEvent: {}
+[47.052675] (-) TimerEvent: {}
+[47.153061] (-) TimerEvent: {}
+[47.253486] (-) TimerEvent: {}
+[47.353890] (-) TimerEvent: {}
+[47.454258] (-) TimerEvent: {}
+[47.554676] (-) TimerEvent: {}
+[47.655041] (-) TimerEvent: {}
+[47.755438] (-) TimerEvent: {}
+[47.855803] (-) TimerEvent: {}
+[47.956217] (-) TimerEvent: {}
+[48.056594] (-) TimerEvent: {}
+[48.156973] (-) TimerEvent: {}
+[48.257322] (-) TimerEvent: {}
+[48.357694] (-) TimerEvent: {}
+[48.458088] (-) TimerEvent: {}
+[48.558435] (-) TimerEvent: {}
+[48.658866] (-) TimerEvent: {}
+[48.759288] (-) TimerEvent: {}
+[48.859717] (-) TimerEvent: {}
+[48.960106] (-) TimerEvent: {}
+[49.060494] (-) TimerEvent: {}
+[49.161234] (-) TimerEvent: {}
+[49.261603] (-) TimerEvent: {}
+[49.361992] (-) TimerEvent: {}
+[49.462324] (-) TimerEvent: {}
+[49.562677] (-) TimerEvent: {}
+[49.663614] (-) TimerEvent: {}
+[49.763943] (-) TimerEvent: {}
+[49.866169] (-) TimerEvent: {}
+[49.966587] (-) TimerEvent: {}
+[50.067124] (-) TimerEvent: {}
+[50.167962] (-) TimerEvent: {}
+[50.268682] (-) TimerEvent: {}
+[50.369087] (-) TimerEvent: {}
+[50.469414] (-) TimerEvent: {}
+[50.569769] (-) TimerEvent: {}
+[50.671624] (-) TimerEvent: {}
+[50.772045] (-) TimerEvent: {}
+[50.872778] (-) TimerEvent: {}
+[50.973164] (-) TimerEvent: {}
+[51.074132] (-) TimerEvent: {}
+[51.174622] (-) TimerEvent: {}
+[51.274965] (-) TimerEvent: {}
+[51.375302] (-) TimerEvent: {}
+[51.475631] (-) TimerEvent: {}
+[51.575976] (-) TimerEvent: {}
+[51.677881] (-) TimerEvent: {}
+[51.778876] (-) TimerEvent: {}
+[51.879394] (-) TimerEvent: {}
+[51.979793] (-) TimerEvent: {}
+[52.080139] (-) TimerEvent: {}
+[52.180532] (-) TimerEvent: {}
+[52.281024] (-) TimerEvent: {}
+[52.381549] (-) TimerEvent: {}
+[52.481884] (-) TimerEvent: {}
+[52.582234] (-) TimerEvent: {}
+[52.682742] (-) TimerEvent: {}
+[52.783129] (-) TimerEvent: {}
+[52.883493] (-) TimerEvent: {}
+[52.983822] (-) TimerEvent: {}
+[53.085175] (-) TimerEvent: {}
+[53.185757] (-) TimerEvent: {}
+[53.286264] (-) TimerEvent: {}
+[53.386681] (-) TimerEvent: {}
+[53.487024] (-) TimerEvent: {}
+[53.587434] (-) TimerEvent: {}
+[53.689133] (-) TimerEvent: {}
+[53.789547] (-) TimerEvent: {}
+[53.889963] (-) TimerEvent: {}
+[53.990308] (-) TimerEvent: {}
+[54.090710] (-) TimerEvent: {}
+[54.191075] (-) TimerEvent: {}
+[54.291474] (-) TimerEvent: {}
+[54.391814] (-) TimerEvent: {}
+[54.492580] (-) TimerEvent: {}
+[54.592930] (-) TimerEvent: {}
+[54.693548] (-) TimerEvent: {}
+[54.793893] (-) TimerEvent: {}
+[54.894258] (-) TimerEvent: {}
+[54.994682] (-) TimerEvent: {}
+[55.095101] (-) TimerEvent: {}
+[55.195547] (-) TimerEvent: {}
+[55.295916] (-) TimerEvent: {}
+[55.396465] (-) TimerEvent: {}
+[55.497610] (-) TimerEvent: {}
+[55.598013] (-) TimerEvent: {}
+[55.698452] (-) TimerEvent: {}
+[55.798842] (-) TimerEvent: {}
+[55.899189] (-) TimerEvent: {}
+[55.999559] (-) TimerEvent: {}
+[56.000238] (rviz_visual_tools) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library librviz_visual_tools.so\x1b[0m\n'}
+[56.099675] (-) TimerEvent: {}
+[56.200045] (-) TimerEvent: {}
+[56.300437] (-) TimerEvent: {}
+[56.400771] (-) TimerEvent: {}
+[56.501173] (-) TimerEvent: {}
+[56.601581] (-) TimerEvent: {}
+[56.701954] (-) TimerEvent: {}
+[56.802960] (-) TimerEvent: {}
+[56.903294] (-) TimerEvent: {}
+[57.003675] (-) TimerEvent: {}
+[57.106432] (-) TimerEvent: {}
+[57.207061] (-) TimerEvent: {}
+[57.307678] (-) TimerEvent: {}
+[57.408974] (-) TimerEvent: {}
+[57.509327] (-) TimerEvent: {}
+[57.600360] (rviz_visual_tools) StdoutLine: {'line': b'[ 58%] Built target rviz_visual_tools\n'}
+[57.609436] (-) TimerEvent: {}
+[57.647447] (rviz_visual_tools) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_visual_tools_imarker_simple\x1b[0m\n'}
+[57.697463] (rviz_visual_tools) StdoutLine: {'line': b'[ 61%] Built target rviz_visual_tools_imarker_simple_autogen\n'}
+[57.709561] (-) TimerEvent: {}
+[57.746969] (rviz_visual_tools) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_visual_tools_rvt_test\x1b[0m\n'}
+[57.794808] (rviz_visual_tools) StdoutLine: {'line': b'[ 64%] Built target rviz_visual_tools_rvt_test_autogen\n'}
+[57.809676] (-) TimerEvent: {}
+[57.848673] (rviz_visual_tools) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple.dir/rviz_visual_tools_imarker_simple_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[57.892276] (rviz_visual_tools) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple.dir/src/imarker_simple.cpp.o\x1b[0m\n'}
+[57.909813] (-) TimerEvent: {}
+[58.010187] (-) TimerEvent: {}
+[58.110599] (-) TimerEvent: {}
+[58.210935] (-) TimerEvent: {}
+[58.311293] (-) TimerEvent: {}
+[58.412207] (-) TimerEvent: {}
+[58.512616] (-) TimerEvent: {}
+[58.612961] (-) TimerEvent: {}
+[58.713315] (-) TimerEvent: {}
+[58.813722] (-) TimerEvent: {}
+[58.914266] (-) TimerEvent: {}
+[59.014708] (-) TimerEvent: {}
+[59.115141] (-) TimerEvent: {}
+[59.215550] (-) TimerEvent: {}
+[59.317088] (-) TimerEvent: {}
+[59.418224] (-) TimerEvent: {}
+[59.519017] (-) TimerEvent: {}
+[59.619415] (-) TimerEvent: {}
+[59.721787] (-) TimerEvent: {}
+[59.822769] (-) TimerEvent: {}
+[59.923191] (-) TimerEvent: {}
+[60.023610] (-) TimerEvent: {}
+[60.123961] (-) TimerEvent: {}
+[60.224322] (-) TimerEvent: {}
+[60.324679] (-) TimerEvent: {}
+[60.425108] (-) TimerEvent: {}
+[60.525520] (-) TimerEvent: {}
+[60.625886] (-) TimerEvent: {}
+[60.728255] (-) TimerEvent: {}
+[60.828701] (-) TimerEvent: {}
+[60.929121] (-) TimerEvent: {}
+[61.029526] (-) TimerEvent: {}
+[61.129883] (-) TimerEvent: {}
+[61.230505] (-) TimerEvent: {}
+[61.330925] (-) TimerEvent: {}
+[61.431364] (-) TimerEvent: {}
+[61.531779] (-) TimerEvent: {}
+[61.632597] (-) TimerEvent: {}
+[61.733010] (-) TimerEvent: {}
+[61.833433] (-) TimerEvent: {}
+[61.933823] (-) TimerEvent: {}
+[62.034452] (-) TimerEvent: {}
+[62.134857] (-) TimerEvent: {}
+[62.235310] (-) TimerEvent: {}
+[62.336268] (-) TimerEvent: {}
+[62.436767] (-) TimerEvent: {}
+[62.537196] (-) TimerEvent: {}
+[62.637632] (-) TimerEvent: {}
+[62.738273] (-) TimerEvent: {}
+[62.838835] (-) TimerEvent: {}
+[62.939280] (-) TimerEvent: {}
+[63.039691] (-) TimerEvent: {}
+[63.140330] (-) TimerEvent: {}
+[63.240716] (-) TimerEvent: {}
+[63.341133] (-) TimerEvent: {}
+[63.441486] (-) TimerEvent: {}
+[63.541846] (-) TimerEvent: {}
+[63.642270] (-) TimerEvent: {}
+[63.742673] (-) TimerEvent: {}
+[63.843039] (-) TimerEvent: {}
+[63.943425] (-) TimerEvent: {}
+[64.043767] (-) TimerEvent: {}
+[64.144131] (-) TimerEvent: {}
+[64.244496] (-) TimerEvent: {}
+[64.345106] (-) TimerEvent: {}
+[64.445512] (-) TimerEvent: {}
+[64.545885] (-) TimerEvent: {}
+[64.646830] (-) TimerEvent: {}
+[64.747257] (-) TimerEvent: {}
+[64.847652] (-) TimerEvent: {}
+[64.948003] (-) TimerEvent: {}
+[65.048429] (-) TimerEvent: {}
+[65.148769] (-) TimerEvent: {}
+[65.249116] (-) TimerEvent: {}
+[65.349504] (-) TimerEvent: {}
+[65.449832] (-) TimerEvent: {}
+[65.550190] (-) TimerEvent: {}
+[65.633001] (rviz_visual_tools) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library librviz_visual_tools_imarker_simple.so\x1b[0m\n'}
+[65.650305] (-) TimerEvent: {}
+[65.750690] (-) TimerEvent: {}
+[65.851033] (-) TimerEvent: {}
+[65.951450] (-) TimerEvent: {}
+[66.051925] (-) TimerEvent: {}
+[66.152559] (-) TimerEvent: {}
+[66.243526] (rviz_visual_tools) StdoutLine: {'line': b'[ 71%] Built target rviz_visual_tools_imarker_simple\n'}
+[66.252679] (-) TimerEvent: {}
+[66.299058] (rviz_visual_tools) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_rvt_test.dir/tests/rvt_test.cpp.o\x1b[0m\n'}
+[66.299331] (rviz_visual_tools) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_rvt_test.dir/rviz_visual_tools_rvt_test_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[66.299563] (rviz_visual_tools) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_visual_tools_demo\x1b[0m\n'}
+[66.352809] (-) TimerEvent: {}
+[66.356758] (rviz_visual_tools) StdoutLine: {'line': b'[ 79%] Built target rviz_visual_tools_demo_autogen\n'}
+[66.408601] (rviz_visual_tools) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_visual_tools_imarker_simple_demo\x1b[0m\n'}
+[66.452913] (-) TimerEvent: {}
+[66.463785] (rviz_visual_tools) StdoutLine: {'line': b'[ 82%] Built target rviz_visual_tools_imarker_simple_demo_autogen\n'}
+[66.513855] (rviz_visual_tools) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_demo.dir/rviz_visual_tools_demo_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[66.515125] (rviz_visual_tools) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_demo.dir/src/rviz_visual_tools_demo.cpp.o\x1b[0m\n'}
+[66.553037] (-) TimerEvent: {}
+[66.653449] (-) TimerEvent: {}
+[66.754241] (-) TimerEvent: {}
+[66.854847] (-) TimerEvent: {}
+[66.955383] (-) TimerEvent: {}
+[67.055871] (-) TimerEvent: {}
+[67.156422] (-) TimerEvent: {}
+[67.256855] (-) TimerEvent: {}
+[67.357305] (-) TimerEvent: {}
+[67.457726] (-) TimerEvent: {}
+[67.558482] (-) TimerEvent: {}
+[67.658885] (-) TimerEvent: {}
+[67.759315] (-) TimerEvent: {}
+[67.859731] (-) TimerEvent: {}
+[67.960381] (-) TimerEvent: {}
+[68.061101] (-) TimerEvent: {}
+[68.161643] (-) TimerEvent: {}
+[68.262055] (-) TimerEvent: {}
+[68.362454] (-) TimerEvent: {}
+[68.462877] (-) TimerEvent: {}
+[68.563241] (-) TimerEvent: {}
+[68.663659] (-) TimerEvent: {}
+[68.764083] (-) TimerEvent: {}
+[68.864490] (-) TimerEvent: {}
+[68.964888] (-) TimerEvent: {}
+[69.065775] (-) TimerEvent: {}
+[69.166282] (-) TimerEvent: {}
+[69.266651] (-) TimerEvent: {}
+[69.367042] (-) TimerEvent: {}
+[69.467580] (-) TimerEvent: {}
+[69.567955] (-) TimerEvent: {}
+[69.668758] (-) TimerEvent: {}
+[69.769143] (-) TimerEvent: {}
+[69.869509] (-) TimerEvent: {}
+[69.969898] (-) TimerEvent: {}
+[70.070269] (-) TimerEvent: {}
+[70.170647] (-) TimerEvent: {}
+[70.271418] (-) TimerEvent: {}
+[70.371802] (-) TimerEvent: {}
+[70.475328] (-) TimerEvent: {}
+[70.575752] (-) TimerEvent: {}
+[70.676218] (-) TimerEvent: {}
+[70.776636] (-) TimerEvent: {}
+[70.877079] (-) TimerEvent: {}
+[70.977482] (-) TimerEvent: {}
+[71.077857] (-) TimerEvent: {}
+[71.178274] (-) TimerEvent: {}
+[71.278675] (-) TimerEvent: {}
+[71.379046] (-) TimerEvent: {}
+[71.479480] (-) TimerEvent: {}
+[71.580656] (-) TimerEvent: {}
+[71.681795] (-) TimerEvent: {}
+[71.782657] (-) TimerEvent: {}
+[71.883699] (-) TimerEvent: {}
+[71.984116] (-) TimerEvent: {}
+[72.085057] (-) TimerEvent: {}
+[72.185434] (-) TimerEvent: {}
+[72.285796] (-) TimerEvent: {}
+[72.386314] (-) TimerEvent: {}
+[72.486728] (-) TimerEvent: {}
+[72.587103] (-) TimerEvent: {}
+[72.688872] (-) TimerEvent: {}
+[72.789260] (-) TimerEvent: {}
+[72.889670] (-) TimerEvent: {}
+[72.990093] (-) TimerEvent: {}
+[73.090587] (-) TimerEvent: {}
+[73.191028] (-) TimerEvent: {}
+[73.291465] (-) TimerEvent: {}
+[73.393791] (-) TimerEvent: {}
+[73.494173] (-) TimerEvent: {}
+[73.594627] (-) TimerEvent: {}
+[73.695115] (-) TimerEvent: {}
+[73.795532] (-) TimerEvent: {}
+[73.895934] (-) TimerEvent: {}
+[73.996334] (-) TimerEvent: {}
+[74.096702] (-) TimerEvent: {}
+[74.197088] (-) TimerEvent: {}
+[74.298148] (-) TimerEvent: {}
+[74.398569] (-) TimerEvent: {}
+[74.499046] (-) TimerEvent: {}
+[74.599491] (-) TimerEvent: {}
+[74.699875] (-) TimerEvent: {}
+[74.800280] (-) TimerEvent: {}
+[74.900686] (-) TimerEvent: {}
+[75.001079] (-) TimerEvent: {}
+[75.101428] (-) TimerEvent: {}
+[75.201856] (-) TimerEvent: {}
+[75.302332] (-) TimerEvent: {}
+[75.402885] (-) TimerEvent: {}
+[75.503303] (-) TimerEvent: {}
+[75.603671] (-) TimerEvent: {}
+[75.697312] (rviz_visual_tools) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX executable rviz_visual_tools_demo\x1b[0m\n'}
+[75.703795] (-) TimerEvent: {}
+[75.804217] (-) TimerEvent: {}
+[75.904660] (-) TimerEvent: {}
+[76.005561] (-) TimerEvent: {}
+[76.106023] (-) TimerEvent: {}
+[76.206448] (-) TimerEvent: {}
+[76.306978] (-) TimerEvent: {}
+[76.407417] (-) TimerEvent: {}
+[76.507769] (-) TimerEvent: {}
+[76.530883] (rviz_visual_tools) StdoutLine: {'line': b'[ 89%] Built target rviz_visual_tools_demo\n'}
+[76.593671] (rviz_visual_tools) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple_demo.dir/rviz_visual_tools_imarker_simple_demo_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[76.596522] (rviz_visual_tools) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/rviz_visual_tools_imarker_simple_demo.dir/src/imarker_simple_demo.cpp.o\x1b[0m\n'}
+[76.607898] (-) TimerEvent: {}
+[76.709316] (-) TimerEvent: {}
+[76.809842] (-) TimerEvent: {}
+[76.910179] (-) TimerEvent: {}
+[77.011626] (-) TimerEvent: {}
+[77.112001] (-) TimerEvent: {}
+[77.212330] (-) TimerEvent: {}
+[77.315209] (-) TimerEvent: {}
+[77.416838] (-) TimerEvent: {}
+[77.517244] (-) TimerEvent: {}
+[77.617576] (-) TimerEvent: {}
+[77.717945] (-) TimerEvent: {}
+[77.729283] (rviz_visual_tools) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable rviz_visual_tools_rvt_test\x1b[0m\n'}
+[77.818064] (-) TimerEvent: {}
+[77.918507] (-) TimerEvent: {}
+[78.018901] (-) TimerEvent: {}
+[78.119276] (-) TimerEvent: {}
+[78.222252] (-) TimerEvent: {}
+[78.322733] (-) TimerEvent: {}
+[78.423174] (-) TimerEvent: {}
+[78.523639] (-) TimerEvent: {}
+[78.624045] (-) TimerEvent: {}
+[78.724506] (-) TimerEvent: {}
+[78.749675] (rviz_visual_tools) StdoutLine: {'line': b'[ 97%] Built target rviz_visual_tools_rvt_test\n'}
+[78.824624] (-) TimerEvent: {}
+[78.925011] (-) TimerEvent: {}
+[79.025380] (-) TimerEvent: {}
+[79.125716] (-) TimerEvent: {}
+[79.226080] (-) TimerEvent: {}
+[79.326475] (-) TimerEvent: {}
+[79.426889] (-) TimerEvent: {}
+[79.527303] (-) TimerEvent: {}
+[79.627710] (-) TimerEvent: {}
+[79.728264] (-) TimerEvent: {}
+[79.830283] (-) TimerEvent: {}
+[79.930725] (-) TimerEvent: {}
+[80.031133] (-) TimerEvent: {}
+[80.131582] (-) TimerEvent: {}
+[80.232039] (-) TimerEvent: {}
+[80.332653] (-) TimerEvent: {}
+[80.433337] (-) TimerEvent: {}
+[80.534276] (-) TimerEvent: {}
+[80.634763] (-) TimerEvent: {}
+[80.735128] (-) TimerEvent: {}
+[80.835638] (-) TimerEvent: {}
+[80.935981] (-) TimerEvent: {}
+[81.036331] (-) TimerEvent: {}
+[81.136957] (-) TimerEvent: {}
+[81.237325] (-) TimerEvent: {}
+[81.340708] (-) TimerEvent: {}
+[81.441163] (-) TimerEvent: {}
+[81.541529] (-) TimerEvent: {}
+[81.641882] (-) TimerEvent: {}
+[81.742300] (-) TimerEvent: {}
+[81.842756] (-) TimerEvent: {}
+[81.943111] (-) TimerEvent: {}
+[82.043520] (-) TimerEvent: {}
+[82.143893] (-) TimerEvent: {}
+[82.244269] (-) TimerEvent: {}
+[82.347599] (-) TimerEvent: {}
+[82.448112] (-) TimerEvent: {}
+[82.548523] (-) TimerEvent: {}
+[82.648914] (-) TimerEvent: {}
+[82.749268] (-) TimerEvent: {}
+[82.849624] (-) TimerEvent: {}
+[82.950027] (-) TimerEvent: {}
+[83.050370] (-) TimerEvent: {}
+[83.150747] (-) TimerEvent: {}
+[83.251114] (-) TimerEvent: {}
+[83.351504] (-) TimerEvent: {}
+[83.451915] (-) TimerEvent: {}
+[83.552355] (-) TimerEvent: {}
+[83.652745] (-) TimerEvent: {}
+[83.753493] (-) TimerEvent: {}
+[83.853840] (-) TimerEvent: {}
+[83.954199] (-) TimerEvent: {}
+[84.054595] (-) TimerEvent: {}
+[84.154946] (-) TimerEvent: {}
+[84.255290] (-) TimerEvent: {}
+[84.355648] (-) TimerEvent: {}
+[84.456051] (-) TimerEvent: {}
+[84.556377] (-) TimerEvent: {}
+[84.656794] (-) TimerEvent: {}
+[84.749006] (rviz_visual_tools) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rviz_visual_tools_imarker_simple_demo\x1b[0m\n'}
+[84.756897] (-) TimerEvent: {}
+[84.857338] (-) TimerEvent: {}
+[84.957757] (-) TimerEvent: {}
+[85.058143] (-) TimerEvent: {}
+[85.158575] (-) TimerEvent: {}
+[85.258940] (-) TimerEvent: {}
+[85.359306] (-) TimerEvent: {}
+[85.459660] (-) TimerEvent: {}
+[85.538793] (rviz_visual_tools) StdoutLine: {'line': b'[100%] Built target rviz_visual_tools_imarker_simple_demo\n'}
+[85.559779] (-) TimerEvent: {}
+[85.564278] (rviz_visual_tools) JobEnded: {'identifier': 'rviz_visual_tools', 'rc': 'SIGINT'}
+[85.575042] (moveit_visual_tools) JobSkipped: {'identifier': 'moveit_visual_tools'}
+[85.575163] (-) EventReactorShutdown: {}

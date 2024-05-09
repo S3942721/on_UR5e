@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit_ur[0m
+[100%] Built target hello_moveit_ur
+-- Install configuration: "Release"
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/lib/hello_moveit_ur/hello_moveit_ur
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur//launch
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur//launch/hello_moveit_ur_launch.py
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/package_run_dependencies/hello_moveit_ur
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/parent_prefix_path/hello_moveit_ur
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/ament_prefix_path.sh
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/path.sh
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/path.dsv
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.bash
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.sh
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.zsh
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.dsv
+-- Installing: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.dsv
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/packages/hello_moveit_ur
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/cmake/hello_moveit_urConfig.cmake
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/cmake/hello_moveit_urConfig-version.cmake
+-- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.xml

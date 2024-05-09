@@ -1,0 +1,91 @@
+[0.040s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/overlay_ws/src/hello_moveit_ur -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/root/overlay_ws/src/install/hello_moveit_ur
+[0.067s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.309s] -- Found moveit_ros_planning_interface: 2.5.5 (/root/underlay_ws/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.334s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.395s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.401s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.414s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.441s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.426s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.490s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.588s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.596s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.925s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.371s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[3.542s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.809s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[4.346s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.116s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[8.111s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[9.108s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[10.406s] -- Found moveit_visual_tools: 4.1.0 (/root/underlay_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake)
+[11.534s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[11.538s] -- Found OGRE
+[11.538s] --   static     : OFF
+[11.539s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[11.539s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[11.540s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[11.540s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[11.541s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[11.541s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[11.541s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[11.542s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[11.543s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[11.544s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[11.544s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[11.549s] -- Could not find freeimage library
+[11.740s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[11.740s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[14.087s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[14.347s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.348s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/overlay_ws/src/hello_moveit_ur/include>
+[14.349s] -- Configured cppcheck exclude dirs and/or files: 
+[14.353s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.362s] -- Added test 'lint_cmake' to check CMake code style
+[14.367s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.396s] -- Added test 'uncrustify' to check C / C++ code style
+[14.396s] -- Configured uncrustify additional arguments: 
+[14.400s] -- Added test 'xmllint' to check XML markup files
+[14.402s] -- Configuring done
+[14.529s] -- Generating done
+[14.537s] -- Build files have been written to: /root/overlay_ws/src/build/hello_moveit_ur
+[14.571s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/overlay_ws/src/hello_moveit_ur -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/root/overlay_ws/src/install/hello_moveit_ur
+[14.572s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[14.895s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit_ur[0m
+[15.062s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[34.887s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[34.888s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:33:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[34.888s]    33 |   double [01;35m[Koffset_x[m[K = 0.0;  // 10 mm
+[34.888s]       |          [01;35m[K^~~~~~~~[m[K
+[34.888s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:34:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[34.888s]    34 |   double [01;35m[Koffset_y[m[K = 0.0;  // 20 mm
+[34.889s]       |          [01;35m[K^~~~~~~~[m[K
+[34.889s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:35:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_z[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[34.889s]    35 |   double [01;35m[Koffset_z[m[K = 0.0;  // 30 mm
+[34.889s]       |          [01;35m[K^~~~~~~~[m[K
+[43.274s] [100%] [32m[1mLinking CXX executable hello_moveit_ur[0m
+[44.466s] [100%] Built target hello_moveit_ur
+[44.494s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[44.570s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/hello_moveit_ur
+[44.587s] -- Install configuration: "Debug"
+[44.588s] -- Installing: /root/overlay_ws/src/install/hello_moveit_ur/lib/hello_moveit_ur/hello_moveit_ur
+[44.606s] -- Set runtime path of "/root/overlay_ws/src/install/hello_moveit_ur/lib/hello_moveit_ur/hello_moveit_ur" to ""
+[44.607s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur//launch
+[44.607s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur//launch/hello_moveit_ur_launch.py
+[44.607s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/package_run_dependencies/hello_moveit_ur
+[44.607s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/parent_prefix_path/hello_moveit_ur
+[44.607s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/ament_prefix_path.sh
+[44.608s] -- Installing: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/ament_prefix_path.dsv
+[44.608s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/path.sh
+[44.608s] -- Installing: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/environment/path.dsv
+[44.608s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.bash
+[44.609s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.sh
+[44.609s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.zsh
+[44.609s] -- Installing: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/local_setup.dsv
+[44.609s] -- Installing: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.dsv
+[44.609s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/ament_index/resource_index/packages/hello_moveit_ur
+[44.610s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/cmake/hello_moveit_urConfig.cmake
+[44.610s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/cmake/hello_moveit_urConfig-version.cmake
+[44.611s] -- Up-to-date: /root/overlay_ws/src/install/hello_moveit_ur/share/hello_moveit_ur/package.xml
+[44.612s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/overlay_ws/src/build/hello_moveit_ur

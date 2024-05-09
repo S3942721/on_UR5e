@@ -1,0 +1,67 @@
+[0.029s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[0.148s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit_ur[0m
+[0.208s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[9.287s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[9.287s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:45:19:[m[K [01;31m[Kerror: [m[K‘[01m[Krviz_visual_tools[m[K’ is not a namespace-name
+[9.287s]    45 |   namespace rvt = [01;31m[Krviz_visual_tools[m[K;
+[9.287s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.288s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:46:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit_visual_tools[m[K’ has not been declared
+[9.288s]    46 |   [01;31m[Kmoveit_visual_tools[m[K::MoveItVisualTools visual_tools(move_group_node, "base_link", "move_group_tutorial",
+[9.288s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[9.294s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[9.294s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[9.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[9.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[9.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[9.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[9.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[9.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[9.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[9.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[9.296s]                  from [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:3[m[K:
+[9.296s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:15:[m[K [01;31m[Kerror: [m[K‘[01m[KLOGGER[m[K’ was not declared in this scope
+[9.296s]    49 |   RCLCPP_INFO([01;31m[KLOGGER[m[K, "Visualizing plan 1 as trajectory line");
+[9.296s]       |               [01;31m[K^~~~~~[m[K
+[9.296s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[9.296s]    49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+[9.297s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[9.297s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K-fpermissive[m[K]
+[9.297s]    49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+[9.297s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[9.297s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[9.297s]    49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+[9.297s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[9.298s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K-fpermissive[m[K]
+[9.298s]    49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+[9.298s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[9.298s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[9.298s]    49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+[9.298s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[9.305s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:50:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisual_tools[m[K’ was not declared in this scope
+[9.305s]    50 |   [01;31m[Kvisual_tools[m[K.publishAxisLabeled(target_pose1, "pose1");
+[9.305s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[9.312s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:50:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_pose[m[K’?
+[9.312s]    50 |   visual_tools.publishAxisLabeled([01;31m[Ktarget_pose1[m[K, "pose1");
+[9.312s]       |                                   [01;31m[K^~~~~~~~~~~~[m[K
+[9.313s]       |                                   [32m[Ktarget_pose[m[K
+[9.321s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:51:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktext_pose[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_pose[m[K’?
+[9.321s]    51 |   visual_tools.publishText([01;31m[Ktext_pose[m[K, "Pose_Goal", rvt::WHITE, rvt::XLARGE);
+[9.321s]       |                            [01;31m[K^~~~~~~~~[m[K
+[9.322s]       |                            [32m[Ktarget_pose[m[K
+[9.322s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:51:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krvt[m[K’ has not been declared
+[9.322s]    51 |   visual_tools.publishText(text_pose, "Pose_Goal", [01;31m[Krvt[m[K::WHITE, rvt::XLARGE);
+[9.322s]       |                                                    [01;31m[K^~~[m[K
+[9.322s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:51:64:[m[K [01;31m[Kerror: [m[K‘[01m[Krvt[m[K’ has not been declared
+[9.323s]    51 |   visual_tools.publishText(text_pose, "Pose_Goal", rvt::WHITE, [01;31m[Krvt[m[K::XLARGE);
+[9.323s]       |                                                                [01;31m[K^~~[m[K
+[9.329s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:52:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_plan[m[K’ was not declared in this scope; did you mean ‘[01m[Kplan[m[K’?
+[9.329s]    52 |   visual_tools.publishTrajectoryLine([01;31m[Kmy_plan[m[K.trajectory_, joint_model_group);
+[9.329s]       |                                      [01;31m[K^~~~~~~[m[K
+[9.329s]       |                                      [32m[Kplan[m[K
+[9.351s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:52:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_model_group[m[K’ was not declared in this scope
+[9.351s]    52 |   visual_tools.publishTrajectoryLine(my_plan.trajectory_, [01;31m[Kjoint_model_group[m[K);
+[9.352s]       |                                                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.906s] gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+[13.906s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+[13.906s] gmake: *** [Makefile:146: all] Error 2
+[13.909s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8

@@ -1,0 +1,88 @@
+[  2%] [34m[1mAutomatic MOC for target gtest_main[0m
+[  5%] [34m[1mAutomatic MOC for target rviz_visual_tools_gui[0m
+[  7%] [34m[1mAutomatic MOC for target gtest[0m
+[ 10%] [34m[1mAutomatic MOC for target rviz_visual_tools_remote_control[0m
+[ 10%] Built target gtest_main_autogen
+[ 10%] Built target rviz_visual_tools_gui_autogen
+[ 10%] Built target rviz_visual_tools_remote_control_autogen
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 10%] Built target gtest_autogen
+[35m[1mConsolidate compiler generated dependencies of target rviz_visual_tools_remote_control[0m
+[35m[1mConsolidate compiler generated dependencies of target rviz_visual_tools_gui[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[ 17%] Built target gtest_main
+[ 25%] Built target gtest
+[ 33%] Built target rviz_visual_tools_remote_control
+[ 46%] Built target rviz_visual_tools_gui
+[ 48%] [34m[1mAutomatic MOC for target rviz_visual_tools[0m
+[ 48%] Built target rviz_visual_tools_autogen
+[35m[1mConsolidate compiler generated dependencies of target rviz_visual_tools[0m
+[ 58%] Built target rviz_visual_tools
+[ 61%] [34m[1mAutomatic MOC for target rviz_visual_tools_rvt_test[0m
+[ 64%] [34m[1mAutomatic MOC for target rviz_visual_tools_imarker_simple[0m
+[ 66%] [34m[1mAutomatic MOC for target rviz_visual_tools_demo[0m
+[ 66%] Built target rviz_visual_tools_rvt_test_autogen
+[ 66%] Built target rviz_visual_tools_imarker_simple_autogen
+[ 66%] Built target rviz_visual_tools_demo_autogen
+[35m[1mConsolidate compiler generated dependencies of target rviz_visual_tools_rvt_test[0m
+[35m[1mConsolidate compiler generated dependencies of target rviz_visual_tools_imarker_simple[0m
+[35m[1mConsolidate compiler generated dependencies of target rviz_visual_tools_demo[0m
+[ 74%] Built target rviz_visual_tools_imarker_simple
+[ 82%] Built target rviz_visual_tools_rvt_test
+[ 89%] Built target rviz_visual_tools_demo
+[ 92%] [34m[1mAutomatic MOC for target rviz_visual_tools_imarker_simple_demo[0m
+[ 92%] Built target rviz_visual_tools_imarker_simple_demo_autogen
+[35m[1mConsolidate compiler generated dependencies of target rviz_visual_tools_imarker_simple_demo[0m
+[100%] Built target rviz_visual_tools_imarker_simple_demo
+-- Install configuration: ""
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/plugin_description.xml
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools.so
+-- Set runtime path of "/root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools.so" to ""
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools_remote_control.so
+-- Set runtime path of "/root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools_remote_control.so" to ""
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools_gui.so
+-- Set runtime path of "/root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools_gui.so" to ""
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools_imarker_simple.so
+-- Set runtime path of "/root/overlay_ws/src/install/rviz_visual_tools/lib/librviz_visual_tools_imarker_simple.so" to ""
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/lib/rviz_visual_tools/rviz_visual_tools_demo
+-- Set runtime path of "/root/overlay_ws/src/install/rviz_visual_tools/lib/rviz_visual_tools/rviz_visual_tools_demo" to ""
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/lib/rviz_visual_tools/rviz_visual_tools_imarker_simple_demo
+-- Set runtime path of "/root/overlay_ws/src/install/rviz_visual_tools/lib/rviz_visual_tools/rviz_visual_tools_imarker_simple_demo" to ""
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools/imarker_simple.hpp
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools/rviz_visual_tools.hpp
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools/remote_control.hpp
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools/tf_visual_tools.hpp
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools/key_tool.hpp
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools/remote_reciever.hpp
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/include/rviz_visual_tools/rviz_visual_tools_gui.hpp
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/launch
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/launch/rvt_test.launch
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/launch/demo_rviz.launch.py
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/launch/demo.rviz
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/launch/demo_combined.launch.py
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/environment/library_path.sh
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/environment/library_path.dsv
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/ament_index/resource_index/package_run_dependencies/rviz_visual_tools
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/ament_index/resource_index/parent_prefix_path/rviz_visual_tools
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/environment/ament_prefix_path.sh
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/environment/ament_prefix_path.dsv
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/environment/path.sh
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/environment/path.dsv
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/local_setup.bash
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/local_setup.sh
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/local_setup.zsh
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/local_setup.dsv
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.dsv
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/ament_index/resource_index/packages/rviz_visual_tools
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_visual_tools
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/export_rviz_visual_toolsExport.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/export_rviz_visual_toolsExport-noconfig.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/rviz_visual_toolsConfig.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/cmake/rviz_visual_toolsConfig-version.cmake
+-- Installing: /root/overlay_ws/src/install/rviz_visual_tools/share/rviz_visual_tools/package.xml

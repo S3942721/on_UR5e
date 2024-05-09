@@ -1,0 +1,110 @@
+[0.041s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[0.121s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.485s] -- Found moveit_ros_planning_interface: 2.5.5 (/root/underlay_ws/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.516s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.593s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.600s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.616s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.670s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.726s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.643s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[5.877s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[6.302s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.340s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.307s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.933s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[8.092s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[8.275s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[8.712s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[10.578s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[12.197s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[13.086s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[14.299s] -- Found moveit_visual_tools: 4.1.0 (/root/underlay_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake)
+[15.796s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[15.799s] -- Found OGRE
+[15.799s] --   static     : OFF
+[15.799s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[15.799s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[15.800s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[15.800s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[15.800s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[15.800s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[15.801s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[15.801s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[15.801s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[15.801s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[15.802s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[15.803s] -- Could not find freeimage library
+[15.881s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[15.907s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[16.345s] -- Found X11: /usr/include   
+[16.346s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[16.630s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[16.630s] -- Looking for gethostbyname
+[16.875s] -- Looking for gethostbyname - found
+[16.876s] -- Looking for connect
+[17.120s] -- Looking for connect - found
+[17.121s] -- Looking for remove
+[17.374s] -- Looking for remove - found
+[17.375s] -- Looking for shmat
+[17.634s] -- Looking for shmat - found
+[17.634s] -- Looking for IceConnectionNumber in ICE
+[17.926s] -- Looking for IceConnectionNumber in ICE - found
+[17.930s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[17.931s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[20.183s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[20.373s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[20.373s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/overlay_ws/src/hello_moveit_ur/include>
+[20.373s] -- Configured cppcheck exclude dirs and/or files: 
+[20.377s] -- Added test 'flake8' to check Python code syntax and style conventions
+[20.384s] -- Added test 'lint_cmake' to check CMake code style
+[20.388s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[20.424s] -- Added test 'uncrustify' to check C / C++ code style
+[20.424s] -- Configured uncrustify additional arguments: 
+[20.424s] -- Added test 'xmllint' to check XML markup files
+[20.425s] -- Configuring done
+[20.525s] -- Generating done
+[20.532s] -- Build files have been written to: /root/overlay_ws/src/build/hello_moveit_ur
+[20.631s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit_ur[0m
+[20.727s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[42.017s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[42.017s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[42.018s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[42.018s]                  from [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:1[m[K:
+[42.018s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit_visual_tools::MoveItVisualTools; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools][m[K’:
+[42.018s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit_visual_tools::MoveItVisualTools; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit_visual_tools::MoveItVisualTools>][m[K’
+[42.018s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools; _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[42.018s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit_visual_tools::MoveItVisualTools; _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[42.019s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[42.019s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}; _Tp = moveit_visual_tools::MoveItVisualTools][m[K’
+[42.019s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit_visual_tools::MoveItVisualTools; _Alloc = std::allocator<moveit_visual_tools::MoveItVisualTools>; _Args = {const char (&)[10]}][m[K’
+[42.019s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit_visual_tools::MoveItVisualTools; _Args = {const char (&)[10]}][m[K’
+[42.019s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:24:79:[m[K   required from here
+[42.020s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const char [10])[m[K’
+[42.020s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[42.020s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[42.020s] In file included from [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:5[m[K:
+[42.020s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:97:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const SharedPtr&, const string&, const string&, moveit::core::RobotModelConstPtr)[m[K’
+[42.021s]    97 |   [01;36m[KMoveItVisualTools[m[K(const rclcpp::Node::SharedPtr& node, const std::string& base_frame,
+[42.021s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[42.021s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:97:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[42.021s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:88:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const SharedPtr&, const string&, const string&, planning_scene_monitor::PlanningSceneMonitorPtr)[m[K’
+[42.021s]    88 |   [01;36m[KMoveItVisualTools[m[K(const rclcpp::Node::SharedPtr& node, const std::string& base_frame, const std::string& marker_topic,
+[42.021s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[42.022s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:88:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[42.022s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:79:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const SharedPtr&)[m[K’
+[42.022s]    79 |   [01;36m[KMoveItVisualTools[m[K(const rclcpp::Node::SharedPtr& node);
+[42.022s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[42.022s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:79:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [10][m[K’ to ‘[01m[Kconst SharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>&[m[K’}
+[42.023s]    79 |   MoveItVisualTools([01;36m[Kconst rclcpp::Node::SharedPtr& node[m[K);
+[42.023s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[42.023s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(const moveit_visual_tools::MoveItVisualTools&)[m[K’
+[42.023s]    70 | class [01;36m[KMoveItVisualTools[m[K : public rviz_visual_tools::RvizVisualTools
+[42.023s]       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[42.023s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [10][m[K’ to ‘[01m[Kconst moveit_visual_tools::MoveItVisualTools&[m[K’
+[42.024s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit_visual_tools::MoveItVisualTools::MoveItVisualTools(moveit_visual_tools::MoveItVisualTools&&)[m[K’
+[42.024s] [01m[K/root/underlay_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h:70:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [10][m[K’ to ‘[01m[Kmoveit_visual_tools::MoveItVisualTools&&[m[K’
+[43.526s] gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+[43.526s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+[43.526s] gmake: *** [Makefile:146: all] Error 2
+[43.529s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8

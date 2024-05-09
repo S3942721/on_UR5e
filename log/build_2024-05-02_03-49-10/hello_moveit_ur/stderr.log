@@ -1,0 +1,63 @@
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:45:19:[m[K [01;31m[Kerror: [m[K‘[01m[Krviz_visual_tools[m[K’ is not a namespace-name
+   45 |   namespace rvt = [01;31m[Krviz_visual_tools[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:46:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit_visual_tools[m[K’ has not been declared
+   46 |   [01;31m[Kmoveit_visual_tools[m[K::MoveItVisualTools visual_tools(move_group_node, "base_link", "move_group_tutorial",
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:3[m[K:
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:15:[m[K [01;31m[Kerror: [m[K‘[01m[KLOGGER[m[K’ was not declared in this scope
+   49 |   RCLCPP_INFO([01;31m[KLOGGER[m[K, "Visualizing plan 1 as trajectory line");
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K-fpermissive[m[K]
+   49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K-fpermissive[m[K]
+   49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:49:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |   [01;31m[KRCLCPP_INFO[m[K(LOGGER, "Visualizing plan 1 as trajectory line");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:50:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisual_tools[m[K’ was not declared in this scope
+   50 |   [01;31m[Kvisual_tools[m[K.publishAxisLabeled(target_pose1, "pose1");
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:50:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_pose[m[K’?
+   50 |   visual_tools.publishAxisLabeled([01;31m[Ktarget_pose1[m[K, "pose1");
+      |                                   [01;31m[K^~~~~~~~~~~~[m[K
+      |                                   [32m[Ktarget_pose[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:51:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktext_pose[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_pose[m[K’?
+   51 |   visual_tools.publishText([01;31m[Ktext_pose[m[K, "Pose_Goal", rvt::WHITE, rvt::XLARGE);
+      |                            [01;31m[K^~~~~~~~~[m[K
+      |                            [32m[Ktarget_pose[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:51:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krvt[m[K’ has not been declared
+   51 |   visual_tools.publishText(text_pose, "Pose_Goal", [01;31m[Krvt[m[K::WHITE, rvt::XLARGE);
+      |                                                    [01;31m[K^~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:51:64:[m[K [01;31m[Kerror: [m[K‘[01m[Krvt[m[K’ has not been declared
+   51 |   visual_tools.publishText(text_pose, "Pose_Goal", rvt::WHITE, [01;31m[Krvt[m[K::XLARGE);
+      |                                                                [01;31m[K^~~[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:52:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_plan[m[K’ was not declared in this scope; did you mean ‘[01m[Kplan[m[K’?
+   52 |   visual_tools.publishTrajectoryLine([01;31m[Kmy_plan[m[K.trajectory_, joint_model_group);
+      |                                      [01;31m[K^~~~~~~[m[K
+      |                                      [32m[Kplan[m[K
+[01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:52:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_model_group[m[K’ was not declared in this scope
+   52 |   visual_tools.publishTrajectoryLine(my_plan.trajectory_, [01;31m[Kjoint_model_group[m[K);
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

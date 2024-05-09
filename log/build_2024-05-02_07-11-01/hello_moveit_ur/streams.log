@@ -1,0 +1,20 @@
+[0.046s] Invoking command in '/root/overlay_ws/src/build/hello_moveit_ur': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
+[0.331s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o[0m
+[14.767s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[14.767s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:56:67:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[14.767s]    56 |   std::cout << "Planning frame: " << planning_frame.c_str() << std[01;31m[K:[m[Kendl;
+[14.767s]       |                                                                   [01;31m[K^[m[K
+[14.768s]       |                                                                   [32m[K::[m[K
+[14.773s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:32:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[14.773s]    32 |   double [01;35m[Koffset_x[m[K = 0.0;  // 10 mm
+[14.773s]       |          [01;35m[K^~~~~~~~[m[K
+[14.773s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:33:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[14.774s]    33 |   double [01;35m[Koffset_y[m[K = 0.0;  // 20 mm
+[14.774s]       |          [01;35m[K^~~~~~~~[m[K
+[14.774s] [01m[K/root/overlay_ws/src/hello_moveit_ur/src/hello_moveit_ur.cpp:34:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffset_z[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[14.774s]    34 |   double [01;35m[Koffset_z[m[K = 0.0;  // 30 mm
+[14.774s]       |          [01;35m[K^~~~~~~~[m[K
+[19.373s] gmake[2]: *** [CMakeFiles/hello_moveit_ur.dir/build.make:76: CMakeFiles/hello_moveit_ur.dir/src/hello_moveit_ur.cpp.o] Error 1
+[19.373s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit_ur.dir/all] Error 2
+[19.373s] gmake: *** [Makefile:146: all] Error 2
+[19.376s] Invoked command in '/root/overlay_ws/src/build/hello_moveit_ur' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/underlay_ws/install/moveit_configs_utils:/root/underlay_ws/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/overlay_ws/src/build/hello_moveit_ur -- -j8 -l8
