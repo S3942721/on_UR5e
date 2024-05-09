@@ -57,29 +57,30 @@ int main(int argc, char * argv[])
   
   // Print current pose:
   RCLCPP_INFO(logger, "Current Pose:");
-  RCLCPP_INFO(logger, "X: %s", current_pose.pose.position.x.c_str());
-  RCLCPP_INFO(logger, "Y: %s", current_pose.pose.position.y.c_str());
-  RCLCPP_INFO(logger, "Z: %s", current_pose.pose.position.z.c_str());
+  RCLCPP_INFO(logger, "X: %f", current_pose.pose.position.x);
+  RCLCPP_INFO(logger, "Y: %f", current_pose.pose.position.y);
+  RCLCPP_INFO(logger, "Z: %f", current_pose.pose.position.z);
   
   // Assuming current_pose.pose.orientation is a quaternion
   RCLCPP_INFO(logger, "Orientation (Quaternion):");
-  RCLCPP_INFO(logger, "X: %s", current_pose.pose.orientation.x.c_str());
-  RCLCPP_INFO(logger, "Y: %s", current_pose.pose.orientation.y.c_str());
-  RCLCPP_INFO(logger, "Z: %s", current_pose.pose.orientation.z.c_str());
-  RCLCPP_INFO(logger, "W: %s", current_pose.pose.orientation.w.c_str());
+  RCLCPP_INFO(logger, "X: %f", current_pose.pose.orientation.x);
+  RCLCPP_INFO(logger, "Y: %f", current_pose.pose.orientation.y);
+  RCLCPP_INFO(logger, "Z: %f", current_pose.pose.orientation.z);
+  RCLCPP_INFO(logger, "W: %f", current_pose.pose.orientation.w);
+
 
   // Print target pose:
   RCLCPP_INFO(logger, "Target Pose:");
-  RCLCPP_INFO(logger, "X: %s", target_pose.position.x.c_str());
-  RCLCPP_INFO(logger, "Y: %s", target_pose.position.y.c_str());
-  RCLCPP_INFO(logger, "Z: %s", target_pose.position.z.c_str());
+  RCLCPP_INFO(logger, "X: %f", target_pose.position.x.c_str());
+  RCLCPP_INFO(logger, "Y: %f", target_pose.position.y.c_str());
+  RCLCPP_INFO(logger, "Z: %f", target_pose.position.z.c_str());
   
   // Assuming target_pose.orientation is a quaternion
   RCLCPP_INFO(logger, "Orientation (Quaternion):");
-  RCLCPP_INFO(logger, "X: %s", target_pose.orientation.x.c_str());
-  RCLCPP_INFO(logger, "Y: %s", target_pose.orientation.y.c_str());
-  RCLCPP_INFO(logger, "Z: %s", target_pose.orientation.z.c_str());
-  RCLCPP_INFO(logger, "W: %s", target_pose.orientation.w.c_str());
+  RCLCPP_INFO(logger, "X: %f", target_pose.orientation.x.c_str());
+  RCLCPP_INFO(logger, "Y: %f", target_pose.orientation.y.c_str());
+  RCLCPP_INFO(logger, "Z: %f", target_pose.orientation.z.c_str());
+  RCLCPP_INFO(logger, "W: %f", target_pose.orientation.w.c_str());
   
   move_group_interface.setPoseTarget(target_pose);
 
