@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from par_utils/action/GripperGrip.action
+// generated code does not contain a copyright notice
+
+
+module par_utils {
+  module action {
+    struct GripperGrip_Goal {
+      float target_width;
+
+      float target_force;
+    };
+    struct GripperGrip_Result {
+      float final_width;
+    };
+    struct GripperGrip_Feedback {
+      float current_width;
+    };
+  };
+};

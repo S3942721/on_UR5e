@@ -1,0 +1,36 @@
+[0.646s] Invoking command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_pkg': CMAKE_PREFIX_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/moveit_visual_tools:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/rviz_visual_tools:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/hello_moveit_ur:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/graph_msgs:/home/rmitaiil/aiil_workspace/humble_workspace/install/ur_description:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_interfaces:/home/rmitaiil/aiil_workspace/humble_workspace/install/rosbot_description:/home/rmitaiil/aiil_workspace/humble_workspace/install/ros_components_description LD_LIBRARY_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/moveit_visual_tools/lib:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/rviz_visual_tools/lib:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/graph_msgs/lib:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/prefix_override:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/par_pkg build --build-base /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build install --record /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/install.log --single-version-externally-managed
+[0.817s] running egg_info
+[0.817s] creating ../build/par_pkg/par_pkg.egg-info
+[0.817s] writing ../build/par_pkg/par_pkg.egg-info/PKG-INFO
+[0.818s] writing dependency_links to ../build/par_pkg/par_pkg.egg-info/dependency_links.txt
+[0.818s] writing entry points to ../build/par_pkg/par_pkg.egg-info/entry_points.txt
+[0.818s] writing requirements to ../build/par_pkg/par_pkg.egg-info/requires.txt
+[0.818s] writing top-level names to ../build/par_pkg/par_pkg.egg-info/top_level.txt
+[0.818s] writing manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'
+[0.819s] reading manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'
+[0.820s] writing manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'
+[0.820s] running build
+[0.820s] running build_py
+[0.820s] creating /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build
+[0.820s] creating /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib
+[0.820s] creating /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib/par_pkg
+[0.820s] copying par_pkg/__init__.py -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib/par_pkg
+[0.820s] copying par_pkg/rg2_gripper_node.py -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib/par_pkg
+[0.828s] running install
+[0.829s] running install_lib
+[0.829s] creating /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg
+[0.830s] copying /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib/par_pkg/__init__.py -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg
+[0.830s] copying /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib/par_pkg/rg2_gripper_node.py -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg
+[0.830s] byte-compiling /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg/__init__.py to __init__.cpython-310.pyc
+[0.830s] byte-compiling /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg/rg2_gripper_node.py to rg2_gripper_node.cpython-310.pyc
+[0.831s] running install_data
+[0.831s] creating /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/share/ament_index
+[0.831s] creating /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/share/ament_index/resource_index
+[0.831s] creating /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/share/ament_index/resource_index/packages
+[0.831s] copying resource/par_pkg -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/share/ament_index/resource_index/packages
+[0.831s] copying package.xml -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/share/par_pkg
+[0.831s] running install_egg_info
+[0.832s] Copying ../build/par_pkg/par_pkg.egg-info to /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg-0.0.0-py3.10.egg-info
+[0.833s] running install_scripts
+[0.848s] writing list of installed files to '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/install.log'
+[0.875s] Invoked command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/moveit_visual_tools:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/rviz_visual_tools:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/hello_moveit_ur:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/graph_msgs:/home/rmitaiil/aiil_workspace/humble_workspace/install/ur_description:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_interfaces:/home/rmitaiil/aiil_workspace/humble_workspace/install/rosbot_description:/home/rmitaiil/aiil_workspace/humble_workspace/install/ros_components_description LD_LIBRARY_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/moveit_visual_tools/lib:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/rviz_visual_tools/lib:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/graph_msgs/lib:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/prefix_override:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/par_pkg build --build-base /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build install --record /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/install.log --single-version-externally-managed
