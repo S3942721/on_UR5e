@@ -5,7 +5,6 @@ from onrobot.onrobot import RG
 from par_utils.action import GripperSetWidth
 from par_utils.msg import GripperInfo
 from rclpy.action.server import ServerGoalHandle
-import time
 import helpers as h
 
 ### gripper_control_node.py ###
@@ -46,7 +45,7 @@ class GripperControlNode(Node):
                 {'gripperType', "rg2"},
                 ('gripperIp', "192.168.1.1"),
                 ('gripperPort', "502"),
-                ("gripperCheckRate", 0.1),
+                ("gripperCheckRate", 10),
                 ("gripperPrecisionEpsilon", 0.1),
                 ("gripperInfoPublishRate", 5),
                 ("gripperInfoTopic", "/par/gripper/info"),
@@ -75,6 +74,8 @@ class GripperControlNode(Node):
         
         self._gripper: RG = RG(self._gripper_type, self._gripper_ip, self._gripper_port)
         """This is our actual gripper object, all commands are sent to this"""
+        
+        self._gripper_check_rate_object = self.create_rate(self._gripper_check_rate)
         
         self._current_gripper_width = self.get_gripper_width()
         """This is the current width of the gripper, updated every [gripper_check_rate] seconds. In metres"""
@@ -150,7 +151,7 @@ class GripperControlNode(Node):
             feedback_msg = GripperSetWidth.Feedback()
             feedback_msg.current_width = self._current_gripper_width
             goal_handle.publish_feedback(feedback_msg)
-            time.sleep(self._gripper_check_rate) # TODO: Confirm this doesnt block other threads
+            self._gripper_check_rate_object.sleep()
         
         self.get_logger().info("Gripper move suceeded!")
         
