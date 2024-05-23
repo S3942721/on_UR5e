@@ -1,2 +1,4 @@
-action/GripperGrip.action
-action/GripperGrip.idl
+action/GripperSetWidth.action
+action/GripperSetWidth.idl
+msg/GripperInfo.idl
+msg/GripperInfo.msg

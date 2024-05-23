@@ -356,11 +356,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/par_utils/action" TYPE FILE FILES "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils/action/GripperGrip.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/par_utils/action" TYPE FILE FILES "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils/action/GripperSetWidth.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/par_utils/action" TYPE FILE FILES "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils/action/GripperGrip.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/par_utils/msg" TYPE FILE FILES "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils/msg/GripperInfo.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/par_utils/action" TYPE FILE FILES "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils/action/GripperSetWidth.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/par_utils/msg" TYPE FILE FILES "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils/msg/GripperInfo.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

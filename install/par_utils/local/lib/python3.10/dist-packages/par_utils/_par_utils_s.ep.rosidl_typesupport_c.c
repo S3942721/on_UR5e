@@ -24,39 +24,39 @@ static struct PyModuleDef par_utils__module = {
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "par_utils/action/detail/gripper_grip__type_support.h"
-#include "par_utils/action/detail/gripper_grip__struct.h"
-#include "par_utils/action/detail/gripper_grip__functions.h"
+#include "par_utils/msg/detail/gripper_info__type_support.h"
+#include "par_utils/msg/detail/gripper_info__struct.h"
+#include "par_utils/msg/detail/gripper_info__functions.h"
 
-static void * par_utils__action__gripper_grip__goal__create_ros_message(void)
+static void * par_utils__msg__gripper_info__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_Goal__create();
+  return par_utils__msg__GripperInfo__create();
 }
 
-static void par_utils__action__gripper_grip__goal__destroy_ros_message(void * raw_ros_message)
+static void par_utils__msg__gripper_info__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_Goal * ros_message = (par_utils__action__GripperGrip_Goal *)raw_ros_message;
-  par_utils__action__GripperGrip_Goal__destroy(ros_message);
+  par_utils__msg__GripperInfo * ros_message = (par_utils__msg__GripperInfo *)raw_ros_message;
+  par_utils__msg__GripperInfo__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__goal__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__msg__gripper_info__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__goal__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__msg__gripper_info__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_Goal);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, msg, GripperInfo);
 
 int8_t
-_register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
+_register_msg_type__msg__gripper_info(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__goal__create_ros_message,
+    (void *)&par_utils__msg__gripper_info__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -64,7 +64,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__goal",
+    "create_ros_message_msg__msg__gripper_info",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -75,7 +75,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__goal__destroy_ros_message,
+    (void *)&par_utils__msg__gripper_info__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -83,7 +83,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__goal",
+    "destroy_ros_message_msg__msg__gripper_info",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -94,7 +94,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__goal__convert_from_py,
+    (void *)&par_utils__msg__gripper_info__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -102,7 +102,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__goal",
+    "convert_from_py_msg__msg__gripper_info",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -113,7 +113,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__goal__convert_to_py,
+    (void *)&par_utils__msg__gripper_info__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -121,7 +121,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__goal",
+    "convert_to_py_msg__msg__gripper_info",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -132,7 +132,7 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_Goal),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, msg, GripperInfo),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -140,7 +140,146 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__goal",
+    "type_support_msg__msg__gripper_info",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "par_utils/action/detail/gripper_set_width__type_support.h"
+#include "par_utils/action/detail/gripper_set_width__struct.h"
+#include "par_utils/action/detail/gripper_set_width__functions.h"
+
+static void * par_utils__action__gripper_set_width__goal__create_ros_message(void)
+{
+  return par_utils__action__GripperSetWidth_Goal__create();
+}
+
+static void par_utils__action__gripper_set_width__goal__destroy_ros_message(void * raw_ros_message)
+{
+  par_utils__action__GripperSetWidth_Goal * ros_message = (par_utils__action__GripperSetWidth_Goal *)raw_ros_message;
+  par_utils__action__GripperSetWidth_Goal__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool par_utils__action__gripper_set_width__goal__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * par_utils__action__gripper_set_width__goal__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_Goal);
+
+int8_t
+_register_msg_type__action__gripper_set_width__goal(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&par_utils__action__gripper_set_width__goal__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__action__gripper_set_width__goal",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&par_utils__action__gripper_set_width__goal__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__action__gripper_set_width__goal",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&par_utils__action__gripper_set_width__goal__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__action__gripper_set_width__goal",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&par_utils__action__gripper_set_width__goal__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__action__gripper_set_width__goal",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_Goal),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__action__gripper_set_width__goal",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -164,41 +303,41 @@ _register_msg_type__action__gripper_grip__goal(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__type_support.h"
+// #include "par_utils/action/detail/gripper_set_width__type_support.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__struct.h"
+// #include "par_utils/action/detail/gripper_set_width__struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__functions.h"
+// #include "par_utils/action/detail/gripper_set_width__functions.h"
 
-static void * par_utils__action__gripper_grip__result__create_ros_message(void)
+static void * par_utils__action__gripper_set_width__result__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_Result__create();
+  return par_utils__action__GripperSetWidth_Result__create();
 }
 
-static void par_utils__action__gripper_grip__result__destroy_ros_message(void * raw_ros_message)
+static void par_utils__action__gripper_set_width__result__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_Result * ros_message = (par_utils__action__GripperGrip_Result *)raw_ros_message;
-  par_utils__action__GripperGrip_Result__destroy(ros_message);
+  par_utils__action__GripperSetWidth_Result * ros_message = (par_utils__action__GripperSetWidth_Result *)raw_ros_message;
+  par_utils__action__GripperSetWidth_Result__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__result__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__action__gripper_set_width__result__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__result__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__action__gripper_set_width__result__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_Result);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_Result);
 
 int8_t
-_register_msg_type__action__gripper_grip__result(PyObject * pymodule)
+_register_msg_type__action__gripper_set_width__result(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__result__create_ros_message,
+    (void *)&par_utils__action__gripper_set_width__result__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -206,7 +345,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__result",
+    "create_ros_message_msg__action__gripper_set_width__result",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -217,7 +356,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__result__destroy_ros_message,
+    (void *)&par_utils__action__gripper_set_width__result__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -225,7 +364,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__result",
+    "destroy_ros_message_msg__action__gripper_set_width__result",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -236,7 +375,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__result__convert_from_py,
+    (void *)&par_utils__action__gripper_set_width__result__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -244,7 +383,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__result",
+    "convert_from_py_msg__action__gripper_set_width__result",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -255,7 +394,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__result__convert_to_py,
+    (void *)&par_utils__action__gripper_set_width__result__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -263,7 +402,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__result",
+    "convert_to_py_msg__action__gripper_set_width__result",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -274,7 +413,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_Result),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_Result),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -282,7 +421,7 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__result",
+    "type_support_msg__action__gripper_set_width__result",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -306,41 +445,41 @@ _register_msg_type__action__gripper_grip__result(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__type_support.h"
+// #include "par_utils/action/detail/gripper_set_width__type_support.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__struct.h"
+// #include "par_utils/action/detail/gripper_set_width__struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__functions.h"
+// #include "par_utils/action/detail/gripper_set_width__functions.h"
 
-static void * par_utils__action__gripper_grip__feedback__create_ros_message(void)
+static void * par_utils__action__gripper_set_width__feedback__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_Feedback__create();
+  return par_utils__action__GripperSetWidth_Feedback__create();
 }
 
-static void par_utils__action__gripper_grip__feedback__destroy_ros_message(void * raw_ros_message)
+static void par_utils__action__gripper_set_width__feedback__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_Feedback * ros_message = (par_utils__action__GripperGrip_Feedback *)raw_ros_message;
-  par_utils__action__GripperGrip_Feedback__destroy(ros_message);
+  par_utils__action__GripperSetWidth_Feedback * ros_message = (par_utils__action__GripperSetWidth_Feedback *)raw_ros_message;
+  par_utils__action__GripperSetWidth_Feedback__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__feedback__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__action__gripper_set_width__feedback__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__feedback__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__action__gripper_set_width__feedback__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_Feedback);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_Feedback);
 
 int8_t
-_register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
+_register_msg_type__action__gripper_set_width__feedback(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback__create_ros_message,
+    (void *)&par_utils__action__gripper_set_width__feedback__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -348,7 +487,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__feedback",
+    "create_ros_message_msg__action__gripper_set_width__feedback",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -359,7 +498,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback__destroy_ros_message,
+    (void *)&par_utils__action__gripper_set_width__feedback__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -367,7 +506,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__feedback",
+    "destroy_ros_message_msg__action__gripper_set_width__feedback",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -378,7 +517,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback__convert_from_py,
+    (void *)&par_utils__action__gripper_set_width__feedback__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -386,7 +525,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__feedback",
+    "convert_from_py_msg__action__gripper_set_width__feedback",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -397,7 +536,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback__convert_to_py,
+    (void *)&par_utils__action__gripper_set_width__feedback__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -405,7 +544,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__feedback",
+    "convert_to_py_msg__action__gripper_set_width__feedback",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -416,7 +555,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_Feedback),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_Feedback),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -424,7 +563,7 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__feedback",
+    "type_support_msg__action__gripper_set_width__feedback",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -448,41 +587,41 @@ _register_msg_type__action__gripper_grip__feedback(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__type_support.h"
+// #include "par_utils/action/detail/gripper_set_width__type_support.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__struct.h"
+// #include "par_utils/action/detail/gripper_set_width__struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__functions.h"
+// #include "par_utils/action/detail/gripper_set_width__functions.h"
 
-static void * par_utils__action__gripper_grip__send_goal__request__create_ros_message(void)
+static void * par_utils__action__gripper_set_width__send_goal__request__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_SendGoal_Request__create();
+  return par_utils__action__GripperSetWidth_SendGoal_Request__create();
 }
 
-static void par_utils__action__gripper_grip__send_goal__request__destroy_ros_message(void * raw_ros_message)
+static void par_utils__action__gripper_set_width__send_goal__request__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_SendGoal_Request * ros_message = (par_utils__action__GripperGrip_SendGoal_Request *)raw_ros_message;
-  par_utils__action__GripperGrip_SendGoal_Request__destroy(ros_message);
+  par_utils__action__GripperSetWidth_SendGoal_Request * ros_message = (par_utils__action__GripperSetWidth_SendGoal_Request *)raw_ros_message;
+  par_utils__action__GripperSetWidth_SendGoal_Request__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__send_goal__request__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__action__gripper_set_width__send_goal__request__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__send_goal__request__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__action__gripper_set_width__send_goal__request__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_SendGoal_Request);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_SendGoal_Request);
 
 int8_t
-_register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule)
+_register_msg_type__action__gripper_set_width__send_goal__request(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__request__create_ros_message,
+    (void *)&par_utils__action__gripper_set_width__send_goal__request__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -490,7 +629,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__send_goal__request",
+    "create_ros_message_msg__action__gripper_set_width__send_goal__request",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -501,7 +640,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__request__destroy_ros_message,
+    (void *)&par_utils__action__gripper_set_width__send_goal__request__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -509,7 +648,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__send_goal__request",
+    "destroy_ros_message_msg__action__gripper_set_width__send_goal__request",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -520,7 +659,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__request__convert_from_py,
+    (void *)&par_utils__action__gripper_set_width__send_goal__request__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -528,7 +667,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__send_goal__request",
+    "convert_from_py_msg__action__gripper_set_width__send_goal__request",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -539,7 +678,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__request__convert_to_py,
+    (void *)&par_utils__action__gripper_set_width__send_goal__request__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -547,7 +686,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__send_goal__request",
+    "convert_to_py_msg__action__gripper_set_width__send_goal__request",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -558,7 +697,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_SendGoal_Request),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_SendGoal_Request),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -566,7 +705,7 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__send_goal__request",
+    "type_support_msg__action__gripper_set_width__send_goal__request",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -590,41 +729,41 @@ _register_msg_type__action__gripper_grip__send_goal__request(PyObject * pymodule
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__type_support.h"
+// #include "par_utils/action/detail/gripper_set_width__type_support.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__struct.h"
+// #include "par_utils/action/detail/gripper_set_width__struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__functions.h"
+// #include "par_utils/action/detail/gripper_set_width__functions.h"
 
-static void * par_utils__action__gripper_grip__send_goal__response__create_ros_message(void)
+static void * par_utils__action__gripper_set_width__send_goal__response__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_SendGoal_Response__create();
+  return par_utils__action__GripperSetWidth_SendGoal_Response__create();
 }
 
-static void par_utils__action__gripper_grip__send_goal__response__destroy_ros_message(void * raw_ros_message)
+static void par_utils__action__gripper_set_width__send_goal__response__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_SendGoal_Response * ros_message = (par_utils__action__GripperGrip_SendGoal_Response *)raw_ros_message;
-  par_utils__action__GripperGrip_SendGoal_Response__destroy(ros_message);
+  par_utils__action__GripperSetWidth_SendGoal_Response * ros_message = (par_utils__action__GripperSetWidth_SendGoal_Response *)raw_ros_message;
+  par_utils__action__GripperSetWidth_SendGoal_Response__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__send_goal__response__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__action__gripper_set_width__send_goal__response__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__send_goal__response__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__action__gripper_set_width__send_goal__response__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_SendGoal_Response);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_SendGoal_Response);
 
 int8_t
-_register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodule)
+_register_msg_type__action__gripper_set_width__send_goal__response(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__response__create_ros_message,
+    (void *)&par_utils__action__gripper_set_width__send_goal__response__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -632,7 +771,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__send_goal__response",
+    "create_ros_message_msg__action__gripper_set_width__send_goal__response",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -643,7 +782,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__response__destroy_ros_message,
+    (void *)&par_utils__action__gripper_set_width__send_goal__response__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -651,7 +790,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__send_goal__response",
+    "destroy_ros_message_msg__action__gripper_set_width__send_goal__response",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -662,7 +801,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__response__convert_from_py,
+    (void *)&par_utils__action__gripper_set_width__send_goal__response__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -670,7 +809,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__send_goal__response",
+    "convert_from_py_msg__action__gripper_set_width__send_goal__response",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -681,7 +820,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__send_goal__response__convert_to_py,
+    (void *)&par_utils__action__gripper_set_width__send_goal__response__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -689,7 +828,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__send_goal__response",
+    "convert_to_py_msg__action__gripper_set_width__send_goal__response",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -700,7 +839,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_SendGoal_Response),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_SendGoal_Response),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -708,7 +847,7 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__send_goal__response",
+    "type_support_msg__action__gripper_set_width__send_goal__response",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -721,15 +860,15 @@ _register_msg_type__action__gripper_grip__send_goal__response(PyObject * pymodul
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_service_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperGrip_SendGoal)();
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperSetWidth_SendGoal)();
 
 int8_t
-_register_srv_type__action__gripper_grip__send_goal(PyObject * pymodule)
+_register_srv_type__action__gripper_set_width__send_goal(PyObject * pymodule)
 {
   int8_t err;
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperGrip_SendGoal)(),
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperSetWidth_SendGoal)(),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -737,7 +876,7 @@ _register_srv_type__action__gripper_grip__send_goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_srv__action__gripper_grip__send_goal",
+    "type_support_srv__action__gripper_set_width__send_goal",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -761,41 +900,41 @@ _register_srv_type__action__gripper_grip__send_goal(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__type_support.h"
+// #include "par_utils/action/detail/gripper_set_width__type_support.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__struct.h"
+// #include "par_utils/action/detail/gripper_set_width__struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__functions.h"
+// #include "par_utils/action/detail/gripper_set_width__functions.h"
 
-static void * par_utils__action__gripper_grip__get_result__request__create_ros_message(void)
+static void * par_utils__action__gripper_set_width__get_result__request__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_GetResult_Request__create();
+  return par_utils__action__GripperSetWidth_GetResult_Request__create();
 }
 
-static void par_utils__action__gripper_grip__get_result__request__destroy_ros_message(void * raw_ros_message)
+static void par_utils__action__gripper_set_width__get_result__request__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_GetResult_Request * ros_message = (par_utils__action__GripperGrip_GetResult_Request *)raw_ros_message;
-  par_utils__action__GripperGrip_GetResult_Request__destroy(ros_message);
+  par_utils__action__GripperSetWidth_GetResult_Request * ros_message = (par_utils__action__GripperSetWidth_GetResult_Request *)raw_ros_message;
+  par_utils__action__GripperSetWidth_GetResult_Request__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__get_result__request__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__action__gripper_set_width__get_result__request__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__get_result__request__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__action__gripper_set_width__get_result__request__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_GetResult_Request);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_GetResult_Request);
 
 int8_t
-_register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodule)
+_register_msg_type__action__gripper_set_width__get_result__request(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__request__create_ros_message,
+    (void *)&par_utils__action__gripper_set_width__get_result__request__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -803,7 +942,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__get_result__request",
+    "create_ros_message_msg__action__gripper_set_width__get_result__request",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -814,7 +953,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__request__destroy_ros_message,
+    (void *)&par_utils__action__gripper_set_width__get_result__request__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -822,7 +961,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__get_result__request",
+    "destroy_ros_message_msg__action__gripper_set_width__get_result__request",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -833,7 +972,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__request__convert_from_py,
+    (void *)&par_utils__action__gripper_set_width__get_result__request__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -841,7 +980,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__get_result__request",
+    "convert_from_py_msg__action__gripper_set_width__get_result__request",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -852,7 +991,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__request__convert_to_py,
+    (void *)&par_utils__action__gripper_set_width__get_result__request__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -860,7 +999,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__get_result__request",
+    "convert_to_py_msg__action__gripper_set_width__get_result__request",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -871,7 +1010,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_GetResult_Request),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_GetResult_Request),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -879,7 +1018,7 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__get_result__request",
+    "type_support_msg__action__gripper_set_width__get_result__request",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -903,41 +1042,41 @@ _register_msg_type__action__gripper_grip__get_result__request(PyObject * pymodul
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__type_support.h"
+// #include "par_utils/action/detail/gripper_set_width__type_support.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__struct.h"
+// #include "par_utils/action/detail/gripper_set_width__struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__functions.h"
+// #include "par_utils/action/detail/gripper_set_width__functions.h"
 
-static void * par_utils__action__gripper_grip__get_result__response__create_ros_message(void)
+static void * par_utils__action__gripper_set_width__get_result__response__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_GetResult_Response__create();
+  return par_utils__action__GripperSetWidth_GetResult_Response__create();
 }
 
-static void par_utils__action__gripper_grip__get_result__response__destroy_ros_message(void * raw_ros_message)
+static void par_utils__action__gripper_set_width__get_result__response__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_GetResult_Response * ros_message = (par_utils__action__GripperGrip_GetResult_Response *)raw_ros_message;
-  par_utils__action__GripperGrip_GetResult_Response__destroy(ros_message);
+  par_utils__action__GripperSetWidth_GetResult_Response * ros_message = (par_utils__action__GripperSetWidth_GetResult_Response *)raw_ros_message;
+  par_utils__action__GripperSetWidth_GetResult_Response__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__get_result__response__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__action__gripper_set_width__get_result__response__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__get_result__response__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__action__gripper_set_width__get_result__response__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_GetResult_Response);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_GetResult_Response);
 
 int8_t
-_register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodule)
+_register_msg_type__action__gripper_set_width__get_result__response(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__response__create_ros_message,
+    (void *)&par_utils__action__gripper_set_width__get_result__response__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -945,7 +1084,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__get_result__response",
+    "create_ros_message_msg__action__gripper_set_width__get_result__response",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -956,7 +1095,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__response__destroy_ros_message,
+    (void *)&par_utils__action__gripper_set_width__get_result__response__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -964,7 +1103,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__get_result__response",
+    "destroy_ros_message_msg__action__gripper_set_width__get_result__response",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -975,7 +1114,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__response__convert_from_py,
+    (void *)&par_utils__action__gripper_set_width__get_result__response__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -983,7 +1122,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__get_result__response",
+    "convert_from_py_msg__action__gripper_set_width__get_result__response",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -994,7 +1133,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__get_result__response__convert_to_py,
+    (void *)&par_utils__action__gripper_set_width__get_result__response__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -1002,7 +1141,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__get_result__response",
+    "convert_to_py_msg__action__gripper_set_width__get_result__response",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -1013,7 +1152,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_GetResult_Response),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_GetResult_Response),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -1021,7 +1160,7 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__get_result__response",
+    "type_support_msg__action__gripper_set_width__get_result__response",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -1034,15 +1173,15 @@ _register_msg_type__action__gripper_grip__get_result__response(PyObject * pymodu
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_service_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperGrip_GetResult)();
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperSetWidth_GetResult)();
 
 int8_t
-_register_srv_type__action__gripper_grip__get_result(PyObject * pymodule)
+_register_srv_type__action__gripper_set_width__get_result(PyObject * pymodule)
 {
   int8_t err;
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperGrip_GetResult)(),
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperSetWidth_GetResult)(),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -1050,7 +1189,7 @@ _register_srv_type__action__gripper_grip__get_result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_srv__action__gripper_grip__get_result",
+    "type_support_srv__action__gripper_set_width__get_result",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -1074,41 +1213,41 @@ _register_srv_type__action__gripper_grip__get_result(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__type_support.h"
+// #include "par_utils/action/detail/gripper_set_width__type_support.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__struct.h"
+// #include "par_utils/action/detail/gripper_set_width__struct.h"
 // already included above
-// #include "par_utils/action/detail/gripper_grip__functions.h"
+// #include "par_utils/action/detail/gripper_set_width__functions.h"
 
-static void * par_utils__action__gripper_grip__feedback_message__create_ros_message(void)
+static void * par_utils__action__gripper_set_width__feedback_message__create_ros_message(void)
 {
-  return par_utils__action__GripperGrip_FeedbackMessage__create();
+  return par_utils__action__GripperSetWidth_FeedbackMessage__create();
 }
 
-static void par_utils__action__gripper_grip__feedback_message__destroy_ros_message(void * raw_ros_message)
+static void par_utils__action__gripper_set_width__feedback_message__destroy_ros_message(void * raw_ros_message)
 {
-  par_utils__action__GripperGrip_FeedbackMessage * ros_message = (par_utils__action__GripperGrip_FeedbackMessage *)raw_ros_message;
-  par_utils__action__GripperGrip_FeedbackMessage__destroy(ros_message);
+  par_utils__action__GripperSetWidth_FeedbackMessage * ros_message = (par_utils__action__GripperSetWidth_FeedbackMessage *)raw_ros_message;
+  par_utils__action__GripperSetWidth_FeedbackMessage__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool par_utils__action__gripper_grip__feedback_message__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool par_utils__action__gripper_set_width__feedback_message__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * par_utils__action__gripper_grip__feedback_message__convert_to_py(void * raw_ros_message);
+PyObject * par_utils__action__gripper_set_width__feedback_message__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_FeedbackMessage);
+ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_FeedbackMessage);
 
 int8_t
-_register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
+_register_msg_type__action__gripper_set_width__feedback_message(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback_message__create_ros_message,
+    (void *)&par_utils__action__gripper_set_width__feedback_message__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -1116,7 +1255,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__gripper_grip__feedback_message",
+    "create_ros_message_msg__action__gripper_set_width__feedback_message",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -1127,7 +1266,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback_message__destroy_ros_message,
+    (void *)&par_utils__action__gripper_set_width__feedback_message__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -1135,7 +1274,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__gripper_grip__feedback_message",
+    "destroy_ros_message_msg__action__gripper_set_width__feedback_message",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -1146,7 +1285,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback_message__convert_from_py,
+    (void *)&par_utils__action__gripper_set_width__feedback_message__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -1154,7 +1293,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__gripper_grip__feedback_message",
+    "convert_from_py_msg__action__gripper_set_width__feedback_message",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -1165,7 +1304,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&par_utils__action__gripper_grip__feedback_message__convert_to_py,
+    (void *)&par_utils__action__gripper_set_width__feedback_message__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -1173,7 +1312,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__gripper_grip__feedback_message",
+    "convert_to_py_msg__action__gripper_set_width__feedback_message",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -1184,7 +1323,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperGrip_FeedbackMessage),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(par_utils, action, GripperSetWidth_FeedbackMessage),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -1192,7 +1331,7 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__gripper_grip__feedback_message",
+    "type_support_msg__action__gripper_set_width__feedback_message",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -1205,12 +1344,12 @@ _register_msg_type__action__gripper_grip__feedback_message(PyObject * pymodule)
 
 
 int8_t
-_register_action_type__action__gripper_grip(PyObject * pymodule)
+_register_action_type__action__gripper_set_width(PyObject * pymodule)
 {
   int8_t err;
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperGrip)(),
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(rosidl_typesupport_c, par_utils, action, GripperSetWidth)(),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -1218,7 +1357,7 @@ _register_action_type__action__gripper_grip(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_action__action__gripper_grip",
+    "type_support_action__action__gripper_set_width",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -1239,67 +1378,73 @@ PyInit_par_utils_s__rosidl_typesupport_c(void)
   }
   int8_t err;
 
-  err = _register_msg_type__action__gripper_grip__goal(pymodule);
+  err = _register_msg_type__msg__gripper_info(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__gripper_grip__result(pymodule);
+  err = _register_msg_type__action__gripper_set_width__goal(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__gripper_grip__feedback(pymodule);
+  err = _register_msg_type__action__gripper_set_width__result(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__gripper_grip__send_goal__request(pymodule);
+  err = _register_msg_type__action__gripper_set_width__feedback(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__gripper_grip__send_goal__response(pymodule);
+  err = _register_msg_type__action__gripper_set_width__send_goal__request(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_srv_type__action__gripper_grip__send_goal(pymodule);
+  err = _register_msg_type__action__gripper_set_width__send_goal__response(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__gripper_grip__get_result__request(pymodule);
+  err = _register_srv_type__action__gripper_set_width__send_goal(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__gripper_grip__get_result__response(pymodule);
+  err = _register_msg_type__action__gripper_set_width__get_result__request(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_srv_type__action__gripper_grip__get_result(pymodule);
+  err = _register_msg_type__action__gripper_set_width__get_result__response(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__gripper_grip__feedback_message(pymodule);
+  err = _register_srv_type__action__gripper_set_width__get_result(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_action_type__action__gripper_grip(pymodule);
+  err = _register_msg_type__action__gripper_set_width__feedback_message(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_action_type__action__gripper_set_width(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;

@@ -1,0 +1,23 @@
+[1.027s] Invoking command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_pkg': AMENT_PREFIX_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/prefix_override:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/par_pkg build --build-base /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build install --record /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/install.log --single-version-externally-managed
+[1.366s] running egg_info
+[1.367s] writing ../build/par_pkg/par_pkg.egg-info/PKG-INFO
+[1.367s] writing dependency_links to ../build/par_pkg/par_pkg.egg-info/dependency_links.txt
+[1.367s] writing entry points to ../build/par_pkg/par_pkg.egg-info/entry_points.txt
+[1.368s] writing requirements to ../build/par_pkg/par_pkg.egg-info/requires.txt
+[1.368s] writing top-level names to ../build/par_pkg/par_pkg.egg-info/top_level.txt
+[1.370s] reading manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'
+[1.372s] writing manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'
+[1.372s] running build
+[1.372s] running build_py
+[1.372s] copying par_pkg/gripper_action_server.py -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib/par_pkg
+[1.373s] running install
+[1.373s] running install_lib
+[1.374s] copying /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build/lib/par_pkg/gripper_action_server.py -> /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg
+[1.375s] byte-compiling /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg/gripper_action_server.py to gripper_action_server.cpython-310.pyc
+[1.376s] running install_data
+[1.377s] running install_egg_info
+[1.379s] removing '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.380s] Copying ../build/par_pkg/par_pkg.egg-info to /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg-0.0.0-py3.10.egg-info
+[1.381s] running install_scripts
+[1.410s] writing list of installed files to '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/install.log'
+[1.439s] Invoked command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_pkg' returned '0': AMENT_PREFIX_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/prefix_override:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages:/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/par_pkg build --build-base /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/build install --record /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_pkg/install.log --single-version-externally-managed

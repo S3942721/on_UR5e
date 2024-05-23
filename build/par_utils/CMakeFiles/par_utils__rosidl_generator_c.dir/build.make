@@ -69,64 +69,96 @@ include CMakeFiles/par_utils__rosidl_generator_c.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/par_utils__rosidl_generator_c.dir/flags.make
 
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/lib/rosidl_generator_c/rosidl_generator_c
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/action__type_support.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.c.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__struct.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__type_support.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.c.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__struct.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
-rosidl_generator_c/par_utils/action/gripper_grip.h: rosidl_adapter/par_utils/action/GripperGrip.idl
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-rosidl_generator_c/par_utils/action/gripper_grip.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/lib/rosidl_generator_c/rosidl_generator_c
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/action__type_support.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.c.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__struct.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__type_support.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.c.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__struct.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
+rosidl_generator_c/par_utils/action/gripper_set_width.h: rosidl_adapter/par_utils/action/GripperSetWidth.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: rosidl_adapter/par_utils/msg/GripperInfo.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_c/par_utils/action/gripper_set_width.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c__arguments.json
 
-rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.h: rosidl_generator_c/par_utils/action/gripper_grip.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.h
+rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.h: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.h
 
-rosidl_generator_c/par_utils/action/detail/gripper_grip__struct.h: rosidl_generator_c/par_utils/action/gripper_grip.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_grip__struct.h
+rosidl_generator_c/par_utils/action/detail/gripper_set_width__struct.h: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_set_width__struct.h
 
-rosidl_generator_c/par_utils/action/detail/gripper_grip__type_support.h: rosidl_generator_c/par_utils/action/gripper_grip.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_grip__type_support.h
+rosidl_generator_c/par_utils/action/detail/gripper_set_width__type_support.h: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_set_width__type_support.h
 
-rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c: rosidl_generator_c/par_utils/action/gripper_grip.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c
+rosidl_generator_c/par_utils/msg/gripper_info.h: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/msg/gripper_info.h
 
-CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o: CMakeFiles/par_utils__rosidl_generator_c.dir/flags.make
-CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o: rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c
-CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o: CMakeFiles/par_utils__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o -MF CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o.d -o CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o -c /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c
+rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.h: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.h
 
-CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c > CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.i
+rosidl_generator_c/par_utils/msg/detail/gripper_info__struct.h: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/msg/detail/gripper_info__struct.h
 
-CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c -o CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.s
+rosidl_generator_c/par_utils/msg/detail/gripper_info__type_support.h: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/msg/detail/gripper_info__type_support.h
+
+rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c
+
+rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c: rosidl_generator_c/par_utils/action/gripper_set_width.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c
+
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o: CMakeFiles/par_utils__rosidl_generator_c.dir/flags.make
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o: rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o: CMakeFiles/par_utils__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o -MF CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o.d -o CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o -c /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c
+
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c > CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.i
+
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c -o CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.s
+
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o: CMakeFiles/par_utils__rosidl_generator_c.dir/flags.make
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o: rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o: CMakeFiles/par_utils__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o -MF CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o.d -o CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o -c /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c
+
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c > CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.i
+
+CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c -o CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.s
 
 # Object files for target par_utils__rosidl_generator_c
 par_utils__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o"
+"CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o" \
+"CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o"
 
 # External object files for target par_utils__rosidl_generator_c
 par_utils__rosidl_generator_c_EXTERNAL_OBJECTS =
 
-libpar_utils__rosidl_generator_c.so: CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c.o
+libpar_utils__rosidl_generator_c.so: CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c.o
+libpar_utils__rosidl_generator_c.so: CMakeFiles/par_utils__rosidl_generator_c.dir/rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c.o
 libpar_utils__rosidl_generator_c.so: CMakeFiles/par_utils__rosidl_generator_c.dir/build.make
 libpar_utils__rosidl_generator_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 libpar_utils__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -134,7 +166,7 @@ libpar_utils__rosidl_generator_c.so: /opt/ros/humble/lib/libunique_identifier_ms
 libpar_utils__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libpar_utils__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libpar_utils__rosidl_generator_c.so: CMakeFiles/par_utils__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libpar_utils__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libpar_utils__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/par_utils__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -145,11 +177,16 @@ CMakeFiles/par_utils__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/par_utils__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/par_utils__rosidl_generator_c.dir/clean
 
-CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.c
-CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_grip__functions.h
-CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_grip__struct.h
-CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_grip__type_support.h
-CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/gripper_grip.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.c
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_set_width__functions.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_set_width__struct.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/detail/gripper_set_width__type_support.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/action/gripper_set_width.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.c
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/msg/detail/gripper_info__functions.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/msg/detail/gripper_info__struct.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/msg/detail/gripper_info__type_support.h
+CMakeFiles/par_utils__rosidl_generator_c.dir/depend: rosidl_generator_c/par_utils/msg/gripper_info.h
 	cd /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles/par_utils__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/par_utils__rosidl_generator_c.dir/depend
 

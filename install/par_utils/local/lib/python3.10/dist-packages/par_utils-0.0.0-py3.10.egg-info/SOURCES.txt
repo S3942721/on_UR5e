@@ -4,3 +4,8 @@ par_utils.egg-info/PKG-INFO
 par_utils.egg-info/SOURCES.txt
 par_utils.egg-info/dependency_links.txt
 par_utils.egg-info/top_level.txt
+par_utils/action/__init__.py
+par_utils/action/_gripper_grip.py
+par_utils/action/_gripper_set_width.py
+par_utils/msg/__init__.py
+par_utils/msg/_gripper_info.py

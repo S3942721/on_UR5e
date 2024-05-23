@@ -66,51 +66,72 @@ include CMakeFiles/par_utils__cpp.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/par_utils__cpp.dir/progress.make
 
-CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/gripper_grip.hpp
-CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_grip__builder.hpp
-CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_grip__struct.hpp
-CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_grip__traits.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__builder.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__struct.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__traits.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/msg/gripper_info.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/msg/detail/gripper_info__builder.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/msg/detail/gripper_info__struct.hpp
+CMakeFiles/par_utils__cpp: rosidl_generator_cpp/par_utils/msg/detail/gripper_info__traits.hpp
 
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__builder.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__struct.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__traits.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: rosidl_adapter/par_utils/action/GripperGrip.idl
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-rosidl_generator_cpp/par_utils/action/gripper_grip.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__builder.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__struct.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__traits.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: rosidl_adapter/par_utils/action/GripperSetWidth.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: rosidl_adapter/par_utils/msg/GripperInfo.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_generator_cpp__arguments.json
 
-rosidl_generator_cpp/par_utils/action/detail/gripper_grip__builder.hpp: rosidl_generator_cpp/par_utils/action/gripper_grip.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/action/detail/gripper_grip__builder.hpp
+rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__builder.hpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__builder.hpp
 
-rosidl_generator_cpp/par_utils/action/detail/gripper_grip__struct.hpp: rosidl_generator_cpp/par_utils/action/gripper_grip.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/action/detail/gripper_grip__struct.hpp
+rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__struct.hpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__struct.hpp
 
-rosidl_generator_cpp/par_utils/action/detail/gripper_grip__traits.hpp: rosidl_generator_cpp/par_utils/action/gripper_grip.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/action/detail/gripper_grip__traits.hpp
+rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__traits.hpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__traits.hpp
+
+rosidl_generator_cpp/par_utils/msg/gripper_info.hpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/msg/gripper_info.hpp
+
+rosidl_generator_cpp/par_utils/msg/detail/gripper_info__builder.hpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/msg/detail/gripper_info__builder.hpp
+
+rosidl_generator_cpp/par_utils/msg/detail/gripper_info__struct.hpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/msg/detail/gripper_info__struct.hpp
+
+rosidl_generator_cpp/par_utils/msg/detail/gripper_info__traits.hpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/par_utils/msg/detail/gripper_info__traits.hpp
 
 par_utils__cpp: CMakeFiles/par_utils__cpp
-par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_grip__builder.hpp
-par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_grip__struct.hpp
-par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_grip__traits.hpp
-par_utils__cpp: rosidl_generator_cpp/par_utils/action/gripper_grip.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__builder.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__struct.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/action/detail/gripper_set_width__traits.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/action/gripper_set_width.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/msg/detail/gripper_info__builder.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/msg/detail/gripper_info__struct.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/msg/detail/gripper_info__traits.hpp
+par_utils__cpp: rosidl_generator_cpp/par_utils/msg/gripper_info.hpp
 par_utils__cpp: CMakeFiles/par_utils__cpp.dir/build.make
 .PHONY : par_utils__cpp
 

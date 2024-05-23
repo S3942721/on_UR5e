@@ -3,7 +3,8 @@
   "output_dir": "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_typesupport_c/par_utils",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
-    "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils:action/GripperGrip.idl"
+    "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils:action/GripperSetWidth.idl",
+    "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils:msg/GripperInfo.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -21,7 +22,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
-    "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils/action/GripperGrip.idl",
+    "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils/action/GripperSetWidth.idl",
+    "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/rosidl_adapter/par_utils/msg/GripperInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

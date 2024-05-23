@@ -1,0 +1,199 @@
+[0.830s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'par_utils']
+[0.830s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['par_utils'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7000738cf880>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x700073ccb760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x700073ccb760>>)
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.892s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e'
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ignore'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ignore_ament_install'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['colcon_pkg']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'colcon_pkg'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['colcon_meta']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'colcon_meta'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['ros']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ros'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['cmake', 'python']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'cmake'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'python'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['python_setup_py']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'python_setup_py'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['ignore', 'ignore_ament_install']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ignore'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ignore_ament_install'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['colcon_pkg']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'colcon_pkg'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['colcon_meta']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'colcon_meta'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['ros']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ros'
+[0.912s] DEBUG:colcon.colcon_core.package_identification:Package 'hello_moveit_ur' with type 'ros.ament_cmake' and name 'hello_moveit_ur'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ignore'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ignore_ament_install'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['colcon_pkg']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'colcon_pkg'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['colcon_meta']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'colcon_meta'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['ros']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ros'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['cmake', 'python']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'cmake'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'python'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['python_setup_py']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'python_setup_py'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'ignore'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'ignore_ament_install'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['colcon_pkg']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'colcon_pkg'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['colcon_meta']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'colcon_meta'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['ros']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'ros'
+[0.914s] DEBUG:colcon.colcon_core.package_identification:Package 'par_pkg' with type 'ros.ament_python' and name 'par_pkg'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'ignore'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'ignore_ament_install'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['colcon_pkg']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'colcon_pkg'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['colcon_meta']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'colcon_meta'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['ros']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'ros'
+[0.915s] DEBUG:colcon.colcon_core.package_identification:Package 'par_utils' with type 'ros.ament_cmake' and name 'par_utils'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ignore'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ignore_ament_install'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['colcon_pkg']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'colcon_pkg'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['colcon_meta']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'colcon_meta'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['ros']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ros'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['cmake', 'python']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'cmake'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'python'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['python_setup_py']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'python_setup_py'
+[0.915s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.915s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.915s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.915s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.916s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.970s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hello_moveit_ur' in 'hello_moveit_ur'
+[0.970s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'par_pkg' in 'par_pkg'
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.016s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/rmitaiil/aiil_workspace/humble_workspace/install
+[1.030s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 352 installed packages in /opt/ros/humble
+[1.031s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.225s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_args' from command line to 'None'
+[1.225s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_target' from command line to 'None'
+[1.226s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.226s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[1.226s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_clean_first' from command line to 'False'
+[1.226s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_force_configure' from command line to 'False'
+[1.226s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'ament_cmake_args' from command line to 'None'
+[1.226s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[1.226s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.226s] DEBUG:colcon.colcon_core.verb:Building package 'par_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils', 'merge_install': False, 'path': '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils', 'symlink_install': False, 'test_result_base': None}
+[1.234s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.244s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.244s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils' with build type 'ament_cmake'
+[1.244s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils'
+[1.257s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_pkg:/home/rmitaiil/aiil_workspace/humble_workspace/install/onrobot_testing:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_rosbot_demo:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils -- -j4 -l4
+[7.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_pkg:/home/rmitaiil/aiil_workspace/humble_workspace/install/onrobot_testing:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_rosbot_demo:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils -- -j4 -l4
+[7.556s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_pkg:/home/rmitaiil/aiil_workspace/humble_workspace/install/onrobot_testing:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_rosbot_demo:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils
+[7.770s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(par_utils)
+[7.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmitaiil/aiil_workspace/humble_workspace/install/snc_pkg:/home/rmitaiil/aiil_workspace/humble_workspace/install/onrobot_testing:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_rosbot_demo:/home/rmitaiil/aiil_workspace/humble_workspace/install/aiil_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils
+[7.800s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils' for CMake module files
+[7.802s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils' for CMake config files
+[7.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('par_utils', 'cmake_prefix_path')
+[7.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/cmake_prefix_path.ps1'
+[7.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/cmake_prefix_path.dsv'
+[7.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/cmake_prefix_path.sh'
+[7.823s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib'
+[7.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('par_utils', 'ld_library_path_lib')
+[7.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/ld_library_path_lib.ps1'
+[7.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/ld_library_path_lib.dsv'
+[7.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/ld_library_path_lib.sh'
+[7.843s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/bin'
+[7.843s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib/pkgconfig/par_utils.pc'
+[7.844s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib/python3.10/site-packages'
+[7.844s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/bin'
+[7.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.ps1'
+[7.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.dsv'
+[7.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.sh'
+[7.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.bash'
+[7.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.zsh'
+[7.876s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/colcon-core/packages/par_utils)
+[8.087s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(par_utils)
+[8.110s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils' for CMake module files
+[8.111s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils' for CMake config files
+[8.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('par_utils', 'cmake_prefix_path')
+[8.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/cmake_prefix_path.ps1'
+[8.126s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/cmake_prefix_path.dsv'
+[8.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/cmake_prefix_path.sh'
+[8.127s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib'
+[8.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('par_utils', 'ld_library_path_lib')
+[8.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/ld_library_path_lib.ps1'
+[8.152s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/ld_library_path_lib.dsv'
+[8.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/hook/ld_library_path_lib.sh'
+[8.153s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/bin'
+[8.153s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib/pkgconfig/par_utils.pc'
+[8.153s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/lib/python3.10/site-packages'
+[8.154s] Level 1:colcon.colcon_core.environment:checking '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/bin'
+[8.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.ps1'
+[8.178s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.dsv'
+[8.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.sh'
+[8.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.bash'
+[8.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/par_utils/package.zsh'
+[8.184s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils/share/colcon-core/packages/par_utils)
+[8.185s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.190s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.231s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.232s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.232s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.524s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.537s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/local_setup.ps1'
+[8.543s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/_local_setup_util_ps1.py'
+[8.548s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/setup.ps1'
+[8.568s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/local_setup.sh'
+[8.572s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/_local_setup_util_sh.py'
+[8.572s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/setup.sh'
+[8.591s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/local_setup.bash'
+[8.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/setup.bash'
+[8.616s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/local_setup.zsh'
+[8.620s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/setup.zsh'

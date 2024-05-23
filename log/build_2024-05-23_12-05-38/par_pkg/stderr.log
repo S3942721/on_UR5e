@@ -1,0 +1,2 @@
+/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg/gripper_action_server.py:31: SyntaxWarning: 'set' object is not callable; perhaps you missed a comma?
+  {'gripperType', "rg2"}
