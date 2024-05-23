@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.action import ActionServer
-from rclpy.node import Node, Publisher, QoSProfile
+from rclpy.node import Node, Publisher
 from onrobot.onrobot import RG
 from par_utils.action import GripperSetWidth
 from par_utils.msg import GripperInfo
