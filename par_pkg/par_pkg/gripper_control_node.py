@@ -8,11 +8,28 @@ from rclpy.action.server import ServerGoalHandle
 import time
 import helpers as h
 
-GRIPPER_BUSY_BIT = 0
+### gripper_control_node.py ###
+# Author: Daniel Mills (s3843035@student.rmit.edu.au)
+# Created: 2024-05-23
+# Updated: 2024-05-23
 
+
+
+GRIPPER_BUSY_BIT = 0
+"""In the gripper status array, this is the index for the busy state of the gripper"""
 
 
 ### This is the node that will handle opening and closing, and other tasks for it.
+### Contains:
+###  - An action server for opening and closing the gripper
+###  - A publisher for publishing gripper meta info (type, max width, max force and so on)
+###  - TODO: A publisher for the joint state
+###  - TODO: Possibly a publisher for the current gripper width?
+###  - TODO: Possibly a publisher for the gripper status (eg. busy)
+
+# TODO: Also look into finger offsets and see what they actually do
+
+
 
 class GripperControlNode(Node):
 
@@ -125,7 +142,7 @@ class GripperControlNode(Node):
             feedback_msg = GripperSetWidth.Feedback()
             feedback_msg.current_width = self._current_gripper_width_mm
             goal_handle.publish_feedback(feedback_msg)
-            time.sleep(self._gripper_check_rate) # Confirm this doesnt block other threads
+            time.sleep(self._gripper_check_rate) # TODO: Confirm this doesnt block other threads
         
         self.get_logger().info("Gripper move suceeded!")
         
