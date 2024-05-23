@@ -71,15 +71,15 @@ class GripperControlNode(Node):
         self._gripper: RG = RG(self._gripper_type, self._gripper_ip, self._gripper_port)
         """This is our actual gripper object, all commands are sent to this"""
         
-        self._current_gripper_width_mm = self.get_gripper_width()
-        """This is the current width of the gripper, updated every [gripper_check_rate] seconds. In milimetres"""
+        self._current_gripper_width = self.get_gripper_width()
+        """This is the current width of the gripper, updated every [gripper_check_rate] seconds. In metres"""
         self._is_gripper_busy = self.get_gripper_is_busy()
         """This is true if the gripper is currently preforming a move, and cannot take new instructions. Updated every [gripper_check_rate] seconds"""
         
-        self._max_width_mm = self._gripper.max_width
-        """This is the maximum width in milimetres the gripper can open. Trying to open wider than this will result in the gripper being clamped to this size"""
-        self._max_force = self._gripper.max_force
-        """This is the maximum force that the gripper can exert, in centinewtons. Trying to go higher than this will result in the value being clamped to this amount."""
+        self._max_width = self.milimetre_tenths_to_metres(self._gripper.max_width)
+        """This is the maximum width in metres the gripper can open. Trying to open wider than this will result in the gripper being clamped to this size"""
+        self._max_force = self.centinewtons_to_newtons(self._gripper.max_force)
+        """This is the maximum force that the gripper can exert, in newtons. Trying to go higher than this will result in the value being clamped to this amount."""
         
         
         self._state_update_timer = self.create_timer(1.0/self._gripper_check_rate, self.state_update_timer_callback)
@@ -92,7 +92,7 @@ class GripperControlNode(Node):
         self._info_publisher: Publisher = self.create_publisher(
             GripperInfo,
             self._gripper_info_topic,
-            10 # Replace this with a launch parameter maybe?
+            10 # TODO: Replace this with a launch parameter maybe?
         )
         
         self._action_server = ActionServer(
@@ -106,7 +106,7 @@ class GripperControlNode(Node):
         
 
     def state_update_timer_callback(self):
-        self._current_gripper_width_mm = self.get_gripper_width()
+        self._current_gripper_width = self.get_gripper_width()
         self._is_gripper_busy = self.get_gripper_is_busy()
     
     def gripper_info_callback(self):
@@ -115,7 +115,7 @@ class GripperControlNode(Node):
         msg.port = self._gripper_port
         msg.ip = self._gripper_ip
         msg.max_force = self._max_force
-        msg.max_width = self._max_width_mm
+        msg.max_width = self._max_width
         self._info_publisher.publish(msg)
         
 
@@ -126,21 +126,21 @@ class GripperControlNode(Node):
             self.get_logger().error("Tried to move gripper while it was busy! Aborting action!")
             return
         
-        target_width_mm = goal_handle.request.target_width
+        target_width = goal_handle.request.target_width
         target_force = goal_handle.request.target_force
-        if (target_width_mm > self._max_width_mm or target_width_mm < 0):
-            self.get_logger().warn(f"Tried to set gripper width to {target_width_mm}mm which is outside range [0,{self._max_width_mm}]. Clamping!")
-            target_width_mm = h.clamp(0, self._max_width_mm, target_width_mm)
+        if (target_width > self._max_width or target_width < 0):
+            self.get_logger().warn(f"Tried to set gripper width to {target_width}m which is outside range [0,{self._max_width}]. Clamping!")
+            target_width = h.clamp(0, self._max_width, target_width)
         if (target_force > self._max_force or target_force < 0):
             self.get_logger().warn(f"Tried to set gripper force to {target_force} which is outside range [0,{self._max_force}]. Clamping!")
             target_force = h.clamp(0, self._max_force, target_force)
         
         
-        self._gripper.move_gripper(target_width_mm, target_force)
+        self._gripper.move_gripper(self.metres_to_milimetre_tenths(target_width), self.newtons_to_centinewtons(target_force))
         
-        while(not self.gripper_reached_target(self._current_gripper_width_mm, target_width_mm) or self._is_gripper_busy):
+        while(not self.gripper_reached_target(self._current_gripper_width, target_width) or self._is_gripper_busy):
             feedback_msg = GripperSetWidth.Feedback()
-            feedback_msg.current_width = self._current_gripper_width_mm
+            feedback_msg.current_width = self._current_gripper_width
             goal_handle.publish_feedback(feedback_msg)
             time.sleep(self._gripper_check_rate) # TODO: Confirm this doesnt block other threads
         
@@ -148,14 +148,14 @@ class GripperControlNode(Node):
         
         goal_handle.succeed()
         result = GripperSetWidth.Result()
-        result.final_width = self._current_gripper_width_mm
+        result.final_width = self._current_gripper_width
         return result
     
     def gripper_reached_target(self, current: float, target:float) -> bool:
         return h.is_approx_equal(current, target, self._gripper_precision_epsilon)
 
     def get_gripper_width(self):
-        return self._gripper.get_width()
+        return self.milimetre_tenths_to_metres(self._gripper.get_width())
 
     def get_gripper_status(self):
         return self._gripper.get_status()
@@ -166,12 +166,24 @@ class GripperControlNode(Node):
 
     def close_connection(self):
         self._gripper.close_connection()
+        
+    def centinewtons_to_newtons(self, v):
+        return v/10.0
+    def newtons_to_centinewtons(self, v):
+        return v*10.0
+
+    def metres_to_milimetre_tenths(self, v):
+        return v*10000.0
+    def milimetre_tenths_to_metres(self, v):
+        return v/10000.0
 
 
 
 
 def main(args=None):
     rclpy.init(args=args)
+
+    # TODO: Make sure this is correct
 
     gripper_control_node = GripperControlNode()
 
