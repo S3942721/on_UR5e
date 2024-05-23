@@ -49,7 +49,8 @@ class GripperControlNode(Node):
                 ("gripperCheckRate", 0.1),
                 ("gripperPrecisionEpsilon", 0.1),
                 ("gripperInfoPublishRate", 5),
-                ("gripperInfoTopic", "/par/gripper/info")
+                ("gripperInfoTopic", "/par/gripper/info"),
+                ('gripperJointPublishRate', 100)
             ]
         )
         
@@ -68,6 +69,8 @@ class GripperControlNode(Node):
         """This is how often the gripper will publish its info to [gripper_info_topic], in Hz"""
         self._gripper_info_topic = self.get_parameter("gripperInfoTopic").value
         """The topic that the gripper info will be published to."""
+        self._gripper_joint_publish_rate = self.get_parameter("gripperJointPublishRate").value
+        """The frequency in Hz that this node will update the joint state for RViz/Moveit"""
         
         
         self._gripper: RG = RG(self._gripper_type, self._gripper_ip, self._gripper_port)
@@ -89,6 +92,9 @@ class GripperControlNode(Node):
         
         self._gripper_info_timer = self.create_timer(1.0/self._gripper_info_publish_rate, self.gripper_info_callback)
         """This timer will publish info about the gripper now and then for other nodes if needed"""
+        
+        self._gripper_joint_publish_timer = self.create_timer(1.0/self._gripper_joint_publish_rate, self.gripper_joint_publish_callback)
+        """This timer will publish the joint state to update rviz/moveit"""
         
         
         self._info_publisher: Publisher = self.create_publisher(
@@ -178,6 +184,10 @@ class GripperControlNode(Node):
         return v*10000.0
     def milimetre_tenths_to_metres(self, v):
         return v/10000.0
+    
+    def gripper_joint_publish_callback(self):
+        # TODO: Hook this up
+        pass
 
 
 
