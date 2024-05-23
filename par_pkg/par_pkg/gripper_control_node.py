@@ -27,6 +27,8 @@ GRIPPER_BUSY_BIT = 0
 ###  - TODO: Possibly a publisher for the current gripper width?
 ###  - TODO: Possibly a publisher for the gripper status (eg. busy)
 
+# TODO: Do something to account for fingertip offsets !!!! VERY IMPORTANT !!!!
+
 # TODO: Also look into finger offsets and see what they actually do
 
 
