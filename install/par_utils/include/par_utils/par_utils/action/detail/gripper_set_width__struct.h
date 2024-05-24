@@ -21,10 +21,10 @@ extern "C"
 typedef struct par_utils__action__GripperSetWidth_Goal
 {
   /// Request Params:
-  /// The target width of the gripper in milimetres.
+  /// The target width of the gripper in metres.
   /// If the request is outside the valid range, this will get clamped
   float target_width;
-  /// The target force to exert. If outside the valid range, this will get clamped
+  /// The target force to exert in newtons. If outside the valid range, this will get clamped
   float target_force;
 } par_utils__action__GripperSetWidth_Goal;
 

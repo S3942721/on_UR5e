@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/vxlab/on_UR5e/build/par_utils/CMakeCache.txt is different than the directory /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/par_utils" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:963: cmake_check_build_system] Error 1

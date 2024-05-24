@@ -1,0 +1,287 @@
+[0.000000] (-) TimerEvent: {}
+[0.000744] (-) JobUnselected: {'identifier': 'hello_moveit_ur'}
+[0.000936] (par_utils) JobQueued: {'identifier': 'par_utils', 'dependencies': OrderedDict()}
+[0.001101] (par_pkg) JobQueued: {'identifier': 'par_pkg', 'dependencies': OrderedDict([('par_utils', '/home/vxlab/on_UR5e/install/par_utils')])}
+[0.001236] (par_utils) JobStarted: {'identifier': 'par_utils'}
+[0.099363] (-) TimerEvent: {}
+[0.199845] (-) TimerEvent: {}
+[0.216349] (par_utils) JobProgress: {'identifier': 'par_utils', 'progress': 'cmake'}
+[0.217264] (par_utils) JobProgress: {'identifier': 'par_utils', 'progress': 'build'}
+[0.218877] (par_utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vxlab/on_UR5e/build/par_utils', '--', '-j8', '-l8'], 'cwd': '/home/vxlab/on_UR5e/build/par_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'vxlab'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vxlab/on_UR5e/install/moveit_visual_tools/lib:/home/vxlab/on_UR5e/install/rviz_visual_tools/lib:/home/vxlab/on_UR5e/install/par_utils/lib:/home/vxlab/on_UR5e/install/graph_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vxlab'), ('OLDPWD', '/home/vxlab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3393'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vxlab/on_UR5e/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'vxlab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vxlab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/vxlab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/urbrain:@/tmp/.ICE-unix/1239,unix/urbrain:/tmp/.ICE-unix/1239'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/799b782f_a342_4b34_bf88_9bdbf161bfd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/par_pkg:/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/graph_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vxlab/on_UR5e/build/par_utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages:/home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages:/home/vxlab/on_UR5e/install/graph_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/hello_moveit_ur:/home/vxlab/on_UR5e/install/graph_msgs:/home/vxlab/on_UR5e/install/par_pkg:/opt/ros/humble')]), 'shell': False}
+[0.288566] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_generator_c\x1b[0m\n'}
+[0.300044] (-) TimerEvent: {}
+[0.301548] (par_utils) StdoutLine: {'line': b'[  2%] Built target par_utils__cpp\n'}
+[0.312446] (par_utils) StdoutLine: {'line': b'[ 12%] Built target par_utils__rosidl_generator_c\n'}
+[0.332858] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.334699] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.336559] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.339494] (par_utils) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_par_utils\n'}
+[0.354859] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.362326] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_c\x1b[0m\n'}
+[0.373069] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.390436] (par_utils) StdoutLine: {'line': b'[ 23%] Built target par_utils__rosidl_typesupport_cpp\n'}
+[0.394405] (par_utils) StdoutLine: {'line': b'[ 33%] Built target par_utils__rosidl_typesupport_introspection_cpp\n'}
+[0.406487] (-) TimerEvent: {}
+[0.406932] (par_utils) StdoutLine: {'line': b'[ 43%] Built target par_utils__rosidl_typesupport_fastrtps_cpp\n'}
+[0.414156] (par_utils) StdoutLine: {'line': b'[ 53%] Built target par_utils__rosidl_typesupport_c\n'}
+[0.418235] (par_utils) StdoutLine: {'line': b'[ 64%] Built target par_utils__rosidl_typesupport_introspection_c\n'}
+[0.430293] (par_utils) StdoutLine: {'line': b'[ 74%] Built target par_utils__rosidl_typesupport_fastrtps_c\n'}
+[0.474908] (par_utils) StdoutLine: {'line': b'[ 74%] Built target par_utils\n'}
+[0.502836] (-) TimerEvent: {}
+[0.515075] (par_utils) StdoutLine: {'line': b'[ 76%] Built target par_utils__py\n'}
+[0.543426] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_generator_py\x1b[0m\n'}
+[0.571201] (par_utils) StdoutLine: {'line': b'[ 84%] Built target par_utils__rosidl_generator_py\n'}
+[0.599295] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.602934] (-) TimerEvent: {}
+[0.603463] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.604061] (par_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target par_utils__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.641665] (par_utils) StdoutLine: {'line': b'[ 89%] Built target par_utils__rosidl_typesupport_introspection_c__pyext\n'}
+[0.645056] (par_utils) StdoutLine: {'line': b'[ 94%] Built target par_utils__rosidl_typesupport_c__pyext\n'}
+[0.651322] (par_utils) StdoutLine: {'line': b'[100%] Built target par_utils__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.703037] (-) TimerEvent: {}
+[0.803462] (-) TimerEvent: {}
+[0.904627] (-) TimerEvent: {}
+[1.010341] (-) TimerEvent: {}
+[1.081611] (par_utils) StdoutLine: {'line': b'running egg_info\n'}
+[1.085156] (par_utils) StdoutLine: {'line': b'writing par_utils.egg-info/PKG-INFO\n'}
+[1.086680] (par_utils) StdoutLine: {'line': b'writing dependency_links to par_utils.egg-info/dependency_links.txt\n'}
+[1.088230] (par_utils) StdoutLine: {'line': b'writing top-level names to par_utils.egg-info/top_level.txt\n'}
+[1.098539] (par_utils) StdoutLine: {'line': b"reading manifest file 'par_utils.egg-info/SOURCES.txt'\n"}
+[1.100041] (par_utils) StdoutLine: {'line': b"writing manifest file 'par_utils.egg-info/SOURCES.txt'\n"}
+[1.110459] (-) TimerEvent: {}
+[1.141731] (par_utils) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_par_utils_egg\n'}
+[1.158755] (par_utils) CommandEnded: {'returncode': 0}
+[1.210640] (-) TimerEvent: {}
+[1.268136] (par_utils) JobProgress: {'identifier': 'par_utils', 'progress': 'install'}
+[1.282510] (par_utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vxlab/on_UR5e/build/par_utils'], 'cwd': '/home/vxlab/on_UR5e/build/par_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'vxlab'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vxlab/on_UR5e/install/moveit_visual_tools/lib:/home/vxlab/on_UR5e/install/rviz_visual_tools/lib:/home/vxlab/on_UR5e/install/par_utils/lib:/home/vxlab/on_UR5e/install/graph_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vxlab'), ('OLDPWD', '/home/vxlab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3393'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vxlab/on_UR5e/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'vxlab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vxlab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/vxlab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/urbrain:@/tmp/.ICE-unix/1239,unix/urbrain:/tmp/.ICE-unix/1239'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/799b782f_a342_4b34_bf88_9bdbf161bfd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/par_pkg:/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/graph_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vxlab/on_UR5e/build/par_utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages:/home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages:/home/vxlab/on_UR5e/install/graph_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/hello_moveit_ur:/home/vxlab/on_UR5e/install/graph_msgs:/home/vxlab/on_UR5e/install/par_pkg:/opt/ros/humble')]), 'shell': False}
+[1.298954] (par_utils) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.299620] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/ament_index/resource_index/rosidl_interfaces/par_utils\n'}
+[1.299855] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils\n'}
+[1.300082] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg\n'}
+[1.300293] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/gripper_info.h\n'}
+[1.300514] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail\n'}
+[1.300728] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__struct.h\n'}
+[1.301183] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__type_support.h\n'}
+[1.301445] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__functions.c\n'}
+[1.301758] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__functions.h\n'}
+[1.302048] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.302249] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action\n'}
+[1.302459] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/gripper_grip.h\n'}
+[1.302668] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/gripper_set_width.h\n'}
+[1.303118] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail\n'}
+[1.303470] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__type_support.h\n'}
+[1.303820] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__type_support.h\n'}
+[1.304025] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__struct.h\n'}
+[1.304256] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__struct.h\n'}
+[1.304623] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__functions.c\n'}
+[1.304898] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__functions.h\n'}
+[1.305104] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__functions.c\n'}
+[1.305307] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__functions.h\n'}
+[1.305614] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/library_path.sh\n'}
+[1.306001] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/library_path.dsv\n'}
+[1.306210] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_generator_c.so\n'}
+[1.306456] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils\n'}
+[1.306661] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg\n'}
+[1.306892] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.307222] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail\n'}
+[1.307463] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__rosidl_typesupport_fastrtps_c.h\n'}
+[1.307754] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action\n'}
+[1.307956] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail\n'}
+[1.308482] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__rosidl_typesupport_fastrtps_c.h\n'}
+[1.308819] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__rosidl_typesupport_fastrtps_c.h\n'}
+[1.309047] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_typesupport_fastrtps_c.so\n'}
+[1.309250] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils\n'}
+[1.309452] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg\n'}
+[1.309654] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.309861] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail\n'}
+[1.310064] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__rosidl_typesupport_introspection_c.h\n'}
+[1.310269] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__type_support.c\n'}
+[1.310485] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action\n'}
+[1.310669] (-) TimerEvent: {}
+[1.310859] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail\n'}
+[1.311066] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__type_support.c\n'}
+[1.311269] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__rosidl_typesupport_introspection_c.h\n'}
+[1.311475] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__rosidl_typesupport_introspection_c.h\n'}
+[1.311661] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__type_support.c\n'}
+[1.311831] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_typesupport_introspection_c.so\n'}
+[1.312035] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_typesupport_c.so\n'}
+[1.312238] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils\n'}
+[1.312686] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg\n'}
+[1.312914] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/gripper_info.hpp\n'}
+[1.313111] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail\n'}
+[1.313309] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__traits.hpp\n'}
+[1.313704] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__struct.hpp\n'}
+[1.313908] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__builder.hpp\n'}
+[1.314107] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action\n'}
+[1.314315] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail\n'}
+[1.314519] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__struct.hpp\n'}
+[1.314708] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__traits.hpp\n'}
+[1.314926] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__builder.hpp\n'}
+[1.315128] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__traits.hpp\n'}
+[1.315332] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__builder.hpp\n'}
+[1.315538] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__struct.hpp\n'}
+[1.315739] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/gripper_grip.hpp\n'}
+[1.315939] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/gripper_set_width.hpp\n'}
+[1.316146] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils\n'}
+[1.316347] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg\n'}
+[1.316551] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.316759] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail\n'}
+[1.316990] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/dds_fastrtps\n'}
+[1.317192] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.317391] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action\n'}
+[1.317584] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail\n'}
+[1.317786] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/dds_fastrtps\n'}
+[1.317992] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.318207] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.318394] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.318597] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils\n'}
+[1.318872] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg\n'}
+[1.319067] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail\n'}
+[1.319270] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__type_support.cpp\n'}
+[1.319472] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/msg/detail/gripper_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.319676] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action\n'}
+[1.319876] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail\n'}
+[1.320085] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__type_support.cpp\n'}
+[1.320282] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.320481] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_set_width__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.320676] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/include/par_utils/par_utils/action/detail/gripper_grip__type_support.cpp\n'}
+[1.320898] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_typesupport_introspection_cpp.so\n'}
+[1.321124] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_typesupport_cpp.so\n'}
+[1.321324] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/pythonpath.sh\n'}
+[1.321525] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/pythonpath.dsv\n'}
+[1.321723] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils-0.0.0-py3.10.egg-info\n'}
+[1.321923] (par_utils) StdoutLine: {'line': b'-- Installing: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.322120] (par_utils) StdoutLine: {'line': b'-- Installing: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.322321] (par_utils) StdoutLine: {'line': b'-- Installing: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[1.322524] (par_utils) StdoutLine: {'line': b'-- Installing: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[1.322816] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils\n'}
+[1.323020] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/msg\n'}
+[1.323219] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/msg/_gripper_info.py\n'}
+[1.323409] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/msg/_gripper_info_s.c\n'}
+[1.323612] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/msg/__init__.py\n'}
+[1.323816] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/par_utils_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.324017] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/_par_utils_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.324206] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/action\n'}
+[1.324403] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/action/_gripper_set_width_s.c\n'}
+[1.324619] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/action/_gripper_grip_s.c\n'}
+[1.324830] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/action/_gripper_set_width.py\n'}
+[1.325051] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/action/__init__.py\n'}
+[1.325251] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/action/_gripper_grip.py\n'}
+[1.325442] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/_par_utils_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.325643] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/par_utils_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.325846] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/libpar_utils__rosidl_generator_py.so\n'}
+[1.326047] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/__init__.py\n'}
+[1.326246] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/par_utils_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.326446] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/_par_utils_s.ep.rosidl_typesupport_c.c\n'}
+[1.375313] (par_utils) StdoutLine: {'line': b"Listing '/home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils'...\n"}
+[1.375659] (par_utils) StdoutLine: {'line': b"Listing '/home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/action'...\n"}
+[1.375874] (par_utils) StdoutLine: {'line': b"Listing '/home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/msg'...\n"}
+[1.381206] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/par_utils_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.382046] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/par_utils_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.382531] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages/par_utils/par_utils_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.382970] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/lib/libpar_utils__rosidl_generator_py.so\n'}
+[1.383273] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/action/GripperSetWidth.idl\n'}
+[1.383549] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/msg/GripperInfo.idl\n'}
+[1.383813] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/action/GripperSetWidth.action\n'}
+[1.384088] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/msg/GripperInfo.msg\n'}
+[1.384272] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/ament_index/resource_index/package_run_dependencies/par_utils\n'}
+[1.384454] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/ament_index/resource_index/parent_prefix_path/par_utils\n'}
+[1.384622] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/ament_prefix_path.sh\n'}
+[1.384928] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/ament_prefix_path.dsv\n'}
+[1.385609] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/path.sh\n'}
+[1.385947] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/environment/path.dsv\n'}
+[1.386398] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/local_setup.bash\n'}
+[1.386670] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/local_setup.sh\n'}
+[1.386941] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/local_setup.zsh\n'}
+[1.387273] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/local_setup.dsv\n'}
+[1.387589] (par_utils) StdoutLine: {'line': b'-- Installing: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/package.dsv\n'}
+[1.388031] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/ament_index/resource_index/packages/par_utils\n'}
+[1.388336] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_generator_cExport.cmake\n'}
+[1.388611] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.388824] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.389022] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.389214] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.389859] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.390037] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_cExport.cmake\n'}
+[1.390206] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.390376] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_generator_cppExport.cmake\n'}
+[1.390572] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.390772] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.390970] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.391158] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.391335] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_cppExport.cmake\n'}
+[1.391510] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utils__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.391684] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_generator_pyExport.cmake\n'}
+[1.392341] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/export_par_utils__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.393389] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/rosidl_cmake-extras.cmake\n'}
+[1.393784] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.394186] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.394416] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.394787] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.395318] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.395540] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.395947] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utilsConfig.cmake\n'}
+[1.396577] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/cmake/par_utilsConfig-version.cmake\n'}
+[1.396773] (par_utils) StdoutLine: {'line': b'-- Up-to-date: /home/vxlab/on_UR5e/install/par_utils/share/par_utils/package.xml\n'}
+[1.397067] (par_utils) CommandEnded: {'returncode': 0}
+[1.410824] (-) TimerEvent: {}
+[1.511235] (-) TimerEvent: {}
+[1.611904] (-) TimerEvent: {}
+[1.712431] (-) TimerEvent: {}
+[1.812818] (-) TimerEvent: {}
+[1.913317] (-) TimerEvent: {}
+[1.993040] (par_utils) JobEnded: {'identifier': 'par_utils', 'rc': 0}
+[1.994385] (par_pkg) JobStarted: {'identifier': 'par_pkg'}
+[2.013436] (-) TimerEvent: {}
+[2.114056] (-) TimerEvent: {}
+[2.214619] (-) TimerEvent: {}
+[2.315236] (-) TimerEvent: {}
+[2.415812] (-) TimerEvent: {}
+[2.516185] (-) TimerEvent: {}
+[2.616669] (-) TimerEvent: {}
+[2.717031] (-) TimerEvent: {}
+[2.817394] (-) TimerEvent: {}
+[2.917897] (-) TimerEvent: {}
+[3.018735] (-) TimerEvent: {}
+[3.119424] (-) TimerEvent: {}
+[3.219929] (-) TimerEvent: {}
+[3.320341] (-) TimerEvent: {}
+[3.420707] (-) TimerEvent: {}
+[3.521057] (-) TimerEvent: {}
+[3.621456] (-) TimerEvent: {}
+[3.721840] (-) TimerEvent: {}
+[3.822208] (-) TimerEvent: {}
+[3.922546] (-) TimerEvent: {}
+[3.998835] (par_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/par_pkg', 'build', '--build-base', '/home/vxlab/on_UR5e/build/par_pkg/build', 'install', '--record', '/home/vxlab/on_UR5e/build/par_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/vxlab/on_UR5e/par_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'vxlab', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vxlab/on_UR5e/install/par_utils/lib:/home/vxlab/on_UR5e/install/moveit_visual_tools/lib:/home/vxlab/on_UR5e/install/rviz_visual_tools/lib:/home/vxlab/on_UR5e/install/graph_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/vxlab', 'OLDPWD': '/home/vxlab', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3393', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/vxlab/on_UR5e/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'vxlab', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vxlab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/vxlab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/urbrain:@/tmp/.ICE-unix/1239,unix/urbrain:/tmp/.ICE-unix/1239', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/799b782f_a342_4b34_bf88_9bdbf161bfd5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.96', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/par_pkg:/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/graph_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vxlab/on_UR5e/build/par_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vxlab/on_UR5e/build/par_pkg/prefix_override:/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages:/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages:/home/vxlab/on_UR5e/install/par_utils/local/lib/python3.10/dist-packages:/home/vxlab/on_UR5e/install/graph_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/hello_moveit_ur:/home/vxlab/on_UR5e/install/graph_msgs'}, 'shell': False}
+[4.022653] (-) TimerEvent: {}
+[4.123016] (-) TimerEvent: {}
+[4.223370] (-) TimerEvent: {}
+[4.323763] (-) TimerEvent: {}
+[4.424154] (-) TimerEvent: {}
+[4.524563] (-) TimerEvent: {}
+[4.549835] (par_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[4.551756] (par_pkg) StdoutLine: {'line': b'writing ../build/par_pkg/par_pkg.egg-info/PKG-INFO\n'}
+[4.552452] (par_pkg) StdoutLine: {'line': b'writing dependency_links to ../build/par_pkg/par_pkg.egg-info/dependency_links.txt\n'}
+[4.552803] (par_pkg) StdoutLine: {'line': b'writing entry points to ../build/par_pkg/par_pkg.egg-info/entry_points.txt\n'}
+[4.553027] (par_pkg) StdoutLine: {'line': b'writing requirements to ../build/par_pkg/par_pkg.egg-info/requires.txt\n'}
+[4.553294] (par_pkg) StdoutLine: {'line': b'writing top-level names to ../build/par_pkg/par_pkg.egg-info/top_level.txt\n'}
+[4.556252] (par_pkg) StdoutLine: {'line': b"reading manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'\n"}
+[4.558205] (par_pkg) StdoutLine: {'line': b"writing manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'\n"}
+[4.558460] (par_pkg) StdoutLine: {'line': b'running build\n'}
+[4.558672] (par_pkg) StdoutLine: {'line': b'running build_py\n'}
+[4.559119] (par_pkg) StdoutLine: {'line': b'running install\n'}
+[4.559387] (par_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.559615] (par_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.560220] (par_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[4.562451] (par_pkg) StdoutLine: {'line': b'running install_data\n'}
+[4.563405] (par_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.566028] (par_pkg) StdoutLine: {'line': b"removing '/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.566536] (par_pkg) StdoutLine: {'line': b'Copying ../build/par_pkg/par_pkg.egg-info to /home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg-0.0.0-py3.10.egg-info\n'}
+[4.568195] (par_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[4.607183] (par_pkg) StdoutLine: {'line': b'Installing gripper_control_node script to /home/vxlab/on_UR5e/install/par_pkg/lib/par_pkg\n'}
+[4.607898] (par_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/vxlab/on_UR5e/build/par_pkg/install.log'\n"}
+[4.624686] (-) TimerEvent: {}
+[4.649049] (par_pkg) CommandEnded: {'returncode': 0}
+[4.724825] (-) TimerEvent: {}
+[4.814301] (par_pkg) JobEnded: {'identifier': 'par_pkg', 'rc': 0}
+[4.816171] (-) EventReactorShutdown: {}

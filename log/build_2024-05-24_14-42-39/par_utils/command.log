@@ -1,0 +1,6 @@
+Invoking command in '/home/vxlab/on_UR5e/build/par_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vxlab/on_UR5e/par_utils -DCMAKE_INSTALL_PREFIX=/home/vxlab/on_UR5e/install/par_utils
+Invoked command in '/home/vxlab/on_UR5e/build/par_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vxlab/on_UR5e/par_utils -DCMAKE_INSTALL_PREFIX=/home/vxlab/on_UR5e/install/par_utils
+Invoking command in '/home/vxlab/on_UR5e/build/par_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vxlab/on_UR5e/build/par_utils -- -j8 -l8
+Invoked command in '/home/vxlab/on_UR5e/build/par_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vxlab/on_UR5e/build/par_utils -- -j8 -l8
+Invoking command in '/home/vxlab/on_UR5e/build/par_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vxlab/on_UR5e/build/par_utils
+Invoked command in '/home/vxlab/on_UR5e/build/par_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vxlab/on_UR5e/build/par_utils

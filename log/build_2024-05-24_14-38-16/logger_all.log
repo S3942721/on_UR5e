@@ -1,0 +1,194 @@
+[3.654s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.654s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x799d9ddc3730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x799d9ddc14e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x799d9ddc14e0>>, mixin_verb=('build',))
+[3.770s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.770s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.771s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.771s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.771s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.771s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.771s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vxlab/on_UR5e'
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.772s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.772s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.772s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.772s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['ignore', 'ignore_ament_install']
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ignore'
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ignore_ament_install'
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['colcon_pkg']
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'colcon_pkg'
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['colcon_meta']
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'colcon_meta'
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['ros']
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'ros'
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['cmake', 'python']
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'cmake'
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'python'
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extensions ['python_setup_py']
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(graph_msgs) by extension 'python_setup_py'
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['ignore', 'ignore_ament_install']
+[3.790s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ignore'
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ignore_ament_install'
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['colcon_pkg']
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'colcon_pkg'
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['colcon_meta']
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'colcon_meta'
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extensions ['ros']
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit_ur) by extension 'ros'
+[3.795s] DEBUG:colcon.colcon_core.package_identification:Package 'hello_moveit_ur' with type 'ros.ament_cmake' and name 'hello_moveit_ur'
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['ignore', 'ignore_ament_install']
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ignore'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ignore_ament_install'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['colcon_pkg']
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'colcon_pkg'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['colcon_meta']
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'colcon_meta'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['ros']
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'ros'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['cmake', 'python']
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'cmake'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'python'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extensions ['python_setup_py']
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_visual_tools) by extension 'python_setup_py'
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['ignore', 'ignore_ament_install']
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'ignore'
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'ignore_ament_install'
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['colcon_pkg']
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'colcon_pkg'
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['colcon_meta']
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'colcon_meta'
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extensions ['ros']
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(par_pkg) by extension 'ros'
+[3.798s] DEBUG:colcon.colcon_core.package_identification:Package 'par_pkg' with type 'ros.ament_python' and name 'par_pkg'
+[3.798s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['ignore', 'ignore_ament_install']
+[3.798s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'ignore'
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'ignore_ament_install'
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['colcon_pkg']
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'colcon_pkg'
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['colcon_meta']
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'colcon_meta'
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extensions ['ros']
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(par_utils) by extension 'ros'
+[3.800s] DEBUG:colcon.colcon_core.package_identification:Package 'par_utils' with type 'ros.ament_cmake' and name 'par_utils'
+[3.800s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['ignore', 'ignore_ament_install']
+[3.800s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ignore'
+[3.800s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ignore_ament_install'
+[3.800s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['colcon_pkg']
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'colcon_pkg'
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['colcon_meta']
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'colcon_meta'
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['ros']
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'ros'
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['cmake', 'python']
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'cmake'
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'python'
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extensions ['python_setup_py']
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(rviz_visual_tools) by extension 'python_setup_py'
+[3.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.053s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.053s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 384 installed packages in /opt/ros/humble
+[4.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.399s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_args' from command line to 'None'
+[4.399s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_target' from command line to 'None'
+[4.400s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.400s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_clean_cache' from command line to 'False'
+[4.400s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_clean_first' from command line to 'False'
+[4.400s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'cmake_force_configure' from command line to 'False'
+[4.400s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'ament_cmake_args' from command line to 'None'
+[4.400s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'catkin_cmake_args' from command line to 'None'
+[4.400s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit_ur' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.400s] DEBUG:colcon.colcon_core.verb:Building package 'hello_moveit_ur' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vxlab/on_UR5e/build/hello_moveit_ur', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vxlab/on_UR5e/install/hello_moveit_ur', 'merge_install': False, 'path': '/home/vxlab/on_UR5e/hello_moveit_ur', 'symlink_install': False, 'test_result_base': None}
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_args' from command line to 'None'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_target' from command line to 'None'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_clean_first' from command line to 'False'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'cmake_force_configure' from command line to 'False'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'ament_cmake_args' from command line to 'None'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[4.441s] Level 5:colcon.colcon_core.verb:set package 'par_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.442s] DEBUG:colcon.colcon_core.verb:Building package 'par_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vxlab/on_UR5e/build/par_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vxlab/on_UR5e/install/par_utils', 'merge_install': False, 'path': '/home/vxlab/on_UR5e/par_utils', 'symlink_install': False, 'test_result_base': None}
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'cmake_args' from command line to 'None'
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'cmake_target' from command line to 'None'
+[4.483s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.483s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[4.483s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[4.483s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[4.483s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[4.483s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[4.483s] Level 5:colcon.colcon_core.verb:set package 'par_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.483s] DEBUG:colcon.colcon_core.verb:Building package 'par_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vxlab/on_UR5e/build/par_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vxlab/on_UR5e/install/par_pkg', 'merge_install': False, 'path': '/home/vxlab/on_UR5e/par_pkg', 'symlink_install': False, 'test_result_base': None}
+[4.524s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.566s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.566s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vxlab/on_UR5e/par_utils' with build type 'ament_cmake'
+[4.567s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vxlab/on_UR5e/par_utils'
+[4.610s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.610s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.610s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.701s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vxlab/on_UR5e/hello_moveit_ur' with build type 'ament_cmake'
+[4.701s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vxlab/on_UR5e/hello_moveit_ur'
+[4.748s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.748s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vxlab/on_UR5e/build/par_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vxlab/on_UR5e/build/par_utils -- -j8 -l8
+[4.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vxlab/on_UR5e/build/hello_moveit_ur': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vxlab/on_UR5e/hello_moveit_ur -DCMAKE_INSTALL_PREFIX=/home/vxlab/on_UR5e/install/hello_moveit_ur
+[4.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vxlab/on_UR5e/build/hello_moveit_ur' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vxlab/on_UR5e/hello_moveit_ur -DCMAKE_INSTALL_PREFIX=/home/vxlab/on_UR5e/install/hello_moveit_ur
+[4.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vxlab/on_UR5e/build/par_utils' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vxlab/on_UR5e/build/par_utils -- -j8 -l8
+[4.885s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_moveit_ur)
+[4.940s] Level 1:colcon.colcon_core.environment:checking '/home/vxlab/on_UR5e/install/hello_moveit_ur' for CMake module files
+[4.941s] Level 1:colcon.colcon_core.environment:checking '/home/vxlab/on_UR5e/install/hello_moveit_ur' for CMake config files
+[4.942s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_moveit_ur', 'cmake_prefix_path')
+[4.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.ps1'
+[4.989s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.dsv'
+[4.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/hook/cmake_prefix_path.sh'
+[4.991s] Level 1:colcon.colcon_core.environment:checking '/home/vxlab/on_UR5e/install/hello_moveit_ur/lib'
+[4.991s] Level 1:colcon.colcon_core.environment:checking '/home/vxlab/on_UR5e/install/hello_moveit_ur/bin'
+[4.991s] Level 1:colcon.colcon_core.environment:checking '/home/vxlab/on_UR5e/install/hello_moveit_ur/lib/pkgconfig/hello_moveit_ur.pc'
+[4.991s] Level 1:colcon.colcon_core.environment:checking '/home/vxlab/on_UR5e/install/hello_moveit_ur/lib/python3.10/site-packages'
+[4.992s] Level 1:colcon.colcon_core.environment:checking '/home/vxlab/on_UR5e/install/hello_moveit_ur/bin'
+[5.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/package.ps1'
+[5.047s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/package.dsv'
+[5.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/package.sh'
+[5.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/package.bash'
+[5.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/vxlab/on_UR5e/install/hello_moveit_ur/share/hello_moveit_ur/package.zsh'
+[5.051s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vxlab/on_UR5e/install/hello_moveit_ur/share/colcon-core/packages/hello_moveit_ur)
+[5.062s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.062s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.063s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[5.063s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.127s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.128s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.128s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.145s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.203s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vxlab/on_UR5e/install/local_setup.ps1'
+[5.205s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vxlab/on_UR5e/install/_local_setup_util_ps1.py'
+[5.208s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vxlab/on_UR5e/install/setup.ps1'
+[5.257s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vxlab/on_UR5e/install/local_setup.sh'
+[5.258s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vxlab/on_UR5e/install/_local_setup_util_sh.py'
+[5.259s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vxlab/on_UR5e/install/setup.sh'
+[5.301s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vxlab/on_UR5e/install/local_setup.bash'
+[5.302s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vxlab/on_UR5e/install/setup.bash'
+[5.361s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vxlab/on_UR5e/install/local_setup.zsh'
+[5.362s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vxlab/on_UR5e/install/setup.zsh'

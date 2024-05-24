@@ -103,8 +103,8 @@ bool par_utils__msg__gripper_info__convert_from_py(PyObject * _pymsg, void * _ro
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->max_width = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->max_width = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // max_force
@@ -112,8 +112,8 @@ bool par_utils__msg__gripper_info__convert_from_py(PyObject * _pymsg, void * _ro
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->max_force = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->max_force = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -191,7 +191,7 @@ PyObject * par_utils__msg__gripper_info__convert_to_py(void * raw_ros_message)
   }
   {  // max_width
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->max_width);
+    field = PyFloat_FromDouble(ros_message->max_width);
     {
       int rc = PyObject_SetAttrString(_pymessage, "max_width", field);
       Py_DECREF(field);
@@ -202,7 +202,7 @@ PyObject * par_utils__msg__gripper_info__convert_to_py(void * raw_ros_message)
   }
   {  // max_force
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->max_force);
+    field = PyFloat_FromDouble(ros_message->max_force);
     {
       int rc = PyObject_SetAttrString(_pymessage, "max_force", field);
       Py_DECREF(field);

@@ -8,8 +8,11 @@ setup.py
 ../build/par_pkg/par_pkg.egg-info/requires.txt
 ../build/par_pkg/par_pkg.egg-info/top_level.txt
 ../build/par_pkg/par_pkg.egg-info/zip-safe
+launch/par_pkg.launch.py
 par_pkg/__init__.py
-par_pkg/gripper_action_server.py
+par_pkg/gripper_control_node.py
+par_pkg/helpers.py
+par_pkg/move_to_pose.py
 par_pkg/onrobot/__init__.py
 par_pkg/onrobot/onrobot.py
 resource/par_pkg

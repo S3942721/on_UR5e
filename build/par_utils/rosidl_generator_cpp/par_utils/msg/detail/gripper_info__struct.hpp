@@ -41,8 +41,8 @@ struct GripperInfo_
       this->gripper_type = "";
       this->ip = "";
       this->port = "";
-      this->max_width = 0l;
-      this->max_force = 0l;
+      this->max_width = 0.0f;
+      this->max_force = 0.0f;
     }
   }
 
@@ -57,8 +57,8 @@ struct GripperInfo_
       this->gripper_type = "";
       this->ip = "";
       this->port = "";
-      this->max_width = 0l;
-      this->max_force = 0l;
+      this->max_width = 0.0f;
+      this->max_force = 0.0f;
     }
   }
 
@@ -73,10 +73,10 @@ struct GripperInfo_
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _port_type port;
   using _max_width_type =
-    int32_t;
+    float;
   _max_width_type max_width;
   using _max_force_type =
-    int32_t;
+    float;
   _max_force_type max_force;
 
   // setters for named parameter idiom
@@ -99,13 +99,13 @@ struct GripperInfo_
     return *this;
   }
   Type & set__max_width(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->max_width = _arg;
     return *this;
   }
   Type & set__max_force(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->max_force = _arg;
     return *this;

@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -66,16 +68,16 @@ class GripperInfo(metaclass=Metaclass_GripperInfo):
         'gripper_type': 'string',
         'ip': 'string',
         'port': 'string',
-        'max_width': 'int32',
-        'max_force': 'int32',
+        'max_width': 'float',
+        'max_force': 'float',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -85,8 +87,8 @@ class GripperInfo(metaclass=Metaclass_GripperInfo):
         self.gripper_type = kwargs.get('gripper_type', str())
         self.ip = kwargs.get('ip', str())
         self.port = kwargs.get('port', str())
-        self.max_width = kwargs.get('max_width', int())
-        self.max_force = kwargs.get('max_force', int())
+        self.max_width = kwargs.get('max_width', float())
+        self.max_force = kwargs.get('max_force', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -182,10 +184,10 @@ class GripperInfo(metaclass=Metaclass_GripperInfo):
     def max_width(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'max_width' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'max_width' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'max_width' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'max_width' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._max_width = value
 
     @builtins.property
@@ -197,8 +199,8 @@ class GripperInfo(metaclass=Metaclass_GripperInfo):
     def max_force(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'max_force' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'max_force' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'max_force' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'max_force' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._max_force = value

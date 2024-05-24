@@ -37,7 +37,7 @@ setup(
     # scripts here.
     entry_points={
         'console_scripts': [
-            'par_pkg = par_pkg.gripper_control_node:main'
+            'gripper_control_node = par_pkg.gripper_control_node:main'
         ],
     },
 )

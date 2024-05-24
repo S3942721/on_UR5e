@@ -1,12 +1,17 @@
 Metadata-Version: 2.1
 Name: par-pkg
 Version: 0.0.0
-Summary: TODO: Package description
+Summary: My awesome package.
 Home-page: UNKNOWN
 Maintainer: rmitaiil
 Maintainer-email: s3843035@student.rmit.edu.au
-License: TODO: License declaration
+License: TODO
+Keywords: foo,bar
 Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: TODO
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
 
 UNKNOWN
 

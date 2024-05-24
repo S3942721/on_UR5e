@@ -1,0 +1,26 @@
+[2.305s] Invoking command in '/home/vxlab/on_UR5e/par_pkg': CMAKE_PREFIX_PATH=/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/hello_moveit_ur:/home/vxlab/on_UR5e/install/graph_msgs LD_LIBRARY_PATH=/home/vxlab/on_UR5e/install/par_utils/lib:/home/vxlab/on_UR5e/install/moveit_visual_tools/lib:/home/vxlab/on_UR5e/install/rviz_visual_tools/lib:/home/vxlab/on_UR5e/install/graph_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/vxlab/on_UR5e/build/par_pkg/prefix_override:/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/par_pkg build --build-base /home/vxlab/on_UR5e/build/par_pkg/build install --record /home/vxlab/on_UR5e/build/par_pkg/install.log --single-version-externally-managed
+[2.970s] running egg_info
+[2.971s] writing ../build/par_pkg/par_pkg.egg-info/PKG-INFO
+[2.972s] writing dependency_links to ../build/par_pkg/par_pkg.egg-info/dependency_links.txt
+[2.972s] writing entry points to ../build/par_pkg/par_pkg.egg-info/entry_points.txt
+[2.972s] writing requirements to ../build/par_pkg/par_pkg.egg-info/requires.txt
+[2.972s] writing top-level names to ../build/par_pkg/par_pkg.egg-info/top_level.txt
+[2.975s] reading manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'
+[2.976s] writing manifest file '../build/par_pkg/par_pkg.egg-info/SOURCES.txt'
+[2.977s] running build
+[2.978s] running build_py
+[2.978s] copying par_pkg/gripper_control_node.py -> /home/vxlab/on_UR5e/build/par_pkg/build/lib/par_pkg
+[2.978s] running install
+[2.978s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.979s]   warnings.warn(
+[2.979s] running install_lib
+[2.981s] copying /home/vxlab/on_UR5e/build/par_pkg/build/lib/par_pkg/gripper_control_node.py -> /home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg
+[2.983s] byte-compiling /home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg/gripper_control_node.py to gripper_control_node.cpython-310.pyc
+[2.987s] running install_data
+[2.990s] running install_egg_info
+[2.992s] removing '/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.993s] Copying ../build/par_pkg/par_pkg.egg-info to /home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages/par_pkg-0.0.0-py3.10.egg-info
+[2.994s] running install_scripts
+[3.031s] Installing gripper_control_node script to /home/vxlab/on_UR5e/install/par_pkg/lib/par_pkg
+[3.032s] writing list of installed files to '/home/vxlab/on_UR5e/build/par_pkg/install.log'
+[3.069s] Invoked command in '/home/vxlab/on_UR5e/par_pkg' returned '0': CMAKE_PREFIX_PATH=/home/vxlab/on_UR5e/install/par_utils:/home/vxlab/on_UR5e/install/moveit_visual_tools:/home/vxlab/on_UR5e/install/rviz_visual_tools:/home/vxlab/on_UR5e/install/hello_moveit_ur:/home/vxlab/on_UR5e/install/graph_msgs LD_LIBRARY_PATH=/home/vxlab/on_UR5e/install/par_utils/lib:/home/vxlab/on_UR5e/install/moveit_visual_tools/lib:/home/vxlab/on_UR5e/install/rviz_visual_tools/lib:/home/vxlab/on_UR5e/install/graph_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/vxlab/on_UR5e/build/par_pkg/prefix_override:/home/vxlab/on_UR5e/install/par_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/par_pkg build --build-base /home/vxlab/on_UR5e/build/par_pkg/build install --record /home/vxlab/on_UR5e/build/par_pkg/install.log --single-version-externally-managed
