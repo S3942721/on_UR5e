@@ -1,0 +1,2 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/vxlab/on_UR5e/build/hello_moveit_ur/CMakeCache.txt is different than the directory /root/overlay_ws/src/build/hello_moveit_ur where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source "/home/vxlab/on_UR5e/hello_moveit_ur/CMakeLists.txt" does not match the source "/root/overlay_ws/src/hello_moveit_ur/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.[0m

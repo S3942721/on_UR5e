@@ -1,8 +1,8 @@
-# Install script for directory: /home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/build/par_utils/par_utils__py
+# Install script for directory: /home/vxlab/on_UR5e/build/par_utils/par_utils__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rmitaiil/aiil_workspace/humble_workspace/src/on_UR5e/install/par_utils")
+  set(CMAKE_INSTALL_PREFIX "/home/vxlab/on_UR5e/install/par_utils")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

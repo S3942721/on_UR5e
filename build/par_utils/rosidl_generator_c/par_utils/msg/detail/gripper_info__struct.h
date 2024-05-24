@@ -36,10 +36,10 @@ typedef struct par_utils__msg__GripperInfo
   rosidl_runtime_c__String ip;
   /// The port of the gripper
   rosidl_runtime_c__String port;
-  /// The maximum width the gripper can open in milimetres
-  int32_t max_width;
-  /// The maximum force the gripper can exert, in centinewtons (10ths of a newton)
-  int32_t max_force;
+  /// The maximum width the gripper can open in metres
+  float max_width;
+  /// The maximum force the gripper can exert, in newtons
+  float max_force;
 } par_utils__msg__GripperInfo;
 
 // Struct for a sequence of par_utils__msg__GripperInfo.

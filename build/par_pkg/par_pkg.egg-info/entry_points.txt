@@ -1,3 +1,3 @@
 [console_scripts]
-
+gripper_control_node = par_pkg.gripper_control_node:main
 
