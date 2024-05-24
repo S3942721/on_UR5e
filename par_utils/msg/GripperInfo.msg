@@ -9,7 +9,7 @@ string ip
 ### The port of the gripper
 string port
 
-### The maximum width the gripper can open in milimetres
-int32 max_width
-### The maximum force the gripper can exert, in centinewtons (10ths of a newton)
-int32 max_force
+### The maximum width the gripper can open in metres
+float32 max_width
+### The maximum force the gripper can exert, in newtons
+float32 max_force
